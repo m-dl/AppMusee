@@ -8,7 +8,6 @@ import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.Location;
 import com.ceri.visitemusee.entities.musee.Visit;
-import com.google.android.gms.drive.HomeActivity;
 
 import java.io.File;
 
@@ -17,8 +16,7 @@ import java.io.File;
  */
 public class FileManager {
     final public static File SD_CARD = Environment.getExternalStorageDirectory();
-    final public static String MEDIA_PATH = "/VisiteChateau";
-    final public static String ZIP = ".zip";
+    final public static String MEDIA_PATH = "/VisiteMusee";
     final public static String PHOTOS = "photo";
     final public static String INTERIEUR = "interieur";
     final public static String VIDEOS = "video";
@@ -31,7 +29,7 @@ public class FileManager {
     final public static String LENGTH_FR = "duree_fr.txt";
     final public static String LENGTH_EN = "duree_en.txt";
     final public static String MARKER = "marker.txt";
-    private Location chateauWorkspace;
+    private Location MuseeWorkspace;
 
     private static FileManager INSTANCE = new FileManager();
 
@@ -45,44 +43,36 @@ public class FileManager {
     }
 
     /**
-     * @return the chateauWorkspace
+     * @return the MuseeWorkspace
      */
-    public Location getChateauWorkspace() {
-        return chateauWorkspace;
+    public Location getMuseeWorkspace() {
+        return MuseeWorkspace;
     }
 
     /**
-     * @param chateauWorkspace the chateauWorkspace to set
+     * @param MuseeWorkspace the MuseeWorkspace to set
      */
-    public void setChateauWorkspace(Location chateauWorkspace) {
-        this.chateauWorkspace = chateauWorkspace;
+    public void setMuseeWorkspace(Location MuseeWorkspace) {
+        this.MuseeWorkspace = MuseeWorkspace;
     }
 
     // Init global media workspace
     public void Init() {
-        this.setChateauWorkspace(new Location());
-        InitChateau();
+        this.setMuseeWorkspace(new Location());
+        InitMusee();
     }
 
-    // Init chateau media workspace
-    public void InitChateau() {
-        FileTools.ListVisitChateau(SD_CARD + MEDIA_PATH, chateauWorkspace);
+    // Init Musee media workspace
+    public void InitMusee() {
+        FileTools.ListVisitMusee(SD_CARD + MEDIA_PATH, MuseeWorkspace);
     }
-
-    // Update media
-    public static void UpdateMedia() {
-        // By precaution, delete zip
-        FileTools.Delete(SD_CARD + MEDIA_PATH + ZIP);
-        Intent intent = new Intent(MainActivity.getContext(), HomeActivity.class);
-        MainActivity.getContext().startActivity(intent);
-    }
-
+    
     // Create menu and list visits
     public static void ListVisits(NavigationView m_NavigationView, boolean french) {
         String name;
         int groupId = 0, itemId = 1, order = 0;
-        if (FileManager.getInstance().getChateauWorkspace().getV() != null) {
-            for (Visit v : FileManager.getInstance().getChateauWorkspace().getV()) {
+        if (FileManager.getInstance().getMuseeWorkspace().getV() != null) {
+            for (Visit v : FileManager.getInstance().getMuseeWorkspace().getV()) {
                 if(french)
                     name = v.getName();
                 else
@@ -92,12 +82,12 @@ public class FileManager {
                 order++;
             }
         }
-        if(!FileManager.getInstance().getChateauWorkspace().getV().isEmpty())
-            order--;
-        if (french) {
-            m_NavigationView.getMenu().addSubMenu(groupId, itemId, order, R.string.option_section).add(R.string.action_section_1);
-        } else {
-            m_NavigationView.getMenu().addSubMenu(groupId, itemId, order, R.string.option_section).add(R.string.action_section_english_1);
-        }
+//        if(!FileManager.getInstance().getMuseeWorkspace().getV().isEmpty())
+//            order--;
+//        if (french) {
+//            m_NavigationView.getMenu().addSubMenu(groupId, itemId, order, R.string.option_section).add(R.string.action_section_1);
+//        } else {
+//            m_NavigationView.getMenu().addSubMenu(groupId, itemId, order, R.string.option_section).add(R.string.action_section_english_1);
+//        }
     }
 }

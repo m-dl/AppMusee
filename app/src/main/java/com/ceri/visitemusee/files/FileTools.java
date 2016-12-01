@@ -140,21 +140,21 @@ public class FileTools {
 		return videosList;
 	}
 
-	// List all Chateau visits from a location
-	public static void ListVisitChateau(String pathFrom, Location l) {
+	// List all Musee visits from a location
+	public static void ListVisitMusee(String pathFrom, Location l) {
 		File fileFrom = new File(pathFrom);
         File[] list = fileFrom.listFiles();
         if(!Exist(fileFrom)) 
         	return;
         for(File file : list){
             if(file.isDirectory()){ // Visits' folder
-            	ListVisitContentChateau(pathFrom + "/" + file.getName(), file.getName(), l);
+            	ListVisitContentMusee(pathFrom + "/" + file.getName(), file.getName(), l);
             }
         }
 	}
 	
-	// List a Chateau visit folder content
-    public static void ListVisitContentChateau(String pathFrom, String visitName, Location l) {
+	// List a Musee visit folder content
+    public static void ListVisitContentMusee(String pathFrom, String visitName, Location l) {
         File fileFrom = new File(pathFrom);
         File[] list = fileFrom.listFiles();
         

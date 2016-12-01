@@ -33,7 +33,6 @@ import com.ceri.visitemusee.overview.OverviewActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tileview.TileViewTools;
 import com.ceri.visitemusee.tool.ScreenParam;
-import com.ceri.visitemusee.tool.TakePicture;
 import com.qozix.tileview.TileView;
 
 import java.util.ArrayList;
@@ -41,8 +40,6 @@ import java.util.ArrayList;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
-import static com.ceri.visitemusee.tool.ConnectionManager.isNetworkAvailable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -96,12 +93,6 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		// auto pin the app
 		startLockTask();
-		// empty visitors pictures folder
-		TakePicture.updateVisitorPhoto();
-		// if wifi -> try to updata media
-		if(isNetworkAvailable()) {
-			FileManager.UpdateMedia();
-		}
 		initObjects();
 		selectLanguage();
 		// create visits dynamically and the menu
@@ -131,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 	private void initMap(int f) {
 		// change these path to change map plans
 		String floorPath = "maps/floor_" + f + "/%col%_%row%.jpg";
-		String floorPath2 = "maps/floor_" + f + "/planchateau.jpg";
+		String floorPath2 = "maps/floor_" + f + "/planmusee.jpg";
 		linearLayout = (LinearLayout) findViewById(R.id.map);
 		// multiple references
 		tileView = new TileView(this);
@@ -232,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
 
 	// launch visit overview activity
 	private void prepareVisit(String title) {
-		Visit visit = FM.getChateauWorkspace().searchVisit(title, AppParams.getInstance().getM_french());
+		Visit visit = FM.getMuseeWorkspace().searchVisit(title, AppParams.getInstance().getM_french());
 		launchVisitOverview(visit);
 	}
 
@@ -276,13 +267,13 @@ public class MainActivity extends AppCompatActivity {
 				prepareVisit(title);
 			} else
 				Toast.makeText(m_Context, resources.getString(R.string.memory_access_error), Toast.LENGTH_LONG).show();
-		} else {
-			// take picture item
-			if (title.equals(resources.getString(R.string.action_section_1)) || title.equals(resources.getString(R.string.action_section_english_1))) {
-				TakePicture takePicture = new TakePicture(m_Activity);
-				takePicture.photo();
-			}
-		}
+		} //else {
+//			// take picture item
+//			if (title.equals(resources.getString(R.string.action_section_1)) || title.equals(resources.getString(R.string.action_section_english_1))) {
+//				TakePicture takePicture = new TakePicture(m_Activity);
+//				takePicture.photo();
+//			}
+//		}
 	}
 
 	// button visit info

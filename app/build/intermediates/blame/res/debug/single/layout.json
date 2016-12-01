@@ -52,12 +52,12 @@
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\activity_player.xml"
     },
     {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_drive.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\exploded-aar\\AppChateau-Fruitiere-Numerique-master\\driveAPI\\unspecified\\res\\layout\\main_drive.xml"
-    },
-    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_drive.xml",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\exploded-aar\\AppChateau-Fruitiere-Numerique-master\\driveAPI\\unspecified\\res\\layout\\main_drive.xml"
     },
     {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",

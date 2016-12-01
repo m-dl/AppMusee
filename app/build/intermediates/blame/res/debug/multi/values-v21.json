@@ -1775,10 +1775,10 @@
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 78,
+                        "startOffset": 80,
                         "endLine": 8,
                         "endColumn": 12,
-                        "endOffset": 424
+                        "endOffset": 432
                     }
                 }
             },
