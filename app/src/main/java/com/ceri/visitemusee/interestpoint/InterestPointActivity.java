@@ -30,7 +30,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by Clément
+ * Created by Maxime
  */
 public class InterestPointActivity extends AppCompatActivity {
     private InterestPoint IP;

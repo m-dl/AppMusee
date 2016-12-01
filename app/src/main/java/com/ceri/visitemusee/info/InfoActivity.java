@@ -29,7 +29,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by Clément
+ * Created by Maxime
  */
 public class InfoActivity extends AppCompatActivity {
     private Info info;

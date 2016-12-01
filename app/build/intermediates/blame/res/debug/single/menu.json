@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tile_view.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\src\\main\\res\\menu\\tile_view.xml"
-    },
-    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation_view_elements.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\menu\\navigation_view_elements.xml"
     },
     {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tile_view.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\menu\\tile_view.xml"
-    },
-    {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation_view_elements.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppChateau-Fruitiere-Numerique-master\\app\\src\\main\\res\\menu\\navigation_view_elements.xml"
     }
 ]

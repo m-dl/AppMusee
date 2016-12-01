@@ -13,7 +13,7 @@ import com.ceri.visitemusee.R;
 import java.util.ArrayList;
 
 /**
- * Created by Clément
+ * Created by Maxime
  */
 public class ImageAdapter extends BaseAdapter {
 

@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+/**
+ * Created by Maxime
+ */
 public class ScreenParam {
 
     // --- set screen properties for design purposes ---

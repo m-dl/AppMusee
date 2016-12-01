@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.GridView;
 
 /**
- * Created by Clément
+ * Created by Maxime
  */
 public class WrappingGridView extends GridView {
 

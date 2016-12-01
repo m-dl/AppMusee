@@ -28,6 +28,9 @@ import java.io.IOException;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+/**
+ * Created by Maxime
+ */
 public class PlayerActivity extends AppCompatActivity implements SurfaceHolder.Callback, MediaPlayer.OnPreparedListener, MediaController.MediaPlayerControl {
 
     private ActionBarDrawerToggle m_DrawerToggle;
