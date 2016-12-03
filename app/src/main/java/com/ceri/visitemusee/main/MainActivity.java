@@ -2,9 +2,7 @@ package com.ceri.visitemusee.main;
 
 import android.Manifest;
 import android.app.Activity;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.app.TaskStackBuilder;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,10 +10,10 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.RemoteException;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -29,7 +27,6 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.beacon.MonitoringActivity;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Location;
 import com.ceri.visitemusee.entities.musee.Visit;
@@ -41,14 +38,18 @@ import com.ceri.visitemusee.tileview.TileViewTools;
 import com.ceri.visitemusee.tool.ScreenParam;
 import com.qozix.tileview.TileView;
 
+import org.altbeacon.beacon.Beacon;
+import org.altbeacon.beacon.BeaconConsumer;
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
+import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
 import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
 import org.altbeacon.beacon.startup.BootstrapNotifier;
 import org.altbeacon.beacon.startup.RegionBootstrap;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -57,13 +58,16 @@ import butterknife.OnClick;
 /**
  * Created by Maxime
  */
-public class MainActivity extends AppCompatActivity implements BootstrapNotifier {
+public class MainActivity extends AppCompatActivity implements BootstrapNotifier, BeaconConsumer {
 
 	private static final String TAG = "BeaconReferenceApp";
 	private RegionBootstrap regionBootstrap;
 	private BackgroundPowerSaver backgroundPowerSaver;
 	private boolean haveDetectedBeaconsSinceBoot = false;
-	private MonitoringActivity monitoringActivity = null;
+	private BeaconManager beaconManager;
+
+	private final static int REQUEST_ENABLE_BT = 11;
+	private BluetoothAdapter mBluetoothAdapter;
 
 	// intent result code
 	private static final int LAUNCH_VISIT = 100;
@@ -115,11 +119,14 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		super.onCreate(savedInstanceState);
 		// auto pin the app
 		startLockTask();
+		BluetoothAdapter.getDefaultAdapter().enable();
+//		if(!BluetoothAdapter.getDefaultAdapter().isEnabled())
+//		{
+//			BluetoothAdapter.getDefaultAdapter().enable();
+//		}
 
-
-
-
-		BeaconManager beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
+		beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
+		beaconManager.bind(this);
 
 		// By default the AndroidBeaconLibrary will only find AltBeacons.  If you wish to make it
 		// find a different type of beacon, you must specify the byte layout for that beacon's
@@ -140,11 +147,6 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		// class will automatically cause the BeaconLibrary to save battery whenever the application
 		// is not visible.  This reduces bluetooth power usage by about 60%
 		backgroundPowerSaver = new BackgroundPowerSaver(this);
-
-		// If you wish to test beacon detection in the Android Emulator, you can use code like this:
-		// BeaconManager.setBeaconSimulator(new TimedBeaconSimulator() );
-		// ((TimedBeaconSimulator) BeaconManager.getBeaconSimulator()).createTimedSimulatedBeacons();
-
 
 
 
@@ -404,12 +406,14 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 	@Override
 	public void onPause() {
 		super.onPause();
+		if (beaconManager.isBound(this)) beaconManager.setBackgroundMode(true);
 		tileView.clear();
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
+		if (beaconManager.isBound(this)) beaconManager.setBackgroundMode(false);
 		tileView.resume();
 		// reload menu if update medias - it's activity nb < 4
 		if(updateActivityNb < 3) {
@@ -428,6 +432,7 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+		beaconManager.unbind(this);
 		tileView.destroy();
 		tileView = null;
 	}
@@ -465,67 +470,48 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		if (!haveDetectedBeaconsSinceBoot) {
 			Log.d(TAG, "auto launching MainActivity");
 
-			// The very first time since boot that we detect an beacon, we launch the
-			// MainActivity
-			Intent intent = new Intent(this, MonitoringActivity.class);
-			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			// Important:  make sure to add android:launchMode="singleInstance" in the manifest
-			// to keep multiple copies of this activity from getting created if the user has
-			// already manually launched the app.
-			this.startActivity(intent);
 			haveDetectedBeaconsSinceBoot = true;
 		} else {
-			if (monitoringActivity != null) {
-				// If the Monitoring Activity is visible, we log info about the beacons we have
-				// seen on its display
-				Log.i("RAAAAASSSE", "I see a beacon fool !");
-				monitoringActivity.logToDisplay("I see a beacon again" );
-			} else {
-				// If we have already seen beacons before, but the monitoring activity is not in
-				// the foreground, we send a notification to the user on subsequent detections.
-				Log.d(TAG, "Sending notification.");
-				sendNotification();
-			}
+			// If the Monitoring Activity is visible, we log info about the beacons we have
+			// seen on its display
+			Log.i(TAG, "I see a beacon again !");
+			logToDisplay("I see a beacon again" );
 		}
-
-
 	}
 
 	@Override
 	public void didExitRegion(Region region) {
-		if (monitoringActivity != null) {
-			monitoringActivity.logToDisplay("I no longer see a beacon.");
-		}
+		logToDisplay("I no longer see a beacon.");
 	}
 
 	@Override
 	public void didDetermineStateForRegion(int state, Region region) {
-		if (monitoringActivity != null) {
-			monitoringActivity.logToDisplay("I have just switched from seeing/not seeing beacons: " + state);
-		}
+		logToDisplay("I have just switched from seeing/not seeing beacons: " + state);
 	}
 
-	private void sendNotification() {
-		NotificationCompat.Builder builder =
-				new NotificationCompat.Builder(this)
-						.setContentTitle("Beacon Reference Application")
-						.setContentText("An beacon is nearby.")
-						.setSmallIcon(R.drawable.ic_launcher);
+	@Override
+	public void onBeaconServiceConnect() {
+		beaconManager.setRangeNotifier(new RangeNotifier() {
+			@Override
+			public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
+				if (beacons.size() > 0) {
+					Beacon firstBeacon = beacons.iterator().next();
+					logToDisplay("The first beacon " + firstBeacon.toString() + " is about " + firstBeacon.getDistance() + " meters away.");
+				}
+			}
 
-		TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-		stackBuilder.addNextIntent(new Intent(this, MonitoringActivity.class));
-		PendingIntent resultPendingIntent =
-				stackBuilder.getPendingIntent(
-						0,
-						PendingIntent.FLAG_UPDATE_CURRENT
-				);
-		builder.setContentIntent(resultPendingIntent);
-		NotificationManager notificationManager =
-				(NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
-		notificationManager.notify(1, builder.build());
+		});
+
+		try {
+			beaconManager.startRangingBeaconsInRegion(new Region("myRangingUniqueId", null, null, null));
+		} catch (RemoteException e) {   }
 	}
 
-	public void setMonitoringActivity(MonitoringActivity activity) {
-		this.monitoringActivity = activity;
+	private void logToDisplay(final String line) {
+		runOnUiThread(new Runnable() {
+			public void run() {
+				Toast.makeText(MainActivity.getContext(), line, Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 }

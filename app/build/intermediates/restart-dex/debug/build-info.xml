@@ -5,23 +5,48 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="16336488248578"
+    timestamp="7177407693890"
     token="-955732868572410530"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="552" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="44" />
     <task
         name="verifier"
-        duration="0" />
+        duration="6" />
 
+    <artifact
+        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="4143577675272"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="5944892708745"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="7177407693890"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+    </build>
     <build
         timestamp="16236411434340"
         verifier="FULL_BUILD_REQUESTED" >
@@ -29,8 +54,5 @@
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="16336488248578"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
