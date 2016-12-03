@@ -166,11 +166,11 @@ public class FileTools {
             if(file.isDirectory()){ // Overview or Info or IP folder
                 if(!file.getName().equals(FileManager.OVERVIEW_FOLDER) && !file.getName().equals(FileManager.INFO_FOLDER)) {
                 	InterestPoint tmpIP = new InterestPoint(pathFrom + "/" + file.getName(), file.getName());
-					if(tmpIP.getFloor() == Location.FLOOR_ONE)
+					if(tmpIP.getFloor() == Location.MAP_ONE)
 						tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP1());
-					else if(tmpIP.getFloor() == Location.FLOOR_TWO)
+					else if(tmpIP.getFloor() == Location.MAP_TWO)
 						tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP2());
-					else if(tmpIP.getFloor() == Location.FLOOR_THREE)
+					else if(tmpIP.getFloor() == Location.MAP_THREE)
 						tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP3());
                 }
             }

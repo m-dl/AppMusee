@@ -55,19 +55,17 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import static com.ceri.visitemusee.tool.Tools.distanceToRange;
+
 /**
  * Created by Maxime
  */
-public class MainActivity extends AppCompatActivity implements BootstrapNotifier, BeaconConsumer {
+public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 
-	private static final String TAG = "BeaconReferenceApp";
-	private RegionBootstrap regionBootstrap;
+	private static final String BEACON_TAG = "BeaconReferenceApp";
 	private BackgroundPowerSaver backgroundPowerSaver;
-	private boolean haveDetectedBeaconsSinceBoot = false;
+	private double currentBeaconRangeDistance = 1;
 	private BeaconManager beaconManager;
-
-	private final static int REQUEST_ENABLE_BT = 11;
-	private BluetoothAdapter mBluetoothAdapter;
 
 	// intent result code
 	private static final int LAUNCH_VISIT = 100;
@@ -119,37 +117,9 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		super.onCreate(savedInstanceState);
 		// auto pin the app
 		startLockTask();
+		// force BTE on
 		BluetoothAdapter.getDefaultAdapter().enable();
-//		if(!BluetoothAdapter.getDefaultAdapter().isEnabled())
-//		{
-//			BluetoothAdapter.getDefaultAdapter().enable();
-//		}
-
-		beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
-		beaconManager.bind(this);
-
-		// By default the AndroidBeaconLibrary will only find AltBeacons.  If you wish to make it
-		// find a different type of beacon, you must specify the byte layout for that beacon's
-		// advertisement with a line like below.  The example shows how to find a beacon with the
-		// same byte layout as AltBeacon but with a beaconTypeCode of 0xaabb.  To find the proper
-		// layout expression for other beacon types, do a web search for "setBeaconLayout"
-		// including the quotes.
-		//
-		beaconManager.getBeaconParsers().clear();
-		beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
-
-		Log.d(TAG, "setting up background monitoring for beacons and power saving");
-		// wake up the app when a beacon is seen
-		Region region = new Region("backgroundRegion", null, null, null);
-		regionBootstrap = new RegionBootstrap(this, region);
-
-		// simply constructing this class and holding a reference to it in your custom Application
-		// class will automatically cause the BeaconLibrary to save battery whenever the application
-		// is not visible.  This reduces bluetooth power usage by about 60%
-		backgroundPowerSaver = new BackgroundPowerSaver(this);
-
-
-
+		initBeacon();
 		initObjects();
 		selectLanguage();
 		// create visits dynamically and the menu
@@ -170,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
 		setDrawer();
 		presentTheDrawer();
-		initMap(Location.FLOOR_ONE);
+		initMap(Location.MAP_ONE);
 		// hide info visit button, no visit launched by default
 		m_FABInfo.hide();
 	}
@@ -208,11 +178,11 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		// if a visit is running, list the IP on the map for the current floor
 		if(AppParams.getInstance().getCurrentVisit() != null) {
 			ArrayList<InterestPoint> IPArray = new ArrayList<InterestPoint>();
-			if(f == Location.FLOOR_ONE)
+			if(f == Location.MAP_ONE)
 				IPArray = AppParams.getInstance().getCurrentVisit().getIP1();
-			else if(f == Location.FLOOR_TWO)
+			else if(f == Location.MAP_TWO)
 				IPArray = AppParams.getInstance().getCurrentVisit().getIP2();
-			else if(f == Location.FLOOR_THREE)
+			else if(f == Location.MAP_THREE)
 				IPArray = AppParams.getInstance().getCurrentVisit().getIP3();
 			for(InterestPoint IP : IPArray) {
 				TileViewTools.addPin(tileView, getContext(), IP);
@@ -242,6 +212,32 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 						AppParams.getInstance().getCurrentFloor() +
 						resources.getString(R.string.total_etage));
 		}
+	}
+
+	// initiate Beacon manager
+	private void initBeacon() {
+		beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
+		beaconManager.bind(this);
+
+		// By default the AndroidBeaconLibrary will only find AltBeacons.  If you wish to make it
+		// find a different type of beacon, you must specify the byte layout for that beacon's
+		// advertisement with a line like below.  The example shows how to find a beacon with the
+		// same byte layout as AltBeacon but with a beaconTypeCode of 0xaabb.  To find the proper
+		// layout expression for other beacon types, do a web search for "setBeaconLayout"
+		// including the quotes.
+		//
+		beaconManager.getBeaconParsers().clear();
+		beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
+
+		Log.d(BEACON_TAG, "setting up background monitoring for beacons and power saving");
+		// wake up the app when a beacon is seen
+		//Region region = new Region("backgroundRegion", null, null, null);
+		//regionBootstrap = new RegionBootstrap(this, region);
+
+		// simply constructing this class and holding a reference to it in your custom Application
+		// class will automatically cause the BeaconLibrary to save battery whenever the application
+		// is not visible.  This reduces bluetooth power usage by about 60%
+		backgroundPowerSaver = new BackgroundPowerSaver(this);
 	}
 
 	// set en or fr language for the app and set some texts
@@ -343,7 +339,7 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 	// button to go up a floor
 	@OnClick(R.id.map_floors_up)
 	public void onFloorUpClick() {
-		if(AppParams.getInstance().getCurrentFloor() < Location.FLOOR_THREE) {
+		if(AppParams.getInstance().getCurrentFloor() < Location.MAP_THREE) {
 			int tmpFloor = AppParams.getInstance().getCurrentFloor() + 1;
 			AppParams.getInstance().setCurrentFloor(tmpFloor);
 			// remove all view or it doesn't work
@@ -356,7 +352,7 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 	// button to go down a floor
 	@OnClick(R.id.map_floors_down)
 	public void onFloorDownClick() {
-		if(AppParams.getInstance().getCurrentFloor() > Location.FLOOR_ONE) {
+		if(AppParams.getInstance().getCurrentFloor() > Location.MAP_ONE) {
 			int tmpFloor = AppParams.getInstance().getCurrentFloor() - 1;
 			AppParams.getInstance().setCurrentFloor(tmpFloor);
 			// remove all view or it doesn't work
@@ -425,11 +421,6 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 	}
 
 	@Override
-	public void onStop() {
-		super.onStop();
-	}
-
-	@Override
 	public void onDestroy() {
 		super.onDestroy();
 		beaconManager.unbind(this);
@@ -463,43 +454,19 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 	}
 
 	@Override
-	public void didEnterRegion(Region arg0) {
-		// In this example, this class sends a notification to the user whenever a Beacon
-		// matching a Region (defined above) are first seen.
-		Log.d(TAG, "did enter region.");
-		if (!haveDetectedBeaconsSinceBoot) {
-			Log.d(TAG, "auto launching MainActivity");
-
-			haveDetectedBeaconsSinceBoot = true;
-		} else {
-			// If the Monitoring Activity is visible, we log info about the beacons we have
-			// seen on its display
-			Log.i(TAG, "I see a beacon again !");
-			logToDisplay("I see a beacon again" );
-		}
-	}
-
-	@Override
-	public void didExitRegion(Region region) {
-		logToDisplay("I no longer see a beacon.");
-	}
-
-	@Override
-	public void didDetermineStateForRegion(int state, Region region) {
-		logToDisplay("I have just switched from seeing/not seeing beacons: " + state);
-	}
-
-	@Override
 	public void onBeaconServiceConnect() {
-		beaconManager.setRangeNotifier(new RangeNotifier() {
+		beaconManager.addRangeNotifier(new RangeNotifier() {
 			@Override
 			public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
 				if (beacons.size() > 0) {
 					Beacon firstBeacon = beacons.iterator().next();
-					logToDisplay("The first beacon " + firstBeacon.toString() + " is about " + firstBeacon.getDistance() + " meters away.");
+					int tmpBeaconRangeDistance = distanceToRange(firstBeacon.getDistance());
+					if(currentBeaconRangeDistance != tmpBeaconRangeDistance)
+						changeBeaconMap(tmpBeaconRangeDistance);
+					currentBeaconRangeDistance = tmpBeaconRangeDistance;
+					logToDisplay("The first beacon " + firstBeacon.getId1() + " is about " + firstBeacon.getDistance() + " meters away.");
 				}
 			}
-
 		});
 
 		try {
@@ -511,6 +478,15 @@ public class MainActivity extends AppCompatActivity implements BootstrapNotifier
 		runOnUiThread(new Runnable() {
 			public void run() {
 				Toast.makeText(MainActivity.getContext(), line, Toast.LENGTH_SHORT).show();
+			}
+		});
+	}
+
+	private void changeBeaconMap(final int distance) {
+		runOnUiThread(new Runnable() {
+			public void run() {
+				linearLayout.removeAllViewsInLayout();
+				initMap(distance);
 			}
 		});
 	}

@@ -7,10 +7,15 @@ import java.util.ArrayList;
  *
  */
 public class Location {
-    // 3 castle floors
-    public static final int FLOOR_ONE = 1;
-    public static final int FLOOR_TWO = 2;
-    public static final int FLOOR_THREE = 3;
+    // 8 museum maps
+    public static final int MAP_ONE = 1;
+    public static final int MAP_TWO = 2;
+    public static final int MAP_THREE = 3;
+    public static final int MAP_FOUR = 4;
+    public static final int MAP_FIVE = 5;
+    public static final int MAP_SIX = 6;
+    public static final int MAP_SEVEN = 7;
+    public static final int MAP_HEIGHT = 8;
     private ArrayList<Visit> V;
     
     public Location() {

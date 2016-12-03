@@ -26,7 +26,7 @@ public class AppParams {
 
     private AppParams() {
         m_french = true;
-        currentFloor = Location.FLOOR_ONE;
+        currentFloor = Location.MAP_ONE;
         currentVisit = null;
     }
     public boolean getM_french() {

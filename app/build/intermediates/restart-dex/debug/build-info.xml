@@ -5,54 +5,53 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="7177407693890"
+    timestamp="17032949526572"
     token="-955732868572410530"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="552" />
+        duration="643" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="44" />
+        duration="56" />
     <task
         name="verifier"
-        duration="6" />
+        duration="4" />
 
     <artifact
         location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="4143577675272"
+        timestamp="13749350711389"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="5944892708745"
+        timestamp="16544202019664"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="7177407693890"
+        timestamp="17032949526572"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
             type="DEX" />
-    </build>
-    <build
-        timestamp="16236411434340"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
     </build>
 
 </instant-run>
