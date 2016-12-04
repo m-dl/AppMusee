@@ -14,7 +14,6 @@ public class InterestPoint implements Serializable {
 	private File presentation_FR, presentation_EN, marker, picture, name_EN;
 	private ArrayList<File> photos, _360, videos;
 	private String name, nameEN;
-	private int floor;
 	private double coordX, coordY;
 	
 	/**
@@ -41,7 +40,6 @@ public class InterestPoint implements Serializable {
 		this.nameEN = readName_EN();
 		this.coordX = 0;
 		this.coordY = 0;
-		this.floor = 0;
 		readMarker();
 	}
 
@@ -171,13 +169,5 @@ public class InterestPoint implements Serializable {
 
 	public void setCoordY(double coordY) {
 		this.coordY = coordY;
-	}
-
-	public int getFloor() {
-		return floor;
-	}
-
-	public void setFloor(int floor) {
-		this.floor = floor;
 	}
 }
