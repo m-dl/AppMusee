@@ -1,7 +1,6 @@
 package com.ceri.visitemusee.files;
 
 import com.ceri.visitemusee.entities.musee.InterestPoint;
-import com.ceri.visitemusee.entities.musee.Location;
 import com.ceri.visitemusee.entities.musee.Visit;
 
 import org.apache.commons.io.FileUtils;
@@ -139,40 +138,40 @@ public class FileTools {
         }
 		return videosList;
 	}
-
-	// List all Museum visits from a location
-	public static void ListVisitMusee(String pathFrom, Location l) {
-		File fileFrom = new File(pathFrom);
-        File[] list = fileFrom.listFiles();
-        if(!Exist(fileFrom)) 
-        	return;
-        for(File file : list){
-            if(file.isDirectory()){ // Visits' folder
-            	ListVisitContentMusee(pathFrom + "/" + file.getName(), file.getName(), l);
-            }
-        }
-	}
-	
-	// List a Museum visit folder content
-    public static void ListVisitContentMusee(String pathFrom, String visitName, Location l) {
-        File fileFrom = new File(pathFrom);
-        File[] list = fileFrom.listFiles();
-        
-        if(!Exist(fileFrom)) 
-        	return;
-        
-        Visit tmpVisit = new Visit(pathFrom, visitName);
-        for(File file : list) {
-            if(file.isDirectory()){ // Overview or Info or IP folder
-                if(!file.getName().equals(FileManager.OVERVIEW_FOLDER) && !file.getName().equals(FileManager.INFO_FOLDER)) {
-                	InterestPoint tmpIP = new InterestPoint(pathFrom + "/" + file.getName(), file.getName());
-					tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP());
-                }
-            }
-        }
-        l.addVisit(tmpVisit);
-    }
-    
+//
+//	// List all Museum visits from a location
+//	public static void ListVisitMusee(String pathFrom, Location l) {
+//		File fileFrom = new File(pathFrom);
+//        File[] list = fileFrom.listFiles();
+//        if(!Exist(fileFrom))
+//        	return;
+//        for(File file : list){
+//            if(file.isDirectory()){ // Visits' folder
+//            	ListVisitContentMusee(pathFrom + "/" + file.getName(), file.getName(), l);
+//            }
+//        }
+//	}
+//
+//	// List a Museum visit folder content
+//    public static void ListVisitContentMusee(String pathFrom, String visitName, Location l) {
+//        File fileFrom = new File(pathFrom);
+//        File[] list = fileFrom.listFiles();
+//
+//        if(!Exist(fileFrom))
+//        	return;
+//
+//        Visit tmpVisit = new Visit(pathFrom, visitName);
+//        for(File file : list) {
+//            if(file.isDirectory()){ // Overview or Info or IP folder
+//                if(!file.getName().equals(FileManager.OVERVIEW_FOLDER) && !file.getName().equals(FileManager.INFO_FOLDER)) {
+//                	InterestPoint tmpIP = new InterestPoint(pathFrom + "/" + file.getName(), file.getName());
+//					tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP());
+//                }
+//            }
+//        }
+//        l.addVisit(tmpVisit);
+//    }
+//
     // Parse map and coordinates
     public static void ParseCoordinates(InterestPoint IP) {
 		String input = Read(IP.getMarker());

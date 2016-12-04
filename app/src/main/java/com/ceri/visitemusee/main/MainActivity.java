@@ -23,14 +23,15 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.basket.Basket;
+import com.ceri.visitemusee.basket.BasketActivity;
+import com.ceri.visitemusee.custom.CustomVisitActivity;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
-import com.ceri.visitemusee.entities.musee.Location;
 import com.ceri.visitemusee.entities.musee.Visit;
 import com.ceri.visitemusee.files.FileManager;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tileview.TileViewTools;
 import com.ceri.visitemusee.tool.ScreenParam;
+import com.ceri.visitemusee.tool.Tools;
 import com.qozix.tileview.TileView;
 
 import org.altbeacon.beacon.Beacon;
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
 		setDrawer();
 		presentTheDrawer();
-		initMap(Location.MAP_ONE);
+		initMap(Tools.MAP_ONE);
 	}
 
 	// initiate the map design for the current floor and add the pins
@@ -238,7 +239,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 						new Handler().postDelayed(new Runnable() {
 							@Override
 							public void run() {
-								navigationDrawerItemSelected(m_menuItem.getTitle().toString());
+								navigationDrawerItemSelected(m_menuItem);
 							}
 						}, 250);
 						return false;
@@ -247,28 +248,25 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	}
 
 	// get item clicked in the menu
-	public void navigationDrawerItemSelected(String title) {
+	public void navigationDrawerItemSelected(MenuItem menuItem) {
 		// full visit item
-		if (title.equals(resources.getString(R.string.action_section_1)) || title.equals(resources.getString(R.string.action_section_en_1))) {
-			// load all pins on the map
+		if (menuItem.getItemId() == R.id.all_visits_item) {
+			Visit v = new Visit("", menuItem.getTitle().toString());
+			AppParams.getInstance().setCurrentVisit(v);
+			linearLayout.removeAllViewsInLayout();
+			initMap(Tools.MAP_ONE);
+			renameActionBar(menuItem.getTitle().toString());
 		}
 		// custom visit item
-		if (title.equals(resources.getString(R.string.action_section_2)) || title.equals(resources.getString(R.string.action_section_en_2))) {
-			//Intent intent = new Intent(MainActivity.m_Activity, CustomVisit.class);
-			//ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
-		}
-		// basket item
-		if (title.equals(resources.getString(R.string.action_section_3)) || title.equals(resources.getString(R.string.action_section_en_3))) {
-			Intent intent = new Intent(MainActivity.m_Activity, Basket.class);
+		else if (menuItem.getItemId() == R.id.custom_visits_item) {
+			Intent intent = new Intent(MainActivity.m_Activity, CustomVisitActivity.class);
 			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
 		}
-	}
-
-	// launch a visit
-	private void launchVisit(Visit v) {
-		AppParams.getInstance().setCurrentVisit(v);
-		//TileViewTools.removePins(tileView, getContext());
-		//TileViewTools.addPin(tileView, getContext(), IP);
+		// basket item
+		else if (menuItem.getItemId() == R.id.basket_item) {
+			Intent intent = new Intent(MainActivity.m_Activity, BasketActivity.class);
+			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
+		}
 	}
 
 	@Override

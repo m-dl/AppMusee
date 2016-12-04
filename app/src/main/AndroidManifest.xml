@@ -43,7 +43,10 @@
             android:name=".interestpoint.PlayerActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".basket.Basket"
+            android:name=".basket.BasketActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".custom.CustomVisitActivity"
             android:screenOrientation="sensorLandscape" />
     </application>
 

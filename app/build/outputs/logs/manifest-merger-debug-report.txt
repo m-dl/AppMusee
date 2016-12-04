@@ -95,30 +95,30 @@ ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:36:
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:38:13-56
 	android:name
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:37:13-59
-activity#com.ceri.visitemusee.interestpoint.SingleViewInterieur
+activity#com.ceri.visitemusee.interestpoint.SingleView360
 ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:39:9-41:59
 	android:screenOrientation
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:40:13-62
-activity#com.ceri.visitemusee.interestpoint.SingleView360
+		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:40:13-56
+activity#com.ceri.visitemusee.interestpoint.PlayerActivity
 ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:42:9-44:59
 	android:screenOrientation
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:43:13-56
-activity#com.ceri.visitemusee.interestpoint.PlayerActivity
+		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:43:13-57
+activity#com.ceri.visitemusee.basket.BasketActivity
 ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:45:9-47:59
 	android:screenOrientation
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:47:13-56
 	android:name
-		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:46:13-57
-activity#com.ceri.visitemusee.basket.Basket
+		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:46:13-50
+activity#com.ceri.visitemusee.custom.CustomVisitActivity
 ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:48:9-50:59
 	android:screenOrientation
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:50:13-56
 	android:name
-		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:49:13-42
+		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:49:13-55
 uses-sdk
 INJECTED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42

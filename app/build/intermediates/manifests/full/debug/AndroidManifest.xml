@@ -44,16 +44,16 @@
             android:name="com.ceri.visitemusee.interestpoint.SingleViewPhotos"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.interestpoint.SingleViewInterieur"
-            android:screenOrientation="sensorLandscape" />
-        <activity
             android:name="com.ceri.visitemusee.interestpoint.SingleView360"
             android:screenOrientation="sensorLandscape" />
         <activity
             android:name="com.ceri.visitemusee.interestpoint.PlayerActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.basket.Basket"
+            android:name="com.ceri.visitemusee.basket.BasketActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.ceri.visitemusee.custom.CustomVisitActivity"
             android:screenOrientation="sensorLandscape" />
 
         <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" >

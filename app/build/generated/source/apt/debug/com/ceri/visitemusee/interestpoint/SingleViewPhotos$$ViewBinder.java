@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class SingleViewPhotos$$ViewBinder<T extends com.ceri.visitemusee.interestpoint.SingleViewPhotos> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131427435, "field 'm_DrawerLayout'");
-    target.m_DrawerLayout = finder.castView(view, 2131427435, "field 'm_DrawerLayout'");
-    view = finder.findRequiredView(source, 2131427438, "field 'm_Toolbar'");
-    target.m_Toolbar = finder.castView(view, 2131427438, "field 'm_Toolbar'");
-    view = finder.findRequiredView(source, 2131427468, "field 'imageView'");
-    target.imageView = finder.castView(view, 2131427468, "field 'imageView'");
+    view = finder.findRequiredView(source, 2131427436, "field 'm_DrawerLayout'");
+    target.m_DrawerLayout = finder.castView(view, 2131427436, "field 'm_DrawerLayout'");
+    view = finder.findRequiredView(source, 2131427439, "field 'm_Toolbar'");
+    target.m_Toolbar = finder.castView(view, 2131427439, "field 'm_Toolbar'");
+    view = finder.findRequiredView(source, 2131427453, "field 'imageView'");
+    target.imageView = finder.castView(view, 2131427453, "field 'imageView'");
   }
 
   @Override public void unbind(T target) {

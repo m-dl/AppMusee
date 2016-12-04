@@ -99,26 +99,6 @@
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/interest_point_interieur_title"
-                    android:textStyle="bold" />
-
-                <com.ceri.visitechateau.tool.WrappingGridView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/grid_view_interieur"
-                    android:layout_gravity="center_horizontal"
-                    android:numColumns="auto_fit"
-                    android:gravity="center"
-                    android:columnWidth="100dp"
-                    android:stretchMode="columnWidth"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/interest_point_360_title"
                     android:textStyle="bold" />
 

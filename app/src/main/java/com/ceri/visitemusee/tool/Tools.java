@@ -1,28 +1,36 @@
 package com.ceri.visitemusee.tool;
 
-import com.ceri.visitemusee.entities.musee.Location;
-
 /**
  * Created by Maxime
  */
 
 public class Tools {
 
+    // 8 museum maps
+    public static final int MAP_ONE = 1;
+    public static final int MAP_TWO = 2;
+    public static final int MAP_THREE = 3;
+    public static final int MAP_FOUR = 4;
+    public static final int MAP_FIVE = 5;
+    public static final int MAP_SIX = 6;
+    public static final int MAP_SEVEN = 7;
+    public static final int MAP_HEIGHT = 8;
+
     public static int distanceToRange(double distance) {
         if(distance < 1)
-            return Location.MAP_TWO;
+            return MAP_TWO;
         else if(distance < 3)
-            return Location.MAP_THREE;
+            return MAP_THREE;
         else if(distance < 7)
-            return Location.MAP_FOUR;
+            return MAP_FOUR;
         else if(distance < 12)
-            return Location.MAP_FIVE;
+            return MAP_FIVE;
         else if(distance < 16)
-            return Location.MAP_SIX;
+            return MAP_SIX;
         else if(distance < 20)
-            return Location.MAP_SEVEN;
+            return MAP_SEVEN;
         else if(distance < 25)
-            return Location.MAP_HEIGHT;
-        return Location.MAP_ONE;
+            return MAP_HEIGHT;
+        return MAP_ONE;
     }
 }
