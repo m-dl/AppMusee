@@ -46,9 +46,6 @@ public class InterestPointActivity extends AppCompatActivity {
     @Bind(R.id.grid_view_photo)
     WrappingGridView gridViewPhoto;
 
-    @Bind(R.id.grid_view_interieur)
-    WrappingGridView gridViewInterieur;
-
     @Bind(R.id.grid_view_360)
     WrappingGridView gridView360;
 
@@ -66,9 +63,6 @@ public class InterestPointActivity extends AppCompatActivity {
 
     @Bind(R.id.interest_point_photo_title)
     TextView interestPointPhotoTitle;
-
-    @Bind(R.id.interest_point_interieur_title)
-    TextView interestPointInterieurTitle;
 
     @Bind(R.id.interest_point_360_title)
     TextView interestPoint360Title;
@@ -107,7 +101,6 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointTitle.setText(IP.getName());
             interestPointContent.setText(IP.readPresentation_FR());
             interestPointPhotoTitle.setText(R.string.images);
-            interestPointInterieurTitle.setText(R.string.interieur);
             interestPoint360Title.setText(R.string.images360);
             interestPointVideoTitle.setText(R.string.videos);
             nameActionBar(IP.getName());
@@ -116,7 +109,6 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointTitle.setText(IP.getNameEN());
             interestPointContent.setText(IP.readPresentation_EN());
             interestPointPhotoTitle.setText(R.string.pictures);
-            interestPointInterieurTitle.setText(R.string.inside);
             interestPoint360Title.setText(R.string.pictures360);
             interestPointVideoTitle.setText(R.string.videosen);
             nameActionBar(IP.getNameEN());
@@ -190,43 +182,6 @@ public class InterestPointActivity extends AppCompatActivity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Intent myI = new Intent(getApplicationContext(), SingleView360.class);
-                    myI.putExtra("id", position);
-                    myI.putExtra("InterestPoint", IP);
-                    startActivity(myI);
-                }
-            });
-        }
-
-        if(IP.getInterieur().isEmpty()) {
-            gridViewInterieur.setVisibility(View.GONE);
-            interestPointInterieurTitle.setVisibility(View.GONE);
-        }
-        else {
-            myBitmap = new ArrayList<Bitmap>();
-            // Load all the file from the arrayList then convert them into bitmap
-            pos = new String[IP.getInterieur().size()];
-            for(int i=0; i<IP.getInterieur().size(); i++){
-                pos[i]="media"+i;
-                this.tmpFile = IP.getInterieur().get(i);
-                if(tmpFile != null){
-                    //Decode the file into a bitmap
-                    tmpBitmap = BitmapFactory.decodeFile(tmpFile.getAbsolutePath());
-                    tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
-                    //Put the created bitmap into an array to be pass to the ImageAdapter
-                    if(tmpBitmap != null){
-                        this.myBitmap.add(tmpBitmap);
-                    }
-                }
-            }
-
-            //Inflate the grid view with the photos
-            gridViewInterieur.setAdapter(new ImageAdapter(this, pos, myBitmap)); //Pass the Bitmap array
-
-            // set click listener to open full image
-            gridViewInterieur.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent myI = new Intent(getApplicationContext(), SingleViewInterieur.class);
                     myI.putExtra("id", position);
                     myI.putExtra("InterestPoint", IP);
                     startActivity(myI);

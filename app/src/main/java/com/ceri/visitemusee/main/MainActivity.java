@@ -1,20 +1,16 @@
 package com.ceri.visitemusee.main;
 
-import android.Manifest;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -27,12 +23,11 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.ceri.visitemusee.R;
+import com.ceri.visitemusee.basket.Basket;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Location;
 import com.ceri.visitemusee.entities.musee.Visit;
 import com.ceri.visitemusee.files.FileManager;
-import com.ceri.visitemusee.info.InfoActivity;
-import com.ceri.visitemusee.overview.OverviewActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tileview.TileViewTools;
 import com.ceri.visitemusee.tool.ScreenParam;
@@ -45,15 +40,12 @@ import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
 import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
-import org.altbeacon.beacon.startup.BootstrapNotifier;
-import org.altbeacon.beacon.startup.RegionBootstrap;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 import static com.ceri.visitemusee.tool.Tools.distanceToRange;
 
@@ -67,9 +59,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	private double currentBeaconRangeDistance = 1;
 	private BeaconManager beaconManager;
 
-	// intent result code
-	private static final int LAUNCH_VISIT = 100;
-	private int updateActivityNb = 0;
 	private Resources resources;
 	private Context m_Context;
 	public static Activity m_Activity;
@@ -86,15 +75,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 
 	@Bind(R.id.toolbar)
 	Toolbar m_Toolbar;
-
-	@Bind(R.id.info)
-	FloatingActionButton m_FABInfo;
-
-	@Bind(R.id.map_floors_up)
-	FloatingActionButton m_FABFloorsUp;
-
-	@Bind(R.id.map_floors_down)
-	FloatingActionButton m_FABFloorsDown;
 
 	private TileView tileView;
 	private LinearLayout linearLayout;
@@ -122,8 +102,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		initBeacon();
 		initObjects();
 		selectLanguage();
-		// create visits dynamically and the menu
-		FileManager.ListVisits(m_NavigationView, AppParams.getInstance().getM_french());
 	}
 
 	// initiate the objects and design
@@ -141,15 +119,13 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		setDrawer();
 		presentTheDrawer();
 		initMap(Location.MAP_ONE);
-		// hide info visit button, no visit launched by default
-		m_FABInfo.hide();
 	}
 
 	// initiate the map design for the current floor and add the pins
 	private void initMap(int f) {
 		// change these path to change map plans
-		String floorPath = "maps/floor_" + f + "/%col%_%row%.jpg";
-		String floorPath2 = "maps/floor_" + f + "/planmusee.jpg";
+		String floorPath = "maps/map_" + f + "/%col%_%row%.jpg";
+		String floorPath2 = "maps/map_" + f + "/planmusee.jpg";
 		linearLayout = (LinearLayout) findViewById(R.id.map);
 		// multiple references
 		tileView = new TileView(this);
@@ -170,47 +146,17 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		// center the frame
 		TileViewTools.frameTo(tileView, 0.5, 0.5);
 		// add pins
-		initPins(f);
+		initPins();
 	}
 
 	// add pins from IP on the map
-	private void initPins(int f) {
-		// if a visit is running, list the IP on the map for the current floor
+	private void initPins() {
+		// if a visit is running, list the IP on the map
 		if(AppParams.getInstance().getCurrentVisit() != null) {
-			ArrayList<InterestPoint> IPArray = new ArrayList<InterestPoint>();
-			if(f == Location.MAP_ONE)
-				IPArray = AppParams.getInstance().getCurrentVisit().getIP1();
-			else if(f == Location.MAP_TWO)
-				IPArray = AppParams.getInstance().getCurrentVisit().getIP2();
-			else if(f == Location.MAP_THREE)
-				IPArray = AppParams.getInstance().getCurrentVisit().getIP3();
+			ArrayList<InterestPoint> IPArray = AppParams.getInstance().getCurrentVisit().getIP();
 			for(InterestPoint IP : IPArray) {
 				TileViewTools.addPin(tileView, getContext(), IP);
 			}
-			// set en or fr text
-			if(AppParams.getInstance().getM_french())
-				renameActionBar(AppParams.getInstance().getCurrentVisit().getName() +
-						resources.getString(R.string.etage_toolbar) +
-						AppParams.getInstance().getCurrentFloor() +
-						resources.getString(R.string.total_etage));
-			else
-				renameActionBar(AppParams.getInstance().getCurrentVisit().getNameEN() +
-						resources.getString(R.string.etage_toolbar_en) +
-						AppParams.getInstance().getCurrentFloor() +
-						resources.getString(R.string.total_etage));
-		}
-		else {
-			// set en or fr text
-			if (AppParams.getInstance().getM_french())
-				renameActionBar(resources.getString(R.string.app_name) +
-						resources.getString(R.string.etage_toolbar) +
-						AppParams.getInstance().getCurrentFloor() +
-						resources.getString(R.string.total_etage));
-			else
-				renameActionBar(resources.getString(R.string.app_name_en) +
-						resources.getString(R.string.etage_toolbar_en) +
-						AppParams.getInstance().getCurrentFloor() +
-						resources.getString(R.string.total_etage));
 		}
 	}
 
@@ -250,12 +196,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 				.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
 						AppParams.getInstance().setM_french(false);
-						m_NavigationView.getMenu().clear();
-						FileManager.ListVisits(m_NavigationView, AppParams.getInstance().getM_french());
-						renameActionBar(resources.getString(R.string.app_name_en) +
-								resources.getString(R.string.etage_toolbar_en) +
-								AppParams.getInstance().getCurrentFloor() +
-								resources.getString(R.string.total_etage));
+						FileManager.renameMenuItems(m_NavigationView, AppParams.getInstance().getM_french());
+						renameActionBar(resources.getString(R.string.app_name_en));
 						dialog.cancel();
 					}
 				})
@@ -272,12 +214,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	// open the menu
 	private void presentTheDrawer() {
 		m_DrawerLayout.openDrawer(GravityCompat.START);
-	}
-
-	// launch visit overview activity
-	private void prepareVisit(String title) {
-		Visit visit = FM.getMuseeWorkspace().searchVisit(title, AppParams.getInstance().getM_french());
-		launchVisitOverview(visit);
 	}
 
 	// set action bar text
@@ -302,8 +238,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 						new Handler().postDelayed(new Runnable() {
 							@Override
 							public void run() {
-								m_menuItem.setChecked(true);
-								navigationDrawerItemSelected(m_menuItem.getItemId(), m_menuItem.getTitle().toString());
+								navigationDrawerItemSelected(m_menuItem.getTitle().toString());
 							}
 						}, 250);
 						return false;
@@ -312,91 +247,28 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	}
 
 	// get item clicked in the menu
-	public void navigationDrawerItemSelected(int position, String title) {
-		if (position > 0) {
-			// a visit is clicked
-			if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-				// set the visit and initiate it with overview
-				prepareVisit(title);
-			} else
-				Toast.makeText(m_Context, resources.getString(R.string.memory_access_error), Toast.LENGTH_LONG).show();
-		} //else {
-//			// take picture item
-//			if (title.equals(resources.getString(R.string.action_section_1)) || title.equals(resources.getString(R.string.action_section_english_1))) {
-//				TakePicture takePicture = new TakePicture(m_Activity);
-//				takePicture.photo();
-//			}
-//		}
-	}
-
-	// button visit info
-	@OnClick(R.id.info)
-	public void onInfoClick() {
-		// launch visit info activity
-		launchVisitInfo();
-	}
-
-	// button to go up a floor
-	@OnClick(R.id.map_floors_up)
-	public void onFloorUpClick() {
-		if(AppParams.getInstance().getCurrentFloor() < Location.MAP_THREE) {
-			int tmpFloor = AppParams.getInstance().getCurrentFloor() + 1;
-			AppParams.getInstance().setCurrentFloor(tmpFloor);
-			// remove all view or it doesn't work
-			linearLayout.removeAllViewsInLayout();
-			// rebuild the new map
-			initMap(tmpFloor);
+	public void navigationDrawerItemSelected(String title) {
+		// full visit item
+		if (title.equals(resources.getString(R.string.action_section_1)) || title.equals(resources.getString(R.string.action_section_en_1))) {
+			// load all pins on the map
+		}
+		// custom visit item
+		if (title.equals(resources.getString(R.string.action_section_2)) || title.equals(resources.getString(R.string.action_section_en_2))) {
+			//Intent intent = new Intent(MainActivity.m_Activity, CustomVisit.class);
+			//ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
+		}
+		// basket item
+		if (title.equals(resources.getString(R.string.action_section_3)) || title.equals(resources.getString(R.string.action_section_en_3))) {
+			Intent intent = new Intent(MainActivity.m_Activity, Basket.class);
+			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
 		}
 	}
 
-	// button to go down a floor
-	@OnClick(R.id.map_floors_down)
-	public void onFloorDownClick() {
-		if(AppParams.getInstance().getCurrentFloor() > Location.MAP_ONE) {
-			int tmpFloor = AppParams.getInstance().getCurrentFloor() - 1;
-			AppParams.getInstance().setCurrentFloor(tmpFloor);
-			// remove all view or it doesn't work
-			linearLayout.removeAllViewsInLayout();
-			// rebuild the new map
-			initMap(tmpFloor);
-		}
-	}
-
-	// if overview confirms, we launch the visit, or we do nothing
-	private void launchVisit(Intent aData) {
-		if (aData != null) {
-			// get the bool response
-			boolean b = aData.getBooleanExtra("LaunchFlag", false);
-			Visit visit = (Visit) aData.getSerializableExtra("Visit");
-			if(b && visit != null) {
-				AppParams.getInstance().setCurrentVisit(visit);
-				// remove all view or it doesn't work
-				linearLayout.removeAllViewsInLayout();
-				// rebuild the new map
-				initMap(AppParams.getInstance().getCurrentFloor());
-				if (!AppParams.getInstance().getM_french())
-					renameActionBar(visit.getNameEN() + resources.getString(R.string.etage_toolbar_en) +
-							AppParams.getInstance().getCurrentFloor() + resources.getString(R.string.total_etage));
-				else
-					renameActionBar(visit.getName() + resources.getString(R.string.etage_toolbar) +
-							AppParams.getInstance().getCurrentFloor() + resources.getString(R.string.total_etage));
-				// show info visit button
-				m_FABInfo.show();
-			}
-		}
-	}
-
-	// launch overview activity
-	private void launchVisitOverview(Visit v) {
-		Intent intent = new Intent(m_Activity, OverviewActivity.class);
-		intent.putExtra("Overview", v);
-		ActivityCompat.startActivityForResult(m_Activity, intent, LAUNCH_VISIT, null);
-	}
-
-	// launch info activity
-	private void launchVisitInfo() {
-		Intent intent = new Intent(m_Activity, InfoActivity.class);
-		ActivityCompat.startActivity(m_Activity, intent, null);
+	// launch a visit
+	private void launchVisit(Visit v) {
+		AppParams.getInstance().setCurrentVisit(v);
+		//TileViewTools.removePins(tileView, getContext());
+		//TileViewTools.addPin(tileView, getContext(), IP);
 	}
 
 	@Override
@@ -411,13 +283,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		super.onResume();
 		if (beaconManager.isBound(this)) beaconManager.setBackgroundMode(false);
 		tileView.resume();
-		// reload menu if update medias - it's activity nb < 4
-		if(updateActivityNb < 3) {
-			m_NavigationView.getMenu().clear();
-			FileManager.ListVisits(m_NavigationView, AppParams.getInstance().getM_french());
-			FM.Init();
-			updateActivityNb++;
-		}
 	}
 
 	@Override
@@ -437,20 +302,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		return m_DrawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
-	}
-
-	// activity result manager
-	@Override
-	protected void onActivityResult(
-			int requestCode, int resultCode, Intent data
-	) {
-		switch (requestCode) {
-			// case overview visit returns result to start or cancel the visit
-			case LAUNCH_VISIT:
-				launchVisit(data);
-				break;
-		}
-		super.onActivityResult(requestCode, resultCode, data);
 	}
 
 	@Override

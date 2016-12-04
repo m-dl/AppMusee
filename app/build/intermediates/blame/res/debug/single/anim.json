@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_up.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\anim\\slide_in_up.xml"
-    },
-    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_in_bottom.xml"
     },
@@ -34,10 +30,6 @@
     {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_up.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\anim\\slide_out_up.xml"
     },
     {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",

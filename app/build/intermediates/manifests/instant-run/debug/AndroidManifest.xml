@@ -39,13 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ceri.visitemusee.info.InfoActivity"
-            android:screenOrientation="sensorLandscape" />
-        <activity
             android:name="com.ceri.visitemusee.interestpoint.InterestPointActivity"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name="com.ceri.visitemusee.overview.OverviewActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
             android:name="com.ceri.visitemusee.interestpoint.SingleViewPhotos"
@@ -60,7 +54,7 @@
             android:name="com.ceri.visitemusee.interestpoint.PlayerActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.info.SingleView"
+            android:name="com.ceri.visitemusee.basket.Basket"
             android:screenOrientation="sensorLandscape" />
 
         <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" >

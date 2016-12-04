@@ -140,7 +140,7 @@ public class FileTools {
 		return videosList;
 	}
 
-	// List all Musee visits from a location
+	// List all Museum visits from a location
 	public static void ListVisitMusee(String pathFrom, Location l) {
 		File fileFrom = new File(pathFrom);
         File[] list = fileFrom.listFiles();
@@ -153,7 +153,7 @@ public class FileTools {
         }
 	}
 	
-	// List a Musee visit folder content
+	// List a Museum visit folder content
     public static void ListVisitContentMusee(String pathFrom, String visitName, Location l) {
         File fileFrom = new File(pathFrom);
         File[] list = fileFrom.listFiles();
@@ -166,19 +166,14 @@ public class FileTools {
             if(file.isDirectory()){ // Overview or Info or IP folder
                 if(!file.getName().equals(FileManager.OVERVIEW_FOLDER) && !file.getName().equals(FileManager.INFO_FOLDER)) {
                 	InterestPoint tmpIP = new InterestPoint(pathFrom + "/" + file.getName(), file.getName());
-					if(tmpIP.getFloor() == Location.MAP_ONE)
-						tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP1());
-					else if(tmpIP.getFloor() == Location.MAP_TWO)
-						tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP2());
-					else if(tmpIP.getFloor() == Location.MAP_THREE)
-						tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP3());
+					tmpVisit.addInterestPoint(tmpIP, tmpVisit.getIP());
                 }
             }
         }
         l.addVisit(tmpVisit);
     }
     
-    // Parse floor and coordinates
+    // Parse map and coordinates
     public static void ParseCoordinates(InterestPoint IP) {
 		String input = Read(IP.getMarker());
 		if(input != null) {

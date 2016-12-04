@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class InterestPoint implements Serializable {
 	private File presentation_FR, presentation_EN, marker, picture, name_EN;
-	private ArrayList<File> photos, interieur, _360, videos;
+	private ArrayList<File> photos, _360, videos;
 	private String name, nameEN;
 	private int floor;
 	private double coordX, coordY;
@@ -33,7 +33,6 @@ public class InterestPoint implements Serializable {
 
 		this.photos = FileTools.ListFolderPictures(pathFrom + "/" + FileManager.PHOTOS);
 		this._360 = FileTools.ListFolderPictures(pathFrom + "/" + FileManager._360);
-		this.interieur = FileTools.ListFolderPictures(pathFrom + "/" + FileManager.INTERIEUR);
 		this.videos = FileTools.ListFolderVideos(pathFrom + "/" + FileManager.VIDEOS);
 		ArrayList<File> tmpPicture = FileTools.ListFolderPictures(pathFrom);
 		if(!tmpPicture.isEmpty())
@@ -124,14 +123,6 @@ public class InterestPoint implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public ArrayList<File> getInterieur() {
-		return interieur;
-	}
-
-	public void setInterieur(ArrayList<File> interieur) {
-		this.interieur = interieur;
 	}
 
 	public ArrayList<File> getVideos() {

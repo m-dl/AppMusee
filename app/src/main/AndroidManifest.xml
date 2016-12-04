@@ -21,37 +21,29 @@
         android:launchMode="singleInstance"
         android:theme="@style/AppBaseTheme">
         <activity
-            android:name="com.ceri.visitemusee.main.MainActivity"
+            android:name=".main.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ceri.visitemusee.info.InfoActivity"
+            android:name=".interestpoint.InterestPointActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.interestpoint.InterestPointActivity"
+            android:name=".interestpoint.SingleViewPhotos"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.overview.OverviewActivity"
+            android:name=".interestpoint.SingleView360"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.interestpoint.SingleViewPhotos"
+            android:name=".interestpoint.PlayerActivity"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name="com.ceri.visitemusee.interestpoint.SingleViewInterieur"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name="com.ceri.visitemusee.interestpoint.SingleView360"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name="com.ceri.visitemusee.interestpoint.PlayerActivity"
-            android:screenOrientation="sensorLandscape" />
-        <activity
-            android:name="com.ceri.visitemusee.info.SingleView"
+            android:name=".basket.Basket"
             android:screenOrientation="sensorLandscape" />
     </application>
 

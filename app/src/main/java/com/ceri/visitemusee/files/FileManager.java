@@ -1,13 +1,11 @@
 package com.ceri.visitemusee.files;
 
-import android.content.Intent;
 import android.os.Environment;
 import android.support.design.widget.NavigationView;
+import android.view.MenuItem;
 
-import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.Location;
-import com.ceri.visitemusee.entities.musee.Visit;
 
 import java.io.File;
 
@@ -18,16 +16,11 @@ public class FileManager {
     final public static File SD_CARD = Environment.getExternalStorageDirectory();
     final public static String MEDIA_PATH = "/VisiteMusee";
     final public static String PHOTOS = "photo";
-    final public static String INTERIEUR = "interieur";
     final public static String VIDEOS = "video";
     final public static String _360 = "360";
-    final public static String OVERVIEW_FOLDER = "visite-overview";
-    final public static String INFO_FOLDER = "visite-info";
     final public static String NAME_EN = "name_en.txt";
     final public static String PRESENTATION_FR = "content_fr.txt";
     final public static String PRESENTATION_EN = "content_en.txt";
-    final public static String LENGTH_FR = "duree_fr.txt";
-    final public static String LENGTH_EN = "duree_en.txt";
     final public static String MARKER = "marker.txt";
     private Location MuseeWorkspace;
 
@@ -67,27 +60,18 @@ public class FileManager {
         FileTools.ListVisitMusee(SD_CARD + MEDIA_PATH, MuseeWorkspace);
     }
     
-    // Create menu and list visits
-    public static void ListVisits(NavigationView m_NavigationView, boolean french) {
-        String name;
-        int groupId = 0, itemId = 1, order = 0;
-        if (FileManager.getInstance().getMuseeWorkspace().getV() != null) {
-            for (Visit v : FileManager.getInstance().getMuseeWorkspace().getV()) {
-                if(french)
-                    name = v.getName();
-                else
-                    name = v.getNameEN();
-                m_NavigationView.getMenu().add(groupId, itemId, order, name);
-                itemId++;
-                order++;
-            }
+    // Rename menu
+    public static void renameMenuItems(NavigationView m_NavigationView, boolean french) {
+        MenuItem titleVisitsItem = m_NavigationView.getMenu().findItem(R.id.title_visits_item);
+        MenuItem allVisitsItem = m_NavigationView.getMenu().findItem(R.id.all_visits_item);
+        MenuItem customVisitsItem = m_NavigationView.getMenu().findItem(R.id.custom_visits_item);
+        MenuItem basketItem = m_NavigationView.getMenu().findItem(R.id.basket_item);
+
+        if (!french) {
+            titleVisitsItem.setTitle(R.string.action_section_en_0);
+            allVisitsItem.setTitle(R.string.action_section_en_1);
+            customVisitsItem.setTitle(R.string.action_section_en_2);
+            basketItem.setTitle(R.string.action_section_en_3);
         }
-//        if(!FileManager.getInstance().getMuseeWorkspace().getV().isEmpty())
-//            order--;
-//        if (french) {
-//            m_NavigationView.getMenu().addSubMenu(groupId, itemId, order, R.string.option_section).add(R.string.action_section_1);
-//        } else {
-//            m_NavigationView.getMenu().addSubMenu(groupId, itemId, order, R.string.option_section).add(R.string.action_section_english_1);
-//        }
     }
 }
