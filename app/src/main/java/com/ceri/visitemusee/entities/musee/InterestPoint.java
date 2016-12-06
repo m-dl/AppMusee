@@ -1,8 +1,5 @@
 package com.ceri.visitemusee.entities.musee;
 
-import com.ceri.visitemusee.files.FileManager;
-import com.ceri.visitemusee.files.FileTools;
-
 import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,100 +8,80 @@ import java.util.ArrayList;
  * @author Maxime
  */
 public class InterestPoint implements Serializable {
-	private File presentation_FR, presentation_EN, marker, picture, name_EN;
+	private String presentation_FR, presentation_EN, name_FR, name_EN, author, type_FR, type_EN;
 	private ArrayList<File> photos, _360, videos;
-	private String name, nameEN;
 	private double coordX, coordY;
-	
-	/**
-	 * @param pathFrom
-	 */
-	public InterestPoint(String pathFrom, String name) {
-		if(!FileTools.Exist(new File(pathFrom)))
-            FileTools.CreateDirectory(pathFrom);
-		
-		this.presentation_FR = new File(pathFrom + "/" + FileManager.PRESENTATION_FR);
-		this.presentation_EN = new File(pathFrom + "/" + FileManager.PRESENTATION_EN);
-		this.name_EN = new File(pathFrom + "/" + FileManager.NAME_EN);
-		this.marker = new File(pathFrom + "/" + FileManager.MARKER);
 
-		initInterestPoint(pathFrom);
-
-		this.photos = FileTools.ListFolderPictures(pathFrom + "/" + FileManager.PHOTOS);
-		this._360 = FileTools.ListFolderPictures(pathFrom + "/" + FileManager._360);
-		this.videos = FileTools.ListFolderVideos(pathFrom + "/" + FileManager.VIDEOS);
-		ArrayList<File> tmpPicture = FileTools.ListFolderPictures(pathFrom);
-		if(!tmpPicture.isEmpty())
-			this.picture = tmpPicture.get(0);
-		this.name = name;
-		this.nameEN = readName_EN();
-		this.coordX = 0;
-		this.coordY = 0;
-		readMarker();
+	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type_FR, String type_EN,
+						 double coordX, double coordY, ArrayList<File> photos, ArrayList<File> _360, ArrayList<File> videos) {
+		this.name_FR = name_FR;
+		this.name_EN = name_EN;
+		this.presentation_FR = presentation_FR;
+		this.presentation_EN = presentation_EN;
+		this.author = author;
+		this.type_FR = type_FR;
+		this.type_EN = type_EN;
+		this.coordX = coordX;
+		this.coordY = coordY;
+		this.photos = photos;
+		this._360 = _360;
+		this.videos = videos;
 	}
 
-	// check and create files if not exist
-	private void initInterestPoint(String pathFrom) {
-		if(!FileTools.Exist(this.presentation_FR))
-			FileTools.CreateFile(pathFrom + "/" + FileManager.PRESENTATION_FR);
-		if(!FileTools.Exist(this.presentation_EN))
-			FileTools.CreateFile(pathFrom + "/" + FileManager.PRESENTATION_EN);
-		if(!FileTools.Exist(this.name_EN))
-			FileTools.CreateFile(pathFrom + "/" + FileManager.NAME_EN);
-		if(!FileTools.Exist(this.marker))
-			FileTools.CreateFile(pathFrom + "/" + FileManager.MARKER);
+	public String getName_FR() {
+		return name_FR;
 	}
 
-	// read presentation fr
-	public String readPresentation_FR() {
-		return FileTools.Read(this.presentation_FR);
+	public void setName_FR(String name_FR) {
+		this.name_FR = name_FR;
 	}
 
-	// read presentation en
-	public String readPresentation_EN() {
-		return FileTools.Read(this.presentation_EN);
+	public String getAuthor() {
+		return author;
 	}
 
-	// read name en
-	public String readName_EN() {
-		return FileTools.Read(this.name_EN);
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 
-	// read marker
-	public void readMarker() {
-		FileTools.ParseCoordinates(this);
+	public String getType_FR() {
+		return type_FR;
 	}
 
-	public File getPresentation_FR() {
+	public void setType_FR(String type_FR) {
+		this.type_FR = type_FR;
+	}
+
+	public String getType_EN() {
+		return type_EN;
+	}
+
+	public void setType_EN(String type_EN) {
+		this.type_EN = type_EN;
+	}
+
+	public String getPresentation_FR() {
 		return presentation_FR;
 	}
 
-	public void setPresentation_FR(File presentation_FR) {
+	public void setPresentation_FR(String presentation_FR) {
 		this.presentation_FR = presentation_FR;
 	}
 
-	public File getPresentation_EN() {
+	public String getPresentation_EN() {
 		return presentation_EN;
 	}
 
-	public void setPresentation_EN(File presentation_EN) {
+	public void setPresentation_EN(String presentation_EN) {
 		this.presentation_EN = presentation_EN;
 	}
 
-	public File getMarker() {
-		return marker;
+	public String getName_EN() {
+		return name_EN;
 	}
 
-	public void setMarker(File marker) {
-		this.marker = marker;
-	}
-
-	public File getPicture() {
-		return picture;
-	}
-
-	public void setPicture(File picture) {
-		this.picture = picture;
+	public void setName_EN(String name_EN) {
+		this.name_EN = name_EN;
 	}
 
 	public ArrayList<File> getPhotos() {
@@ -115,22 +92,6 @@ public class InterestPoint implements Serializable {
 		this.photos = photos;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public ArrayList<File> getVideos() {
-		return videos;
-	}
-
-	public void setVideos(ArrayList<File> videos) {
-		this.videos = videos;
-	}
-
 	public ArrayList<File> get_360() {
 		return _360;
 	}
@@ -139,20 +100,12 @@ public class InterestPoint implements Serializable {
 		this._360 = _360;
 	}
 
-	public File getName_EN() {
-		return name_EN;
+	public ArrayList<File> getVideos() {
+		return videos;
 	}
 
-	public void setName_EN(File name_EN) {
-		this.name_EN = name_EN;
-	}
-
-	public String getNameEN() {
-		return nameEN;
-	}
-
-	public void setNameEN(String nameEN) {
-		this.nameEN = nameEN;
+	public void setVideos(ArrayList<File> videos) {
+		this.videos = videos;
 	}
 
 	public double getCoordX() {

@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		initBeacon();
 		initObjects();
 		selectLanguage();
-		FileTools.JSONToIP();
 	}
 
 	// initiate the objects and design

@@ -18,12 +18,14 @@ import android.widget.TextView;
 
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
+import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ImageAdapter;
 import com.ceri.visitemusee.tool.ScreenParam;
 import com.ceri.visitemusee.tool.WrappingGridView;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.Bind;
@@ -93,25 +95,31 @@ public class InterestPointActivity extends AppCompatActivity {
         //Getting the interest point
         IP = (InterestPoint) getIntent().getSerializableExtra("InterestPoint");
 
-        if(IP.getPicture() != null)
-            interestPointPicture.setImageBitmap(BitmapFactory.decodeFile(IP.getPicture().getAbsolutePath()));
+        if(IP.getPhotos() != null)
+            if(!IP.getPhotos().isEmpty())
+                try {
+                    interestPointPicture.setImageBitmap(BitmapFactory.decodeStream(
+                            MainActivity.getContext().getResources().getAssets().open(IP.getPhotos().get(0).getAbsolutePath())));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
         // set en or fr text
         if (AppParams.getInstance().getM_french()) {
-            interestPointTitle.setText(IP.getName());
-            interestPointContent.setText(IP.readPresentation_FR());
+            interestPointTitle.setText(IP.getName_FR());
+            interestPointContent.setText(IP.getPresentation_FR());
             interestPointPhotoTitle.setText(R.string.images);
             interestPoint360Title.setText(R.string.images360);
             interestPointVideoTitle.setText(R.string.videos);
-            nameActionBar(IP.getName());
+            nameActionBar(IP.getName_FR());
         }
         else {
-            interestPointTitle.setText(IP.getNameEN());
-            interestPointContent.setText(IP.readPresentation_EN());
+            interestPointTitle.setText(IP.getName_EN());
+            interestPointContent.setText(IP.getPresentation_EN());
             interestPointPhotoTitle.setText(R.string.pictures);
             interestPoint360Title.setText(R.string.pictures360);
             interestPointVideoTitle.setText(R.string.videosen);
-            nameActionBar(IP.getNameEN());
+            nameActionBar(IP.getName_EN());
         }
 
         // if some media elements are empty, do not dislay titles and gridviews
@@ -120,7 +128,7 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointPhotoTitle.setVisibility(View.GONE);
         }
         else {
-            myBitmap = new ArrayList<Bitmap>();
+            myBitmap = new ArrayList<>();
             // Load all the file from the arrayList then convert them into bitmap
             pos = new String[IP.getPhotos().size()];
             for(int i=0; i<IP.getPhotos().size(); i++){
@@ -128,8 +136,12 @@ public class InterestPointActivity extends AppCompatActivity {
                 this.tmpFile = IP.getPhotos().get(i);
                 if(tmpFile != null){
                     //Decode the file into a bitmap
-                    tmpBitmap = BitmapFactory.decodeFile(tmpFile.getAbsolutePath());
-                    tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
+                    try {
+                        tmpBitmap = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(tmpFile.getAbsolutePath()));
+                        tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     //Put the created bitmap into an array to be pass to the ImageAdapter
                     if(tmpBitmap != null){
                         this.myBitmap.add(tmpBitmap);
@@ -157,16 +169,19 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPoint360Title.setVisibility(View.GONE);
         }
         else {
-            myBitmap = new ArrayList<Bitmap>();
+            myBitmap = new ArrayList<>();
             // Load all the file from the arrayList then convert them into bitmap
             pos = new String[IP.get_360().size()];
             for(int i=0; i<IP.get_360().size(); i++){
                 pos[i]="media"+i;
                 this.tmpFile = IP.get_360().get(i);
                 if(tmpFile != null){
-                    //Decode the file into a bitmap
-                    tmpBitmap = BitmapFactory.decodeFile(tmpFile.getAbsolutePath());
-                    tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
+                    try {
+                        tmpBitmap = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(tmpFile.getAbsolutePath()));
+                        tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     //Put the created bitmap into an array to be pass to the ImageAdapter
                     if(tmpBitmap != null){
                         this.myBitmap.add(tmpBitmap);
@@ -194,7 +209,7 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointVideoTitle.setVisibility(View.GONE);
         }
         else {
-            myBitmap = new ArrayList<Bitmap>();
+            myBitmap = new ArrayList<>();
             // Load all the file from the arrayList then convert them into bitmap
             pos = new String[IP.getVideos().size()];
             for(int i=0; i<IP.getVideos().size(); i++){
@@ -241,25 +256,5 @@ public class InterestPointActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(menuItem);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
     }
 }

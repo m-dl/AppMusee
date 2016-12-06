@@ -1,9 +1,6 @@
 package com.ceri.visitemusee.files;
 
-import android.content.res.AssetManager;
-
 import com.ceri.visitemusee.entities.musee.InterestPoint;
-import com.ceri.visitemusee.entities.musee.Visit;
 import com.ceri.visitemusee.main.MainActivity;
 
 import org.apache.commons.io.FileUtils;
@@ -13,17 +10,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 /**
  * @author Maxime
@@ -186,20 +179,6 @@ public class FileTools {
 //        l.addVisit(tmpVisit);
 //    }
 //
-    // Parse map and coordinates
-    public static void ParseCoordinates(InterestPoint IP) {
-		String input = Read(IP.getMarker());
-		if(input != null) {
-			String[] lines = input.split(System.getProperty("line.separator"));
-			if(lines.length > 1) {
-				String[] coord = lines[1].split(",");
-				if(coord.length > 1) {
-					IP.setCoordX(Double.parseDouble(coord[0]));
-					IP.setCoordY(Double.parseDouble(coord[1]));
-				}
-			}
-		}
-    }
 
 	static String readFile(InputStream inputStream) {
 		try {
@@ -213,68 +192,61 @@ public class FileTools {
 	}
 
 	// decode json object
-	public static List<InterestPoint> JSONToIP() {
+	public static ArrayList<InterestPoint> JSONToIP() {
 		try {
 			MainActivity.getContext().getResources().getAssets();
 			String s = null;
 			try {
-				s = readFile(MainActivity.getContext().getResources().getAssets().open("museum/json/test.json"));
+				s = readFile(MainActivity.getContext().getResources().getAssets().open(FileManager.MUSEUM_JSON));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			List<InterestPoint> IPList = new ArrayList<>();
+			ArrayList<InterestPoint> IPList = new ArrayList<>();
 			JSONObject reader;
 			JSONObject object = new JSONObject(s);
-			object = object.getJSONObject("visit");
-			System.out.println(object.toString());
-			JSONArray jArray = object.getJSONArray("ip");
+			object = object.getJSONObject(FileManager.VISIT);
+			JSONArray jArray = object.getJSONArray(FileManager.IP);
 			for (int i = 0; i < jArray.length(); i++) {
 				reader = jArray.getJSONObject(i);
 				String title_en, title_fr, presentation_fr, presentation_en, author, type_en, type_fr;
 				double coordx, coordy;
-				List<String> pictures = new ArrayList<>(), p360 = new ArrayList<>(), videos = new ArrayList<>();
+				ArrayList<File> pictures = new ArrayList<>(), p360 = new ArrayList<>(), videos = new ArrayList<>();
 
-				title_en = reader.getString("title_en");
-				title_fr = reader.getString("title_fr");
-				presentation_fr = reader.getString("presentation_fr");
-				presentation_en = reader.getString("presentation_en");
-				coordx = Double.parseDouble(reader.getString("coordx"));
-				coordy = Double.parseDouble(reader.getString("coordy"));
-				author = reader.getString("author");
-				type_en = reader.getString("type_en");
-				type_fr = reader.getString("type_fr");
+				title_fr = reader.getString(FileManager.NAME_FR);
+				title_en = reader.getString(FileManager.NAME_EN);
+				presentation_fr = reader.getString(FileManager.PRESENTATION_FR);
+				presentation_en = reader.getString(FileManager.PRESENTATION_EN);
+				coordx = Double.parseDouble(reader.getString(FileManager.COORD_X));
+				coordy = Double.parseDouble(reader.getString(FileManager.COORD_Y));
+				author = reader.getString(FileManager.AUTHOR);
+				type_fr = reader.getString(FileManager.TYPE_FR);
+				type_en = reader.getString(FileManager.TYPE_EN);
 
-				JSONObject tmpobject = reader.getJSONObject("pictures");
-				JSONArray tmpjArray = tmpobject.getJSONArray("lien");
+				JSONObject tmpobject = reader.getJSONObject(FileManager.PHOTOS);
+				JSONArray tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					//JSONObject reader2 = tmpjArray.getJSONObject(j);
-					pictures.add(tmpjArray.getString(j));
+					pictures.add(new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + tmpjArray.getString(j)));
 				}
 
-				tmpobject = reader.getJSONObject("p360");
-				tmpjArray = tmpobject.getJSONArray("lien");
+				tmpobject = reader.getJSONObject(FileManager._360);
+				tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					//JSONObject reader2 = tmpjArray.getJSONObject(j);
-					//p360.add(reader2.getString("lien"));
-					p360.add(tmpjArray.getString(j));
+					p360.add(new File(FileManager.MUSEUM_FOLDER + FileManager._360_FOLDER + tmpjArray.getString(j)));
 				}
 
-				tmpobject = reader.getJSONObject("videos");
-				tmpjArray = tmpobject.getJSONArray("lien");
+				tmpobject = reader.getJSONObject(FileManager.VIDEOS);
+				tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					//JSONObject reader2 = tmpjArray.getJSONObject(j);
-					//videos.add(reader2.getString("lien"));
-					videos.add(tmpjArray.getString(j));
+					videos.add(new File(FileManager.RESSOURCES + MainActivity.getContext().getPackageName() +
+							File.pathSeparator + FileManager.RAW + FileManager.MUSEUM_FOLDER + FileManager.VIDEOS_FOLDER + tmpjArray.getString(j)));
 				}
 
-				System.out.println(title_en + title_fr + presentation_fr + presentation_en + author + type_en + type_fr + coordx + coordy);
-				InterestPoint IP = new InterestPoint("", "");
-				IPList.add(IP);
+				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type_fr, type_en, coordx, coordy, pictures, p360, videos));
 			}
 			return IPList;
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		return null;
+		return new ArrayList<>();
 	}
 }
