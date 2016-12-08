@@ -28,7 +28,6 @@ import com.ceri.visitemusee.custom.CustomVisitActivity;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Visit;
 import com.ceri.visitemusee.files.FileManager;
-import com.ceri.visitemusee.files.FileTools;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tileview.TileViewTools;
 import com.ceri.visitemusee.tool.ScreenParam;

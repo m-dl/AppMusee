@@ -1,0 +1,118 @@
+{
+  "visit": {
+    "ip": [
+      {
+        "title_fr": "
+		IP un
+	",
+        "title_en": "
+		First IP
+	",
+        "presentation_fr": "
+		presentation francaise
+	",
+        "presentation_en": "
+		english presentation
+
+
+
+		end of the presentation
+	",
+        "pictures": {
+          "lien": [
+            "img1.jpg",
+            "img2.jpg",
+            "img3.jpg"
+          ]
+        },
+        "p360": {
+          "lien": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "1.jpg",
+            "2.jpg",
+            "1.jpg",
+            "2.jpg"
+          ]
+        },
+        "videos": {
+          "lien": [
+            "vid1.mp4",
+            "vid2.mp4",
+            "vid3.mp4"
+          ]
+        },
+        "coordx": "
+		0.5
+	",
+        "coordy": "
+		0.26
+	",
+        "author": "
+		Léonard de Vinci
+	",
+        "type_fr": "
+		tableau
+	",
+        "type_en": "
+		painting
+	"
+      },
+      {
+        "title_fr": "
+		IP deux
+	",
+        "title_en": "
+		Second IP
+	",
+        "presentation_fr": "
+		presentation francaise n.2
+	",
+        "presentation_en": "
+		english presentation bis
+	",
+        "pictures": {
+          "lien": [
+            "4.jpg",
+            "5.jpg",
+            "6.jpg",
+            "img1.jpg",
+            "img2.jpg",
+            "img1.jpg",
+            "img2.jpg"
+          ]
+        },
+        "p360": {
+          "lien": [
+            "4.jpg",
+            "5.jpg",
+            "6.jpg"
+          ]
+        },
+        "videos": {
+          "lien": [
+            "vid1.mp4",
+            "vid2.mp4",
+            "vid3.mp4"
+          ]
+        },
+        "coordx": "
+		0.12
+	",
+        "coordy": "
+		0.82
+	",
+        "author": "
+		Van Gogh
+	",
+        "type_fr": "
+		statue
+	",
+        "type_en": "
+		statue
+	"
+      }
+    ]
+  }
+}

@@ -1,7 +1,5 @@
 package com.ceri.visitemusee.entities.musee;
 
-import com.ceri.visitemusee.files.FileManager;
-import com.ceri.visitemusee.files.FileTools;
 import com.ceri.visitemusee.params.AppParams;
 
 import java.io.Serializable;

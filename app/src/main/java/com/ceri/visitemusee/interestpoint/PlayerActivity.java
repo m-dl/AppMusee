@@ -3,6 +3,7 @@ package com.ceri.visitemusee.interestpoint;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.DrawerLayout;
@@ -19,6 +20,8 @@ import android.widget.MediaController;
 
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
+import com.ceri.visitemusee.files.FileManager;
+import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ScreenParam;
 
@@ -78,10 +81,10 @@ public class PlayerActivity extends AppCompatActivity implements SurfaceHolder.C
 
         // set en or fr text
         if (AppParams.getInstance().getM_french()) {
-            nameActionBar(IP.getName());
+            nameActionBar(IP.getName_FR());
         }
         else {
-            nameActionBar(IP.getNameEN());
+            nameActionBar(IP.getName_EN());
         }
     }
 
@@ -147,11 +150,11 @@ public class PlayerActivity extends AppCompatActivity implements SurfaceHolder.C
     // create the player
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        String path = tmpFile.getAbsolutePath();
         this.mdP = new MediaPlayer();
         this.mcontrol = new MediaController(this);
         try {
-            this.mdP.setDataSource(path);
+            this.mdP.setDataSource(this, Uri.parse(FileManager.RESSOURCES + MainActivity.getContext().getPackageName() +
+                    "/" + FileManager.RAW + tmpFile.getPath()));
         }catch(IllegalArgumentException e){
             e.printStackTrace();
         } catch (IOException e) {

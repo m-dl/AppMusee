@@ -13,10 +13,12 @@ import android.widget.ImageView;
 
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
+import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ScreenParam;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.Bind;
@@ -49,7 +51,12 @@ public class SingleViewPhotos extends AppCompatActivity {
 
         ArrayList<File> photos = IP.getPhotos();
         File tmpFile = photos.get(position);
-        Bitmap tmpBitmap = BitmapFactory.decodeFile(tmpFile.getAbsolutePath());
+        Bitmap tmpBitmap = null;
+        try {
+            tmpBitmap = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(tmpFile.getPath()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         imageView.setImageBitmap(tmpBitmap);
     }
 
@@ -68,10 +75,10 @@ public class SingleViewPhotos extends AppCompatActivity {
 
         // set en or fr text
         if (AppParams.getInstance().getM_french()) {
-            nameActionBar(IP.getName());
+            nameActionBar(IP.getName_FR());
         }
         else {
-            nameActionBar(IP.getNameEN());
+            nameActionBar(IP.getName_EN());
         }
     }
 

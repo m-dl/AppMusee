@@ -4,9 +4,6 @@ import android.support.design.widget.NavigationView;
 import android.view.MenuItem;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.entities.musee.InterestPoint;
-
-import java.util.ArrayList;
 
 /**
  * Created by Maxime
@@ -19,8 +16,7 @@ public class FileManager {
     final public static String JSON_FOLDER = "json/";
     final public static String PICTURES_FOLDER = "pictures/";
     final public static String _360_FOLDER = "360/";
-    final public static String VIDEOS_FOLDER = "videos/";
-    final public static String MUSEUM_JSON = MUSEUM_FOLDER + JSON_FOLDER + "test.json";
+    final public static String MUSEUM_JSON = MUSEUM_FOLDER + JSON_FOLDER + "data.json";
     final public static String VISIT = "visit";
     final public static String IP = "ip";
     final public static String PHOTOS = "pictures";

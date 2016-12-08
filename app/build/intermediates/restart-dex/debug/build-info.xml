@@ -5,40 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="47585982749371"
+    timestamp="11287109106371"
     token="-955732868572410530"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="852" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="18" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-        type="DEX" />
+        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="45945119227553"
+        timestamp="10879281623517"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="47585982749371"
+        timestamp="11287109106371"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
