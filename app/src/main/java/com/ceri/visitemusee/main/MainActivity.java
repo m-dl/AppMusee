@@ -11,7 +11,6 @@ import android.os.Handler;
 import android.os.RemoteException;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
@@ -22,6 +21,7 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 import com.ceri.visitemusee.R;
+import com.ceri.visitemusee.basket.BasketActivity;
 import com.ceri.visitemusee.custom.CustomVisitActivity;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Visit;
@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	private static MainActivity instance;
 	private ActionBarDrawerToggle m_DrawerToggle;
 	private ScreenParam param;
-	private FileManager FM;
 
 	@Bind(R.id.drawer_layout)
 	DrawerLayout m_DrawerLayout;
@@ -107,7 +106,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	private void initObjects() {
 		setContentView(R.layout.main);
 		ButterKnife.bind(this);
-		FM = FileManager.getInstance();
 		resources = getResources();
 		m_Context = getContext();
 		m_Activity = MainActivity.this;
@@ -116,9 +114,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		param.paramSetSupportActionBar(m_Toolbar, this);
 		m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
 		setDrawer();
-		presentTheDrawer();
-		initMap(Tools.MAP_ONE);
-		//TODO: demarrer la visite complete par defaut, et mettre fond gris sur le menuitem en cours
+		initVisit();
 	}
 
 	// initiate the map design for the current floor and add the pins
@@ -186,6 +182,19 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		backgroundPowerSaver = new BackgroundPowerSaver(this);
 	}
 
+	// init a visit
+	private void initVisit() {
+		Visit v = new Visit(getString(R.string.action_section_1), getString(R.string.action_section_en_1));
+		AppParams.getInstance().setCurrentVisit(v);
+		if(linearLayout != null)
+			linearLayout.removeAllViewsInLayout();
+		initMap(Tools.MAP_ONE);
+		if(AppParams.getInstance().getM_french())
+			renameActionBar(getString(R.string.action_section_0));
+		else
+			renameActionBar(getString(R.string.action_section_en_0));
+	}
+
 	// set en or fr language for the app and set some texts
 	private void selectLanguage() {
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -211,11 +220,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		alertDialog.show();
 	}
 
-	// open the menu
-	private void presentTheDrawer() {
-		m_DrawerLayout.openDrawer(GravityCompat.START);
-	}
-
 	// set action bar text
 	private void renameActionBar(String s) {
 		android.support.v7.app.ActionBar actionBar = getSupportActionBar();
@@ -226,7 +230,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	// initiate the drawer design for the menu
 	public void setDrawer() {
 		m_DrawerLayout.setDrawerListener(m_DrawerToggle);
-		m_DrawerLayout.isDrawerOpen(m_NavigationView);
+		m_NavigationView.getMenu().findItem(R.id.all_visits_item).setChecked(true);
 		m_NavigationView.setNavigationItemSelectedListener(
 				new NavigationView.OnNavigationItemSelectedListener() {
 					MenuItem m_menuItem;
@@ -235,12 +239,16 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 					public boolean onNavigationItemSelected(MenuItem menuItem) {
 						m_DrawerLayout.closeDrawers();
 						m_menuItem = menuItem;
-						new Handler().postDelayed(new Runnable() {
-							@Override
-							public void run() {
-								navigationDrawerItemSelected(m_menuItem);
-							}
-						}, 250);
+						//TODO: gerer les checkable du menu selon les activities
+						if(!menuItem.isChecked()) {
+							menuItem.setChecked(true);
+							new Handler().postDelayed(new Runnable() {
+								@Override
+								public void run() {
+									navigationDrawerItemSelected(m_menuItem);
+								}
+							}, 250);
+						}
 						return false;
 					}
 				});
@@ -250,11 +258,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	public void navigationDrawerItemSelected(MenuItem menuItem) {
 		// full visit item
 		if (menuItem.getItemId() == R.id.all_visits_item) {
-			Visit v = new Visit("", menuItem.getTitle().toString());
-			AppParams.getInstance().setCurrentVisit(v);
-			linearLayout.removeAllViewsInLayout();
-			initMap(Tools.MAP_ONE);
-			renameActionBar(menuItem.getTitle().toString());
+			initVisit();
 		}
 		// custom visit item
 		else if (menuItem.getItemId() == R.id.custom_visits_item) {
@@ -263,10 +267,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		}
 		// basket item
 		else if (menuItem.getItemId() == R.id.basket_item) {
-//			Intent intent = new Intent(MainActivity.m_Activity, BasketActivity.class);
-//			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
-			Intent intent = new Intent(MainActivity.m_Activity, NewRoomActivity.class);
-			intent.putExtra(Tools.ROOM, 6);
+			Intent intent = new Intent(MainActivity.m_Activity, BasketActivity.class);
 			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
 		}
 	}
@@ -316,10 +317,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 						Intent intent = new Intent(MainActivity.m_Activity, NewRoomActivity.class);
 						intent.putExtra(Tools.ROOM, tmpBeaconRangeDistance);
 						ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
-						//changeBeaconMap(tmpBeaconRangeDistance);
 					}
 					currentBeaconRangeDistance = tmpBeaconRangeDistance;
-					//logToDisplay("The first beacon " + firstBeacon.getId1() + " is about " + firstBeacon.getDistance() + " meters away.");
 				}
 			}
 		});
@@ -328,21 +327,4 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 			beaconManager.startRangingBeaconsInRegion(new Region("myRangingUniqueId", null, null, null));
 		} catch (RemoteException e) {   }
 	}
-
-//	private void logToDisplay(final String line) {
-//		runOnUiThread(new Runnable() {
-//			public void run() {
-//				Toast.makeText(MainActivity.getContext(), line, Toast.LENGTH_SHORT).show();
-//			}
-//		});
-//	}
-//
-//	private void changeBeaconMap(final int distance) {
-//		runOnUiThread(new Runnable() {
-//			public void run() {
-//				linearLayout.removeAllViewsInLayout();
-//				initMap(distance);
-//			}
-//		});
-//	}
 }

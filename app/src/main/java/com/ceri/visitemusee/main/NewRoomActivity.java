@@ -89,7 +89,6 @@ public class NewRoomActivity extends AppCompatActivity {
         TileViewTools.frameTo(tileView, 0.5, 0.5);
     }
 
-
     @Override
     public void onPause() {
         super.onPause();

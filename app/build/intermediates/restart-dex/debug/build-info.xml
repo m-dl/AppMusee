@@ -5,57 +5,46 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="20241458399713"
+    timestamp="16318936982947"
     token="-955732868572410530"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="4330" />
+        duration="717" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="78" />
+        duration="42" />
     <task
         name="verifier"
-        duration="10" />
+        duration="6" />
 
     <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="19454682039071"
+        timestamp="15003349776688"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="20241458399713"
+        timestamp="15943247921527"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
             type="RESOURCES" />
+    </build>
+    <build
+        timestamp="16318936982947"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
             type="DEX" />
     </build>
 
