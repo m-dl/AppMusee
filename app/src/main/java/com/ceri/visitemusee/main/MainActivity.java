@@ -20,10 +20,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.basket.BasketActivity;
 import com.ceri.visitemusee.custom.CustomVisitActivity;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Visit;
@@ -120,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		setDrawer();
 		presentTheDrawer();
 		initMap(Tools.MAP_ONE);
+		//TODO: demarrer la visite complete par defaut, et mettre fond gris sur le menuitem en cours
 	}
 
 	// initiate the map design for the current floor and add the pins
@@ -264,7 +263,10 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		}
 		// basket item
 		else if (menuItem.getItemId() == R.id.basket_item) {
-			Intent intent = new Intent(MainActivity.m_Activity, BasketActivity.class);
+//			Intent intent = new Intent(MainActivity.m_Activity, BasketActivity.class);
+//			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
+			Intent intent = new Intent(MainActivity.m_Activity, NewRoomActivity.class);
+			intent.putExtra(Tools.ROOM, 6);
 			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
 		}
 	}
@@ -310,10 +312,14 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 				if (beacons.size() > 0) {
 					Beacon firstBeacon = beacons.iterator().next();
 					int tmpBeaconRangeDistance = distanceToRange(firstBeacon.getDistance());
-					if(currentBeaconRangeDistance != tmpBeaconRangeDistance)
-						changeBeaconMap(tmpBeaconRangeDistance);
+					if(currentBeaconRangeDistance != tmpBeaconRangeDistance) {
+						Intent intent = new Intent(MainActivity.m_Activity, NewRoomActivity.class);
+						intent.putExtra(Tools.ROOM, tmpBeaconRangeDistance);
+						ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
+						//changeBeaconMap(tmpBeaconRangeDistance);
+					}
 					currentBeaconRangeDistance = tmpBeaconRangeDistance;
-					logToDisplay("The first beacon " + firstBeacon.getId1() + " is about " + firstBeacon.getDistance() + " meters away.");
+					//logToDisplay("The first beacon " + firstBeacon.getId1() + " is about " + firstBeacon.getDistance() + " meters away.");
 				}
 			}
 		});
@@ -323,20 +329,20 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		} catch (RemoteException e) {   }
 	}
 
-	private void logToDisplay(final String line) {
-		runOnUiThread(new Runnable() {
-			public void run() {
-				Toast.makeText(MainActivity.getContext(), line, Toast.LENGTH_SHORT).show();
-			}
-		});
-	}
-
-	private void changeBeaconMap(final int distance) {
-		runOnUiThread(new Runnable() {
-			public void run() {
-				linearLayout.removeAllViewsInLayout();
-				initMap(distance);
-			}
-		});
-	}
+//	private void logToDisplay(final String line) {
+//		runOnUiThread(new Runnable() {
+//			public void run() {
+//				Toast.makeText(MainActivity.getContext(), line, Toast.LENGTH_SHORT).show();
+//			}
+//		});
+//	}
+//
+//	private void changeBeaconMap(final int distance) {
+//		runOnUiThread(new Runnable() {
+//			public void run() {
+//				linearLayout.removeAllViewsInLayout();
+//				initMap(distance);
+//			}
+//		});
+//	}
 }

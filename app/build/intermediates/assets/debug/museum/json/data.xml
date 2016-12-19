@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visit>
+<ip>
+	<title_fr>
+		IP un
+	</title_fr>
+	<title_en>
+		First IP
+	</title_en>
+	<presentation_fr>
+		presentation francaise
+	</presentation_fr>
+	<presentation_en>
+		english presentation
+
+
+
+		end of the presentation
+	</presentation_en>
+	<pictures>
+		<lien>img1.png</lien>
+		<lien>img2.png</lien>
+		<lien>img3.png</lien>
+	</pictures>
+	<p360>
+		<lien>360_1.png</lien>
+		<lien>360_2.png</lien>
+		<lien>360_3.png</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.5
+	</coordx>
+	<coordy>
+		0.26
+	</coordy>
+	<author>
+		Léonard de Vinci
+	</author>
+	<type_fr>
+		tableau
+	</type_fr>
+	<type_en>
+		painting
+	</type_en>
+</ip>
+<ip>
+	<title_fr>
+		IP deux
+	</title_fr>
+	<title_en>
+		Second IP
+	</title_en>
+	<presentation_fr>
+		presentation francaise n.2
+	</presentation_fr>
+	<presentation_en>
+		english presentation bis
+	</presentation_en>
+	<pictures>
+		<lien>img4.png</lien>
+		<lien>img5.png</lien>
+		<lien>img6.png</lien>
+	</pictures>
+	<p360>
+		<lien>360_4.png</lien>
+		<lien>360_5.png</lien>
+		<lien>360_6.png</lien>
+	</p360>
+	<videos>
+		<lien>vid4.mp4</lien>
+		<lien>vid5.mp4</lien>
+		<lien>vid6.mp4</lien>
+	</videos>
+	<coordx>
+		0.12
+	</coordx>
+	<coordy>
+		0.82
+	</coordy>
+	<author>
+		Van Gogh
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+</ip>
+</visit>

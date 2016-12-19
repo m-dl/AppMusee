@@ -22,7 +22,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/blue"
+                android:background="@color/colorPrimaryDark"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
         </android.support.design.widget.AppBarLayout>
 
@@ -56,10 +56,10 @@
                     android:id="@+id/interest_point_title"
                     android:layout_marginTop="-40dp"
                     android:background="#99000000"
-                    android:padding="0dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:textStyle="bold"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical|center_horizontal" />
 
                 <TextView
                     android:layout_width="match_parent"

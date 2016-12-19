@@ -11,14 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 223,
-                        "endColumn": 68,
-                        "endOffset": 287
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -26,9 +19,9 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 124,
-                    "endLine": 8,
+                    "endLine": 9,
                     "endColumn": 12,
-                    "endOffset": 462
+                    "endOffset": 537
                 },
                 "from": {
                     "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\values-v21\\styles.xml",
@@ -36,28 +29,9 @@
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 80,
-                        "endLine": 8,
+                        "endLine": 9,
                         "endColumn": 12,
-                        "endOffset": 432
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 467,
-                    "endColumn": 90,
-                    "endOffset": 553
-                },
-                "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 239,
-                        "endColumn": 90,
-                        "endOffset": 325
+                        "endOffset": 508
                     }
                 }
             },
@@ -65,752 +39,471 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 558,
-                    "endColumn": 102,
-                    "endOffset": 656
+                    "startOffset": 542,
+                    "endColumn": 90,
+                    "endOffset": 628
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 330,
-                        "endColumn": 102,
-                        "endOffset": 428
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 661,
+                    "startOffset": 633,
                     "endColumn": 102,
-                    "endOffset": 759
+                    "endOffset": 731
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 433,
-                        "endColumn": 102,
-                        "endOffset": 531
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 764,
-                    "endColumn": 104,
-                    "endOffset": 864
+                    "startOffset": 736,
+                    "endColumn": 102,
+                    "endOffset": 834
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 536,
-                        "endColumn": 104,
-                        "endOffset": 636
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 869,
-                    "endColumn": 106,
-                    "endOffset": 971
+                    "startOffset": 839,
+                    "endColumn": 104,
+                    "endOffset": 939
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 641,
-                        "endColumn": 106,
-                        "endOffset": 743
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 976,
-                    "endColumn": 108,
-                    "endOffset": 1080
+                    "startOffset": 944,
+                    "endColumn": 106,
+                    "endOffset": 1046
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 748,
-                        "endColumn": 108,
-                        "endOffset": 852
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1085,
+                    "startOffset": 1051,
                     "endColumn": 108,
-                    "endOffset": 1189
+                    "endOffset": 1155
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 857,
-                        "endColumn": 108,
-                        "endOffset": 961
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1194,
+                    "startOffset": 1160,
                     "endColumn": 108,
-                    "endOffset": 1298
+                    "endOffset": 1264
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 966,
-                        "endColumn": 108,
-                        "endOffset": 1070
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1303,
+                    "startOffset": 1269,
                     "endColumn": 108,
-                    "endOffset": 1407
+                    "endOffset": 1373
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1075,
-                        "endColumn": 108,
-                        "endOffset": 1179
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1412,
+                    "startOffset": 1378,
                     "endColumn": 108,
-                    "endOffset": 1516
+                    "endOffset": 1482
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1184,
-                        "endColumn": 108,
-                        "endOffset": 1288
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1521,
-                    "endColumn": 106,
-                    "endOffset": 1623
+                    "startOffset": 1487,
+                    "endColumn": 108,
+                    "endOffset": 1591
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1293,
-                        "endColumn": 106,
-                        "endOffset": 1395
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1628,
-                    "endColumn": 102,
-                    "endOffset": 1726
+                    "startOffset": 1596,
+                    "endColumn": 106,
+                    "endOffset": 1698
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1400,
-                        "endColumn": 102,
-                        "endOffset": 1498
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1731,
-                    "endColumn": 118,
-                    "endOffset": 1845
+                    "startOffset": 1703,
+                    "endColumn": 102,
+                    "endOffset": 1801
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1503,
-                        "endColumn": 118,
-                        "endOffset": 1617
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1850,
-                    "endLine": 23,
-                    "endColumn": 12,
-                    "endOffset": 2000
+                    "startOffset": 1806,
+                    "endColumn": 118,
+                    "endOffset": 1920
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1801,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 1951
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2005,
-                    "endLine": 25,
+                    "startOffset": 1925,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 2155
+                    "endOffset": 2075
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1956,
-                        "endLine": 22,
-                        "endColumn": 12,
-                        "endOffset": 2106
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2160,
-                    "endColumn": 104,
-                    "endOffset": 2260
+                    "startOffset": 2080,
+                    "endLine": 26,
+                    "endColumn": 12,
+                    "endOffset": 2230
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 2295,
-                        "endColumn": 104,
-                        "endOffset": 2395
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2265,
-                    "endColumn": 120,
-                    "endOffset": 2381
+                    "startOffset": 2235,
+                    "endColumn": 104,
+                    "endOffset": 2335
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 2400,
-                        "endColumn": 120,
-                        "endOffset": 2516
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2386,
-                    "endColumn": 100,
-                    "endOffset": 2482
+                    "startOffset": 2340,
+                    "endColumn": 120,
+                    "endOffset": 2456
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 2521,
-                        "endColumn": 100,
-                        "endOffset": 2617
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2487,
-                    "endLine": 30,
-                    "endColumn": 12,
-                    "endOffset": 2629
+                    "startOffset": 2461,
+                    "endColumn": 100,
+                    "endOffset": 2557
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 2801,
-                        "endLine": 31,
-                        "endColumn": 12,
-                        "endOffset": 2943
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2634,
-                    "endLine": 32,
+                    "startOffset": 2562,
+                    "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2770
+                    "endOffset": 2704
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 2948,
-                        "endLine": 33,
-                        "endColumn": 12,
-                        "endOffset": 3084
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2775,
-                    "endColumn": 102,
-                    "endOffset": 2873
+                    "startOffset": 2709,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2845
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 3273,
-                        "endColumn": 102,
-                        "endOffset": 3371
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2878,
-                    "endColumn": 118,
-                    "endOffset": 2992
+                    "startOffset": 2850,
+                    "endColumn": 102,
+                    "endOffset": 2948
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 3376,
-                        "endColumn": 118,
-                        "endOffset": 3490
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2997,
-                    "endColumn": 106,
-                    "endOffset": 3099
+                    "startOffset": 2953,
+                    "endColumn": 118,
+                    "endOffset": 3067
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 3495,
-                        "endColumn": 106,
-                        "endOffset": 3597
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 3104,
-                    "endColumn": 102,
-                    "endOffset": 3202
+                    "startOffset": 3072,
+                    "endColumn": 106,
+                    "endOffset": 3174
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 3602,
-                        "endColumn": 102,
-                        "endOffset": 3700
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 3207,
-                    "endLine": 38,
-                    "endColumn": 12,
-                    "endOffset": 3349
+                    "startOffset": 3179,
+                    "endColumn": 102,
+                    "endOffset": 3277
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 3884,
-                        "endLine": 43,
-                        "endColumn": 12,
-                        "endOffset": 4026
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 3354,
-                    "endLine": 40,
+                    "startOffset": 3282,
+                    "endLine": 39,
                     "endColumn": 12,
-                    "endOffset": 3504
+                    "endOffset": 3424
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 4031,
-                        "endLine": 45,
-                        "endColumn": 12,
-                        "endOffset": 4181
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3509,
-                    "endLine": 42,
+                    "startOffset": 3429,
+                    "endLine": 41,
                     "endColumn": 12,
-                    "endOffset": 3675
+                    "endOffset": 3579
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 46,
-                        "startColumn": 4,
-                        "startOffset": 4186,
-                        "endLine": 47,
-                        "endColumn": 12,
-                        "endOffset": 4352
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3680,
-                    "endLine": 44,
+                    "startOffset": 3584,
+                    "endLine": 43,
                     "endColumn": 12,
-                    "endOffset": 3824
+                    "endOffset": 3750
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 4357,
-                        "endLine": 49,
-                        "endColumn": 12,
-                        "endOffset": 4501
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3829,
-                    "endLine": 46,
+                    "startOffset": 3755,
+                    "endLine": 45,
                     "endColumn": 12,
-                    "endOffset": 3989
+                    "endOffset": 3899
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 4506,
-                        "endLine": 51,
-                        "endColumn": 12,
-                        "endOffset": 4666
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3994,
-                    "endLine": 48,
+                    "startOffset": 3904,
+                    "endLine": 47,
                     "endColumn": 12,
-                    "endOffset": 4146
+                    "endOffset": 4064
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 4671,
-                        "endLine": 53,
-                        "endColumn": 12,
-                        "endOffset": 4823
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 4151,
-                    "endLine": 50,
+                    "startOffset": 4069,
+                    "endLine": 49,
                     "endColumn": 12,
-                    "endOffset": 4297
+                    "endOffset": 4221
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 4828,
-                        "endLine": 55,
-                        "endColumn": 12,
-                        "endOffset": 4974
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4302,
-                    "endColumn": 118,
-                    "endOffset": 4416
+                    "startOffset": 4226,
+                    "endLine": 51,
+                    "endColumn": 12,
+                    "endOffset": 4372
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 58,
-                        "startColumn": 4,
-                        "startOffset": 5163,
-                        "endColumn": 118,
-                        "endOffset": 5277
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4421,
-                    "endLine": 53,
-                    "endColumn": 12,
-                    "endOffset": 4565
+                    "startOffset": 4377,
+                    "endColumn": 118,
+                    "endOffset": 4491
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 61,
-                        "startColumn": 4,
-                        "startOffset": 5461,
-                        "endLine": 62,
-                        "endColumn": 12,
-                        "endOffset": 5605
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4570,
-                    "endLine": 55,
+                    "startOffset": 4496,
+                    "endLine": 54,
                     "endColumn": 12,
-                    "endOffset": 4714
+                    "endOffset": 4640
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 5610,
-                        "endLine": 64,
-                        "endColumn": 12,
-                        "endOffset": 5754
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4719,
-                    "endColumn": 111,
-                    "endOffset": 4826
+                    "startOffset": 4645,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 4789
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 67,
-                        "startColumn": 4,
-                        "startOffset": 5943,
-                        "endColumn": 111,
-                        "endOffset": 6050
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 4831,
-                    "endColumn": 146,
-                    "endOffset": 4973
+                    "startOffset": 4794,
+                    "endColumn": 111,
+                    "endOffset": 4901
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 70,
-                        "startColumn": 4,
-                        "startOffset": 6234,
-                        "endColumn": 146,
-                        "endOffset": 6376
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 4978,
-                    "endLine": 59,
-                    "endColumn": 12,
-                    "endOffset": 5126
+                    "startOffset": 4906,
+                    "endColumn": 146,
+                    "endOffset": 5048
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 71,
-                        "startColumn": 4,
-                        "startOffset": 6381,
-                        "endLine": 72,
-                        "endColumn": 12,
-                        "endOffset": 6529
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5131,
-                    "endLine": 61,
+                    "startOffset": 5053,
+                    "endLine": 60,
                     "endColumn": 12,
-                    "endOffset": 5273
+                    "endOffset": 5201
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 73,
-                        "startColumn": 4,
-                        "startOffset": 6534,
-                        "endLine": 74,
-                        "endColumn": 12,
-                        "endOffset": 6676
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 5278,
-                    "endColumn": 74,
+                    "startOffset": 5206,
+                    "endLine": 62,
+                    "endColumn": 12,
                     "endOffset": 5348
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 77,
-                        "startColumn": 4,
-                        "startOffset": 6860,
-                        "endColumn": 74,
-                        "endOffset": 6930
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
@@ -818,923 +511,588 @@
                     "startLine": 63,
                     "startColumn": 4,
                     "startOffset": 5353,
-                    "endColumn": 88,
-                    "endOffset": 5437
+                    "endColumn": 74,
+                    "endOffset": 5423
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 6935,
-                        "endColumn": 88,
-                        "endOffset": 7019
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 5442,
-                    "endColumn": 86,
-                    "endOffset": 5524
+                    "startOffset": 5428,
+                    "endColumn": 88,
+                    "endOffset": 5512
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 7024,
-                        "endColumn": 86,
-                        "endOffset": 7106
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 5529,
-                    "endColumn": 100,
-                    "endOffset": 5625
+                    "startOffset": 5517,
+                    "endColumn": 86,
+                    "endOffset": 5599
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 7111,
-                        "endColumn": 100,
-                        "endOffset": 7207
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 5630,
-                    "endLine": 109,
-                    "endColumn": 12,
-                    "endOffset": 8693
+                    "startOffset": 5604,
+                    "endColumn": 100,
+                    "endOffset": 5700
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 7212,
-                        "endLine": 124,
-                        "endColumn": 12,
-                        "endOffset": 10275
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 8698,
-                    "endLine": 112,
+                    "startOffset": 5705,
+                    "endLine": 110,
                     "endColumn": 12,
-                    "endOffset": 8879
+                    "endOffset": 8552
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 125,
-                        "startColumn": 4,
-                        "startOffset": 10280,
-                        "endLine": 127,
-                        "endColumn": 12,
-                        "endOffset": 10461
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 8884,
-                    "endLine": 156,
+                    "startOffset": 8557,
+                    "endLine": 113,
                     "endColumn": 12,
-                    "endOffset": 11959
+                    "endOffset": 8738
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 128,
-                        "startColumn": 4,
-                        "startOffset": 10466,
-                        "endLine": 171,
-                        "endColumn": 12,
-                        "endOffset": 13541
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 11964,
-                    "endLine": 159,
+                    "startOffset": 8743,
+                    "endLine": 157,
                     "endColumn": 12,
-                    "endOffset": 12157
+                    "endOffset": 11602
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 172,
-                        "startColumn": 4,
-                        "startOffset": 13546,
-                        "endLine": 174,
-                        "endColumn": 12,
-                        "endOffset": 13739
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 160,
+                    "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 12162,
-                    "endLine": 161,
+                    "startOffset": 11607,
+                    "endLine": 160,
                     "endColumn": 12,
-                    "endOffset": 12280
+                    "endOffset": 11800
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 177,
-                        "startColumn": 4,
-                        "startOffset": 13923,
-                        "endLine": 178,
-                        "endColumn": 12,
-                        "endOffset": 14041
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 12285,
-                    "endLine": 163,
+                    "startOffset": 11805,
+                    "endLine": 162,
                     "endColumn": 12,
-                    "endOffset": 12403
+                    "endOffset": 11923
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 179,
-                        "startColumn": 4,
-                        "startOffset": 14046,
-                        "endLine": 180,
-                        "endColumn": 12,
-                        "endOffset": 14164
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12408,
-                    "endLine": 165,
+                    "startOffset": 11928,
+                    "endLine": 164,
                     "endColumn": 12,
-                    "endOffset": 12516
+                    "endOffset": 12046
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 181,
-                        "startColumn": 4,
-                        "startOffset": 14169,
-                        "endLine": 182,
-                        "endColumn": 12,
-                        "endOffset": 14277
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 166,
+                    "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 12521,
-                    "endLine": 168,
+                    "startOffset": 12051,
+                    "endLine": 166,
                     "endColumn": 12,
-                    "endOffset": 12699
+                    "endOffset": 12159
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 183,
-                        "startColumn": 4,
-                        "startOffset": 14282,
-                        "endLine": 185,
-                        "endColumn": 12,
-                        "endOffset": 14460
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 12704,
-                    "endLine": 170,
+                    "startOffset": 12164,
+                    "endLine": 169,
                     "endColumn": 12,
-                    "endOffset": 12830
+                    "endOffset": 12342
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 186,
-                        "startColumn": 4,
-                        "startOffset": 14465,
-                        "endLine": 187,
-                        "endColumn": 12,
-                        "endOffset": 14591
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 171,
+                    "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 12835,
-                    "endLine": 173,
+                    "startOffset": 12347,
+                    "endLine": 171,
                     "endColumn": 12,
-                    "endOffset": 13031
+                    "endOffset": 12473
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 188,
-                        "startColumn": 4,
-                        "startOffset": 14596,
-                        "endLine": 190,
-                        "endColumn": 12,
-                        "endOffset": 14792
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 174,
+                    "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 13036,
-                    "endColumn": 88,
-                    "endOffset": 13120
+                    "startOffset": 12478,
+                    "endLine": 174,
+                    "endColumn": 12,
+                    "endOffset": 12674
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 191,
-                        "startColumn": 4,
-                        "startOffset": 14797,
-                        "endColumn": 88,
-                        "endOffset": 14881
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13125,
-                    "endColumn": 110,
-                    "endOffset": 13231
+                    "startOffset": 12679,
+                    "endColumn": 88,
+                    "endOffset": 12763
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 192,
-                        "startColumn": 4,
-                        "startOffset": 14886,
-                        "endColumn": 110,
-                        "endOffset": 14992
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 13236,
-                    "endColumn": 126,
-                    "endOffset": 13358
+                    "startOffset": 12768,
+                    "endColumn": 110,
+                    "endOffset": 12874
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 193,
-                        "startColumn": 4,
-                        "startOffset": 14997,
-                        "endColumn": 126,
-                        "endOffset": 15119
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 13363,
-                    "endColumn": 100,
-                    "endOffset": 13459
+                    "startOffset": 12879,
+                    "endColumn": 126,
+                    "endOffset": 13001
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 194,
-                        "startColumn": 4,
-                        "startOffset": 15124,
-                        "endColumn": 100,
-                        "endOffset": 15220
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13464,
-                    "endColumn": 94,
-                    "endOffset": 13554
+                    "startOffset": 13006,
+                    "endColumn": 100,
+                    "endOffset": 13102
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 195,
-                        "startColumn": 4,
-                        "startOffset": 15225,
-                        "endColumn": 94,
-                        "endOffset": 15315
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13559,
-                    "endColumn": 122,
-                    "endOffset": 13677
+                    "startOffset": 13107,
+                    "endColumn": 94,
+                    "endOffset": 13197
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 196,
-                        "startColumn": 4,
-                        "startOffset": 15320,
-                        "endColumn": 122,
-                        "endOffset": 15438
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 13682,
-                    "endColumn": 128,
-                    "endOffset": 13806
+                    "startOffset": 13202,
+                    "endColumn": 122,
+                    "endOffset": 13320
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 197,
-                        "startColumn": 4,
-                        "startOffset": 15443,
-                        "endColumn": 128,
-                        "endOffset": 15567
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13811,
-                    "endColumn": 116,
-                    "endOffset": 13923
+                    "startOffset": 13325,
+                    "endColumn": 128,
+                    "endOffset": 13449
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 198,
-                        "startColumn": 4,
-                        "startOffset": 15572,
-                        "endColumn": 116,
-                        "endOffset": 15684
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13928,
-                    "endLine": 184,
-                    "endColumn": 12,
-                    "endOffset": 14100
+                    "startOffset": 13454,
+                    "endColumn": 116,
+                    "endOffset": 13566
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 199,
-                        "startColumn": 4,
-                        "startOffset": 15689,
-                        "endLine": 201,
-                        "endColumn": 12,
-                        "endOffset": 15861
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 185,
+                    "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 14105,
-                    "endColumn": 98,
-                    "endOffset": 14199
+                    "startOffset": 13571,
+                    "endLine": 185,
+                    "endColumn": 12,
+                    "endOffset": 13743
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 202,
-                        "startColumn": 4,
-                        "startOffset": 15866,
-                        "endColumn": 98,
-                        "endOffset": 15960
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 14204,
-                    "endLine": 187,
-                    "endColumn": 12,
-                    "endOffset": 14334
+                    "startOffset": 13748,
+                    "endColumn": 98,
+                    "endOffset": 13842
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 203,
-                        "startColumn": 4,
-                        "startOffset": 15965,
-                        "endLine": 204,
-                        "endColumn": 12,
-                        "endOffset": 16095
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 188,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14339,
-                    "endLine": 189,
+                    "startOffset": 13847,
+                    "endLine": 188,
                     "endColumn": 12,
-                    "endOffset": 14477
+                    "endOffset": 13977
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 205,
-                        "startColumn": 4,
-                        "startOffset": 16100,
-                        "endLine": 206,
-                        "endColumn": 12,
-                        "endOffset": 16238
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 190,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14482,
-                    "endLine": 191,
+                    "startOffset": 13982,
+                    "endLine": 190,
                     "endColumn": 12,
-                    "endOffset": 14612
+                    "endOffset": 14120
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 207,
-                        "startColumn": 4,
-                        "startOffset": 16243,
-                        "endLine": 208,
-                        "endColumn": 12,
-                        "endOffset": 16373
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 192,
+                    "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14617,
-                    "endLine": 193,
+                    "startOffset": 14125,
+                    "endLine": 192,
                     "endColumn": 12,
-                    "endOffset": 14731
+                    "endOffset": 14255
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 209,
-                        "startColumn": 4,
-                        "startOffset": 16378,
-                        "endLine": 210,
-                        "endColumn": 12,
-                        "endOffset": 16492
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14736,
-                    "endLine": 197,
+                    "startOffset": 14260,
+                    "endLine": 194,
                     "endColumn": 12,
-                    "endOffset": 14932
+                    "endOffset": 14374
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 211,
-                        "startColumn": 4,
-                        "startOffset": 16497,
-                        "endLine": 214,
-                        "endColumn": 12,
-                        "endOffset": 16693
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 198,
+                    "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 14937,
-                    "endLine": 199,
+                    "startOffset": 14379,
+                    "endLine": 198,
                     "endColumn": 12,
-                    "endOffset": 15051
+                    "endOffset": 14575
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 215,
-                        "startColumn": 4,
-                        "startOffset": 16698,
-                        "endLine": 216,
-                        "endColumn": 12,
-                        "endOffset": 16812
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 200,
+                    "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 15056,
-                    "endColumn": 92,
-                    "endOffset": 15144
+                    "startOffset": 14580,
+                    "endLine": 200,
+                    "endColumn": 12,
+                    "endOffset": 14694
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 217,
-                        "startColumn": 4,
-                        "startOffset": 16817,
-                        "endColumn": 92,
-                        "endOffset": 16905
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 15149,
-                    "endColumn": 110,
-                    "endOffset": 15255
+                    "startOffset": 14699,
+                    "endColumn": 92,
+                    "endOffset": 14787
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 218,
-                        "startColumn": 4,
-                        "startOffset": 16910,
-                        "endColumn": 110,
-                        "endOffset": 17016
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15260,
-                    "endColumn": 55,
-                    "endOffset": 15311
+                    "startOffset": 14792,
+                    "endColumn": 110,
+                    "endOffset": 14898
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 219,
-                        "startColumn": 4,
-                        "startOffset": 17021,
-                        "endColumn": 55,
-                        "endOffset": 17072
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 15316,
-                    "endLine": 204,
-                    "endColumn": 12,
-                    "endOffset": 15418
+                    "startOffset": 14903,
+                    "endColumn": 55,
+                    "endOffset": 14954
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 220,
-                        "startColumn": 4,
-                        "startOffset": 17077,
-                        "endLine": 221,
-                        "endColumn": 12,
-                        "endOffset": 17179
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15423,
-                    "endLine": 208,
+                    "startOffset": 14959,
+                    "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15613
+                    "endOffset": 15061
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 222,
-                        "startColumn": 4,
-                        "startOffset": 17184,
-                        "endLine": 225,
-                        "endColumn": 12,
-                        "endOffset": 17374
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 209,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15618,
-                    "endLine": 210,
+                    "startOffset": 15066,
+                    "endLine": 209,
                     "endColumn": 12,
-                    "endOffset": 15724
+                    "endOffset": 15256
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 226,
-                        "startColumn": 4,
-                        "startOffset": 17379,
-                        "endLine": 227,
-                        "endColumn": 12,
-                        "endOffset": 17485
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 211,
+                    "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15729,
-                    "endLine": 212,
+                    "startOffset": 15261,
+                    "endLine": 211,
                     "endColumn": 12,
-                    "endOffset": 15857
+                    "endOffset": 15367
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 228,
-                        "startColumn": 4,
-                        "startOffset": 17490,
-                        "endLine": 229,
-                        "endColumn": 12,
-                        "endOffset": 17618
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 213,
+                    "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 15862,
-                    "endColumn": 94,
-                    "endOffset": 15952
+                    "startOffset": 15372,
+                    "endLine": 213,
+                    "endColumn": 12,
+                    "endOffset": 15500
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 230,
-                        "startColumn": 4,
-                        "startOffset": 17623,
-                        "endColumn": 94,
-                        "endOffset": 17713
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 15957,
-                    "endColumn": 90,
-                    "endOffset": 16043
+                    "startOffset": 15505,
+                    "endColumn": 94,
+                    "endOffset": 15595
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 231,
-                        "startColumn": 4,
-                        "startOffset": 17718,
-                        "endColumn": 90,
-                        "endOffset": 17804
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 16048,
+                    "startOffset": 15600,
                     "endColumn": 90,
-                    "endOffset": 16134
+                    "endOffset": 15686
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 232,
-                        "startColumn": 4,
-                        "startOffset": 17809,
-                        "endColumn": 90,
-                        "endOffset": 17895
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 16139,
-                    "endColumn": 116,
-                    "endOffset": 16251
+                    "startOffset": 15691,
+                    "endColumn": 90,
+                    "endOffset": 15777
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 233,
-                        "startColumn": 4,
-                        "startOffset": 17900,
-                        "endColumn": 116,
-                        "endOffset": 18012
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 16256,
-                    "endLine": 218,
-                    "endColumn": 12,
-                    "endOffset": 16390
+                    "startOffset": 15782,
+                    "endColumn": 116,
+                    "endOffset": 15894
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 234,
-                        "startColumn": 4,
-                        "startOffset": 18017,
-                        "endLine": 235,
-                        "endColumn": 12,
-                        "endOffset": 18151
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 219,
+                    "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 16395,
-                    "endLine": 225,
+                    "startOffset": 15899,
+                    "endLine": 219,
                     "endColumn": 12,
-                    "endOffset": 16743
+                    "endOffset": 16033
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 238,
-                        "startColumn": 4,
-                        "startOffset": 18335,
-                        "endLine": 244,
-                        "endColumn": 12,
-                        "endOffset": 18683
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 226,
+                    "startLine": 220,
                     "startColumn": 4,
-                    "startOffset": 16748,
-                    "endLine": 232,
+                    "startOffset": 16038,
+                    "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 17108
+                    "endOffset": 16386
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 245,
-                        "startColumn": 4,
-                        "startOffset": 18688,
-                        "endLine": 251,
-                        "endColumn": 12,
-                        "endOffset": 19048
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 233,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 17113,
-                    "endLine": 242,
+                    "startOffset": 16391,
+                    "endLine": 233,
                     "endColumn": 12,
-                    "endOffset": 17788
+                    "endOffset": 16751
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 252,
-                        "startColumn": 4,
-                        "startOffset": 19053,
-                        "endLine": 261,
-                        "endColumn": 12,
-                        "endOffset": 19728
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 243,
+                    "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 17793,
-                    "endColumn": 56,
-                    "endOffset": 17845
+                    "startOffset": 16756,
+                    "endLine": 243,
+                    "endColumn": 12,
+                    "endOffset": 17374
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 262,
-                        "startColumn": 4,
-                        "startOffset": 19733,
-                        "endColumn": 56,
-                        "endOffset": 19785
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 244,
                     "startColumn": 4,
-                    "startOffset": 17850,
-                    "endColumn": 57,
-                    "endOffset": 17903
+                    "startOffset": 17379,
+                    "endColumn": 56,
+                    "endOffset": 17431
                 },
                 "from": {
-                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 263,
-                        "startColumn": 4,
-                        "startOffset": 19790,
-                        "endColumn": 57,
-                        "endOffset": 19843
-                    }
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 245,
+                    "startColumn": 4,
+                    "startOffset": 17436,
+                    "endColumn": 57,
+                    "endOffset": 17489
+                },
+                "from": {
+                    "file": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
                 }
             }
         ]

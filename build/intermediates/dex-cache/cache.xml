@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="e5b445d74c76cef75ae1443f5b5b2b34da72b215">
+        sha1="34edae7a318d756b640c625cb688fb0778e6918a">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_340c0a45a79a2ac3fabd8ab6cdf485620d77202e\classes.dex" />
     </item>
     <item
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="8f24c8031aae5fbc96155716c6cf81392df001b1">
+        sha1="26c08c802e89093d302441010013040b96d34056">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5db8de4a42916fa087b66dd4329ec9fba31a2c15\classes.dex" />
     </item>
     <item

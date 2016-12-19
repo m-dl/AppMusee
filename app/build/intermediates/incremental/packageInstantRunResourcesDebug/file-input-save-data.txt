@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 08 22:47:10 CET 2016
+#Mon Dec 19 16:18:28 CET 2016
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug\\museum\\pictures\\6.jpg
 118.set=ANDROID_RESOURCE
@@ -139,6 +139,7 @@
 148.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 69.set=ANDROID_RESOURCE
 169.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_holo_light.xml
+200.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 123.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 144.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png
 175.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug
@@ -335,7 +336,7 @@
 167.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 146.set=ASSET
 142.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
-198.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_tab_indicator_material.xml
+198.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_new_room.xml
 121.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\design_fab_background.xml
 0.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 173.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_content_include.xml
@@ -357,7 +358,7 @@
 6.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_primary_text_disable_only_material_light.xml
 181.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 121.set=ANDROID_RESOURCE
-count=200
+count=201
 27.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 77.set=ANDROID_RESOURCE
 79.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -388,7 +389,7 @@ count=200
 156.set=ANDROID_RESOURCE
 147.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_single_view.xml
 143.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug
-199.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png
+199.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_tab_indicator_material.xml
 122.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\switch_thumb_material_light.xml
 13.set=ANDROID_RESOURCE
 1.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -443,6 +444,7 @@ count=200
 166.set=ANDROID_RESOURCE
 148.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_item_background_holo_light.xml
 144.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
+200.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png
 123.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_text_cursor_material.xml
 23.set=ANDROID_RESOURCE
 2.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -551,6 +553,7 @@ count=200
 100.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_fade_out.xml
 147.set=ANDROID_RESOURCE
 152.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\design_layout_snackbar.xml
+200.set=ANDROID_RESOURCE
 108.set=ANDROID_RESOURCE
 50.set=ASSET
 25.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\marker.png

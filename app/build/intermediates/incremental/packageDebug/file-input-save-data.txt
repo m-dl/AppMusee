@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 08 22:41:30 CET 2016
+#Mon Dec 19 16:06:35 CET 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-design-23.1.1_91f52dd7a4c9c01bb0655a59e82c43722cbe54ae\\classes.dex
@@ -116,6 +116,7 @@
 22.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
 27.set=ANDROID_RESOURCE
 74.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
+226.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 205.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug\\museum\\pictures\\6.jpg
 128.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png
 73.set=ANDROID_RESOURCE
@@ -164,6 +165,7 @@
 144.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png
 175.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 120.set=ANDROID_RESOURCE
+226.set=ANDROID_RESOURCE
 2.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_ic_clear_mtrl_alpha.png
 150.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 76.set=ANDROID_RESOURCE
@@ -336,7 +338,7 @@
 203.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 72.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-support-v4-23.1.1_9b28e57b84a7731eba667509ffe321de7639cb96\\classes.dex
 126.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
-224.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_tab_indicator_material.xml
+224.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_new_room.xml
 178.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
 101.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 150.set=ANDROID_RESOURCE
@@ -396,7 +398,7 @@
 204.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 73.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\museum.jpg
 127.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
-225.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png
+225.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_tab_indicator_material.xml
 179.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 102.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug
 160.set=ASSET
@@ -404,7 +406,7 @@
 6.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_5db8de4a42916fa087b66dd4329ec9fba31a2c15\\classes.dex
 181.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 121.set=ANDROID_RESOURCE
-count=226
+count=227
 27.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 77.set=DEX
 79.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -456,6 +458,7 @@ count=226
 205.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug
 74.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_spinner_textfield_background_material.xml
 128.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
+226.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png
 103.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 155.base=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_
 7.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug\\museum\\pictures\\5.jpg

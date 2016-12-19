@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml
@@ -46,7 +46,7 @@ ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:13:
 	android:name
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:13:22-78
 application
-ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:15:5-51:19
+ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:15:5-54:19
 MERGED from [com.android.support:design:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
@@ -119,6 +119,12 @@ ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:48:
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:50:13-56
 	android:name
 		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:49:13-55
+activity#com.ceri.visitemusee.main.NewRoomActivity
+ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:51:9-53:58
+	android:screenOrientation
+		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:53:13-56
+	android:name
+		ADDED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml:52:13-49
 uses-sdk
 INJECTED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42

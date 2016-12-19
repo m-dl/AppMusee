@@ -55,6 +55,9 @@
         <activity
             android:name="com.ceri.visitemusee.custom.CustomVisitActivity"
             android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.ceri.visitemusee.main.NewRoomActivity"
+            android:screenOrientation="sensorLandscape" />
 
         <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" >
             <intent-filter>

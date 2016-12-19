@@ -48,6 +48,9 @@
         <activity
             android:name=".custom.CustomVisitActivity"
             android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".main.NewRoomActivity"
+            android:screenOrientation="sensorLandscape"/>
     </application>
 
 </manifest>

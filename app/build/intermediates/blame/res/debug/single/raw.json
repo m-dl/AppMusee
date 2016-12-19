@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\raw\\vid2.mp4",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\raw\\vid2.mp4"
+    },
+    {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\raw\\vid1.mp4",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\raw\\vid1.mp4"
+    },
+    {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\raw\\vid3.mp4",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\raw\\vid3.mp4"
+    }
+]

@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_new_room.xml",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\activity_new_room.xml"
+    },
+    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\main.xml"
     },

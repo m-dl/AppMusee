@@ -1,5 +1,11 @@
 package com.ceri.visitemusee.tool;
 
+import android.support.design.widget.Snackbar;
+import android.view.View;
+import android.widget.Toast;
+
+import com.ceri.visitemusee.main.MainActivity;
+
 /**
  * Created by Maxime
  */
@@ -15,6 +21,7 @@ public class Tools {
     public static final int MAP_SIX = 6;
     public static final int MAP_SEVEN = 7;
     public static final int MAP_HEIGHT = 8;
+    public static final String ROOM = "Room";
 
     public static int distanceToRange(double distance) {
         if(distance < 1)
@@ -32,5 +39,15 @@ public class Tools {
         else if(distance < 25)
             return MAP_HEIGHT;
         return MAP_ONE;
+    }
+
+    // display toast message
+    public static void notifToast(String s) {
+        Toast.makeText(MainActivity.getContext(), s, Toast.LENGTH_SHORT).show();
+    }
+
+    // display snackbar message
+    public static void notifBar(View view, String s) {
+        Snackbar.make(view, s, Snackbar.LENGTH_LONG).setAction("Action", null).show();
     }
 }

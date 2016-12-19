@@ -12,8 +12,8 @@ public class SingleViewPhotos$$ViewBinder<T extends com.ceri.visitemusee.interes
     target.m_DrawerLayout = finder.castView(view, 2131492972, "field 'm_DrawerLayout'");
     view = finder.findRequiredView(source, 2131492975, "field 'm_Toolbar'");
     target.m_Toolbar = finder.castView(view, 2131492975, "field 'm_Toolbar'");
-    view = finder.findRequiredView(source, 2131492989, "field 'imageView'");
-    target.imageView = finder.castView(view, 2131492989, "field 'imageView'");
+    view = finder.findRequiredView(source, 2131492993, "field 'imageView'");
+    target.imageView = finder.castView(view, 2131492993, "field 'imageView'");
   }
 
   @Override public void unbind(T target) {
