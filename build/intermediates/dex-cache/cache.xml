@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maxime\Desktop\AppMusee\app\libs\disklrucache-1.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="7d14a74fb87b3e0a7df770036db5f8454b475a07">
-        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\2\disklrucache-1.3.1_e2adb160cceac33ce1fad1592af810fab2ee0bdb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -43,17 +34,17 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="c1d607bd1e30d3d31290e0a63ac5c81959f93c48">
+        sha1="a8cb5e12a35daccb4ec9037360eeded8ab0a9109">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_340c0a45a79a2ac3fabd8ab6cdf485620d77202e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jar="C:\Users\Maxime\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.1.0\908e18674f895e3e1fa8f4a954b8c637a23d2801\core-3.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.1.1_cee2f98834e3552cb937587ca6c3db7cf8951a5e\classes.dex" />
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.1.0_d50a05b88b7946cd7047e7ffa699e0f998fea5b4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -63,6 +54,15 @@
         revision="23.0.1"
         sha1="0b271af1568b43a528bba26d19c5874bb91c34cd">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\org.altbeacon-android-beacon-library-2.9.1_7e5a007dfe96260cf5d179c62e780d7160f6a117\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.1.1_cee2f98834e3552cb937587ca6c3db7cf8951a5e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,21 +93,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_9b28e57b84a7731eba667509ffe321de7639cb96\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Maxime\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_68a337efcbf258c1d52f094bd6c404198cd76976\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_9b28e57b84a7731eba667509ffe321de7639cb96\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,12 +120,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Maxime\.gradle\caches\modules-2\files-2.1\com.github.kenglxn.QRGen\core\2.2.0\5c0463c223d69f9af0a6dbd145ea3967a8cccb21\core-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5c0463c223d69f9af0a6dbd145ea3967a8cccb21">
+        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-2.2.0_b00ec3cd769087f98a702aca44c22c4dec884042\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_53d8addc8c8a2fb9f0eb8dc55603616a3330a718\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Maxime\.gradle\caches\modules-2\files-2.1\com.github.kenglxn.QRGen\android\2.2.0\a763c9c20b67e0be7ad5d15e6206b85725ff6d54\android-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a763c9c20b67e0be7ad5d15e6206b85725ff6d54">
+        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\android-2.2.0_380779e2985754c33ee9ec4ae68b3c2037157dc9\classes.dex" />
     </item>
 
 </items>

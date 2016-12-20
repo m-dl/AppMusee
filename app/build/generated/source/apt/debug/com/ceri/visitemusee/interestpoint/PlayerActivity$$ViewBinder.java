@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class PlayerActivity$$ViewBinder<T extends com.ceri.visitemusee.interestpoint.PlayerActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492972, "field 'm_DrawerLayout'");
-    target.m_DrawerLayout = finder.castView(view, 2131492972, "field 'm_DrawerLayout'");
-    view = finder.findRequiredView(source, 2131492975, "field 'm_Toolbar'");
-    target.m_Toolbar = finder.castView(view, 2131492975, "field 'm_Toolbar'");
-    view = finder.findRequiredView(source, 2131492991, "field 'pre'");
-    target.pre = finder.castView(view, 2131492991, "field 'pre'");
+    view = finder.findRequiredView(source, 2131492970, "field 'm_DrawerLayout'");
+    target.m_DrawerLayout = finder.castView(view, 2131492970, "field 'm_DrawerLayout'");
+    view = finder.findRequiredView(source, 2131492973, "field 'm_Toolbar'");
+    target.m_Toolbar = finder.castView(view, 2131492973, "field 'm_Toolbar'");
+    view = finder.findRequiredView(source, 2131492997, "field 'pre'");
+    target.pre = finder.castView(view, 2131492997, "field 'pre'");
   }
 
   @Override public void unbind(T target) {

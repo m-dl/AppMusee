@@ -113,7 +113,7 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointPhotoTitle.setText(R.string.images);
             interestPoint360Title.setText(R.string.images360);
             interestPointVideoTitle.setText(R.string.videos);
-            nameActionBar(IP.getName_FR());
+            renameActionBar(IP.getName_FR());
         }
         else {
             interestPointTitle.setText(IP.getName_EN());
@@ -121,7 +121,7 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointPhotoTitle.setText(R.string.pictures);
             interestPoint360Title.setText(R.string.pictures360);
             interestPointVideoTitle.setText(R.string.videosen);
-            nameActionBar(IP.getName_EN());
+            renameActionBar(IP.getName_EN());
         }
 
         // if some media elements are empty, do not dislay titles and gridviews
@@ -245,7 +245,7 @@ public class InterestPointActivity extends AppCompatActivity {
     }
 
     // set action bar text
-    private void nameActionBar(String s) {
+    private void renameActionBar(String s) {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         if (actionBar != null)
             actionBar.setTitle(s);

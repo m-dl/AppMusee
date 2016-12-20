@@ -59,6 +59,9 @@
         <activity
             android:name="com.ceri.visitemusee.main.NewRoomActivity"
             android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.ceri.visitemusee.basket.GenerateBasketActivity"
+            android:screenOrientation="sensorLandscape" />
 
         <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver" >
             <intent-filter>

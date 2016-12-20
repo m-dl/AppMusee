@@ -33,10 +33,12 @@ public class FileManager {
     final public static String TYPE_EN = "type_en";
     final public static String LINK = "lien";
 
-    private static FileManager INSTANCE = new FileManager();
+    private static FileManager INSTANCE;
 
-    // Singleton
+    // singleton
     public static FileManager getInstance() {
+        if (INSTANCE == null)
+            INSTANCE = new FileManager();
         return INSTANCE;
     }
 

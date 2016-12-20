@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	private double currentBeaconRangeDistance = 1;
 	private BeaconManager beaconManager;
 
-	private Resources resources;
+	public static Resources resources;
 	private Context m_Context;
 	public static Activity m_Activity;
 	private static MainActivity instance;

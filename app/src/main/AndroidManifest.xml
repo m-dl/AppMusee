@@ -50,7 +50,10 @@
             android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".main.NewRoomActivity"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".basket.GenerateBasketActivity"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>
