@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:baselineAligned="true"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" >
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:scaleType="center"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/museum" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+            <TextView
+            android:text="@string/basket_name_default"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/basketlistitemname"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+            <TextView
+            android:text="@string/basket_price_default"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/basketlistitemprice"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            android:textSize="20sp" />
+
+            <Button
+            android:text="@string/basket_action_default"
+            android:textColor="@color/white"
+            android:background="@color/colorAccentTransparent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:id="@+id/basketlistitemaction"
+            android:layout_gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/qrcode"-->
+        <!--android:src="@drawable/museum"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1" />-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1" >-->
+
+        <!--<TextView-->
+            <!--android:text="@string/basket_name_default"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/basketlistitemname"-->
+            <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+            <!--android:text="@string/basket_price_default"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/basketlistitemprice"-->
+            <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="normal|bold"-->
+            <!--android:textSize="20sp" />-->
+
+        <!--<Button-->
+            <!--android:text="@string/basket_action_default"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@color/colorAccentTransparent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/basketlistitemaction" />-->
+    <!--</LinearLayout>-->
+
+    <!--<include layout="@layout/separator_view" />-->
+
+<!--</LinearLayout>-->

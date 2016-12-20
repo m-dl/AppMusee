@@ -28,6 +28,18 @@ public class Basket {
 
     public Basket() {
         this.items = new ArrayList<>();
+        items.add(new BasketItem(50, "rasse"));
+        items.add(new BasketItem(5555, "rasse2"));
+        items.add(new BasketItem(2, "rasse3"));
+        items.add(new BasketItem(80, "rasse5"));
+    }
+
+    public ArrayList<BasketItem> getItems() {
+        return items;
+    }
+
+    public void setItems(ArrayList<BasketItem> items) {
+        this.items = items;
     }
 
     public int getBasketSize() {
@@ -94,6 +106,14 @@ public class Basket {
     }
 
     public Bitmap generateQRCode() {
-        return QRCode.from("Génération du panier en QRCode").bitmap();
+        return QRCode.from(basketToJSON()).bitmap();
+    }
+
+    private String basketToJSON() {
+        String json = "";
+        for(BasketItem item : this.items) {
+            json += item.getName() + " - " + item.getPrice() + "\n";
+        }
+        return "Génération du panier en QRCode";
     }
 }

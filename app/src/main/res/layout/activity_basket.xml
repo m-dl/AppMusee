@@ -79,22 +79,18 @@
                     android:id="@+id/emptybasketbutton" />
             </LinearLayout>
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorPrimary"/>
+            <include layout="@layout/separator_view" />
+
+            <ListView
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:choiceMode="singleChoice"
+                android:divider="@color/colorPrimaryDark"
+                android:dividerHeight="1dp"/>
+
         </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
-
-    <android.support.design.widget.NavigationView
-        android:id="@+id/navigationView"
-        android:layout_height="match_parent"
-        android:layout_width="wrap_content"
-        android:background="@color/white"
-        android:layout_gravity="start"
-        aLinearLayoutystemWindows="true"
-        app:itemTextColor="@color/black"
-        app:headerLayout="@layout/navigation_view_header"
-        app:menu="@menu/navigation_view_elements"/>
-
 </android.support.v4.widget.DrawerLayout>
