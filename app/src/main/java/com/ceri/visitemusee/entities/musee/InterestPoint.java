@@ -15,13 +15,13 @@ public class InterestPoint implements Serializable {
 
 	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type_FR, String type_EN,
 						 double coordX, double coordY, ArrayList<String> photos, ArrayList<String> _360, ArrayList<File> videos) {
-		this.name_FR = name_FR;
-		this.name_EN = name_EN;
-		this.presentation_FR = presentation_FR;
-		this.presentation_EN = presentation_EN;
-		this.author = author;
-		this.type_FR = type_FR;
-		this.type_EN = type_EN;
+		this.name_FR = name_FR.trim();
+		this.name_EN = name_EN.trim();
+		this.presentation_FR = presentation_FR.trim();
+		this.presentation_EN = presentation_EN.trim();
+		this.author = author.trim();
+		this.type_FR = type_FR.trim();
+		this.type_EN = type_EN.trim();
 		this.coordX = coordX;
 		this.coordY = coordY;
 		this.photos = photos;

@@ -21,7 +21,7 @@ public class Visit implements Serializable {
         // load all IP once
         this.setIP(FileTools.JSONToIP());
         // load all BI once
-        //this.setBI(FileTools.JSONToItem());
+        this.setBI(FileTools.JSONToItem());
     }
 
     public String getName_EN() {

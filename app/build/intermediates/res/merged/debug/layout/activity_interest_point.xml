@@ -47,16 +47,16 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="250dp"
                     android:scaleType="centerCrop"
                     android:adjustViewBounds="true"
                     android:id="@+id/interest_point_picture"/>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:id="@+id/interest_point_title"
-                    android:layout_marginTop="-40dp"
+                    android:layout_marginTop="-50dp"
                     android:background="#99000000"
                     android:gravity="center_horizontal|center_vertical"
                     android:textStyle="bold"
@@ -66,21 +66,18 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
                     android:id="@+id/interest_point_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_margin="16dp"
                     android:textColor="@color/black"
                     android:textSize="16dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/interest_point_photo_title"
                     android:textStyle="bold" />
@@ -90,6 +87,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/grid_view_photo"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
                     android:numColumns="auto_fit"
                     android:gravity="center"
                     android:columnWidth="100dp"
@@ -98,9 +97,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/interest_point_360_title"
                     android:textStyle="bold" />
@@ -109,6 +109,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/grid_view_360"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
                     android:layout_gravity="center_horizontal"
                     android:numColumns="auto_fit"
                     android:gravity="center"
@@ -118,9 +120,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/interest_point_video_title"
                     android:textStyle="bold" />
@@ -129,6 +132,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/grid_view_video"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
                     android:layout_gravity="center_horizontal"
                     android:numColumns="auto_fit"
                     android:gravity="center"

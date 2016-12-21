@@ -13,11 +13,11 @@ public class BasketItem implements Serializable {
 
     public BasketItem(double price, String name_FR, String name_EN, String presentation_FR, String presentation_EN, String type, String picture) {
         this.price = price;
-        this.name_FR = name_FR;
-        this.name_EN = name_EN;
-        this.presentation_FR = presentation_FR;
-        this.presentation_EN = presentation_EN;
-        this.type = type;
+        this.name_FR = name_FR.trim();
+        this.name_EN = name_EN.trim();
+        this.presentation_FR = presentation_FR.trim();
+        this.presentation_EN = presentation_EN.trim();
+        this.type = type.trim();
         this.picture =picture;
     }
 

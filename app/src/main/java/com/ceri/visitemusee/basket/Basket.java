@@ -33,10 +33,6 @@ public class Basket {
 
     public Basket() {
         this.items = new ArrayList<>();
-        items.add(new BasketItem(111, "rasse", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "5.jpg"));
-        items.add(new BasketItem(4512, "rasse2", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img3.jpg"));
-        items.add(new BasketItem(5, "rasse3", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img1.jpg"));
-        items.add(new BasketItem(91, "rasse5", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img2.jpg"));
     }
 
     public ArrayList<BasketItem> getItems() {
