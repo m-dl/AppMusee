@@ -1,5 +1,7 @@
 package com.ceri.visitemusee.entities.musee;
 
+import com.ceri.visitemusee.basket.BasketItem;
+import com.ceri.visitemusee.files.FileTools;
 import com.ceri.visitemusee.params.AppParams;
 
 import java.io.Serializable;
@@ -10,13 +12,17 @@ import java.util.ArrayList;
  */
 public class Visit implements Serializable {
 
+    private ArrayList<BasketItem> BI;
     private ArrayList<InterestPoint> IP;
     private String name_FR, name_EN;
 
     public Visit(String name_FR, String name_EN) {
         this.name_FR = name_FR;
         this.name_EN = name_EN;
-        this.setIP(AppParams.getInstance().getAppIPList());
+        // load all IP once
+        this.setIP(FileTools.JSONToIP());
+        // load all BI once
+        //this.setBI(FileTools.JSONToItem());
     }
 
     public String getName_EN() {
@@ -41,5 +47,13 @@ public class Visit implements Serializable {
 
     public void setIP(ArrayList<InterestPoint> IP) {
         this.IP = IP;
+    }
+
+    public ArrayList<BasketItem> getBI() {
+        return BI;
+    }
+
+    public void setBI(ArrayList<BasketItem> BI) {
+        this.BI = BI;
     }
 }

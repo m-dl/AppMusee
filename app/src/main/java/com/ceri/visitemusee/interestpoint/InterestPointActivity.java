@@ -94,6 +94,7 @@ public class InterestPointActivity extends AppCompatActivity {
         param.paramSetSupportActionBar(m_Toolbar, this);
         m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
 
+        // TODO: créer d'un coup le bitmap au lieu de le refaire à chaque fois
         //Getting the interest point
         IP = (InterestPoint) getIntent().getSerializableExtra("InterestPoint");
 

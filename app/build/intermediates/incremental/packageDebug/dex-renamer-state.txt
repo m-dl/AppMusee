@@ -1,4 +1,4 @@
-#Wed Dec 21 00:17:14 CET 2016
+#Wed Dec 21 02:41:14 CET 2016
 base.0=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_340c0a45a79a2ac3fabd8ab6cdf485620d77202e
 renamed.1=classes2.dex
 renamed.0=classes.dex

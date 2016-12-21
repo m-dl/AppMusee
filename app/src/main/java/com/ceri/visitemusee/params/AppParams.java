@@ -1,5 +1,6 @@
 package com.ceri.visitemusee.params;
 
+import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Visit;
 import com.ceri.visitemusee.files.FileTools;
@@ -25,13 +26,9 @@ public class AppParams {
     // current visit we are on
     private Visit currentVisit;
 
-    private ArrayList<InterestPoint> appIPList;
-
     private AppParams() {
         m_french = true;
         currentVisit = null;
-        // load all IP once
-        this.appIPList = FileTools.JSONToIP();
     }
     public boolean getM_french() {
         return m_french;
@@ -47,13 +44,5 @@ public class AppParams {
 
     public void setCurrentVisit(Visit currentVisit) {
         this.currentVisit = currentVisit;
-    }
-
-    public ArrayList<InterestPoint> getAppIPList() {
-        return appIPList;
-    }
-
-    public void setAppIPList(ArrayList<InterestPoint> appIPList) {
-        this.appIPList = appIPList;
     }
 }

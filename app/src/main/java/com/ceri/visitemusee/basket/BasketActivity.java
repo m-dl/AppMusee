@@ -1,11 +1,7 @@
 package com.ceri.visitemusee.basket;
 
-import android.app.LoaderManager;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,23 +9,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.custom.CustomVisitActivity;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
-import com.ceri.visitemusee.tool.ItemAdapter;
 import com.ceri.visitemusee.tool.ScreenParam;
 import com.ceri.visitemusee.tool.Tools;
-
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -55,9 +43,11 @@ public class BasketActivity extends AppCompatActivity {
     @Bind(R.id.emptybasketbutton)
     Button emptyBasketButton;
 
+    @Bind(R.id.item_list)
+    ListView itemList;
+
     private ActionBarDrawerToggle m_DrawerToggle;
     private ScreenParam param;
-    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,8 +59,11 @@ public class BasketActivity extends AppCompatActivity {
         validateBasketButton.setText(Basket.getInstance().getBasketValidateButtonText());
         emptyBasketButton.setText(Basket.getInstance().getBasketEmptyButtonText());
 
-        list = (ListView) findViewById(R.id.item_list);
-        displayCitiesList(list, Basket.getInstance().getItems());
+        // display basket items
+        Tools.displayItemList(itemList, Basket.getInstance().getItems());
+        // TODO; c/c adapter pour layout ajouter panier
+        // TODO: lags chargement images
+        // TODO: gérer onResume (prix ou listview)
 
         validateBasketButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -87,34 +80,8 @@ public class BasketActivity extends AppCompatActivity {
                 else
                     Tools.notifBar(v, getString(R.string.confirmation_empty_basket_en));
                 // TODO: vider la vue du panier et tout le reste (prix)
-                // TODO: bug du nenu dans le panier
             }
         });
-    }
-
-    // display list of element
-    public void displayCitiesList(ListView CListView, List<BasketItem> C) {
-        ItemAdapter adapter = new ItemAdapter(getApplicationContext(), C);
-        CListView.setAdapter(adapter);
-        int numberOfItems = adapter.getCount();
-
-        // Get total height of all items.
-        int totalItemsHeight = 0;
-        // order true to display most recent items first
-        for (int itemPos = 0; itemPos < numberOfItems; itemPos++) {
-            View item = adapter.getView(itemPos, null, CListView);
-            item.measure(0, 0);
-            totalItemsHeight += item.getMeasuredHeight();
-        }
-        // Get total height of all item dividers.
-        int totalDividersHeight = CListView.getDividerHeight() *
-                (numberOfItems - 1);
-
-        // Set list height.
-        ViewGroup.LayoutParams params = CListView.getLayoutParams();
-        params.height = totalItemsHeight + totalDividersHeight;
-        CListView.setLayoutParams(params);
-        CListView.requestLayout();
     }
 
     // initiate the objects and design

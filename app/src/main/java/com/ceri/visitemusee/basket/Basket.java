@@ -3,11 +3,17 @@ package com.ceri.visitemusee.basket;
 import android.graphics.Bitmap;
 
 import com.ceri.visitemusee.R;
+import com.ceri.visitemusee.files.FileManager;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 
 import net.glxn.qrgen.android.QRCode;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -28,10 +34,10 @@ public class Basket {
 
     public Basket() {
         this.items = new ArrayList<>();
-        items.add(new BasketItem(50, "rasse"));
-        items.add(new BasketItem(5555, "rasse2"));
-        items.add(new BasketItem(2, "rasse3"));
-        items.add(new BasketItem(80, "rasse5"));
+        items.add(new BasketItem(111, "rasse", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img1.jpg")));
+        items.add(new BasketItem(4512, "rasse2", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img3.jpg")));
+        items.add(new BasketItem(5, "rasse3", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img1.jpg")));
+        items.add(new BasketItem(91, "rasse5", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img2.jpg")));
     }
 
     public ArrayList<BasketItem> getItems() {
@@ -109,11 +115,38 @@ public class Basket {
         return QRCode.from(basketToJSON()).bitmap();
     }
 
+    public void removeItem(BasketItem basketItem) {
+        this.items.remove(basketItem);
+    }
+
+    public void addItem(BasketItem basketItem) {
+        this.items.add(basketItem);
+    }
+
     private String basketToJSON() {
-        String json = "";
-        for(BasketItem item : this.items) {
-            json += item.getName() + " - " + item.getPrice() + "\n";
+        JSONObject jsonObject;
+        JSONArray jArray = new JSONArray();
+        String json;
+        try {
+            for(BasketItem item : this.items) {
+                jsonObject = new JSONObject();
+                jsonObject.put("Nom", item.getName_FR());
+                jsonObject.put("Prix", item.getPrice());
+                jArray.put(jsonObject);
+            }
+
+            jsonObject = new JSONObject();
+            jsonObject.put("Total", getBasketAmmount());
+            jArray.put(jsonObject);
+
+            JSONObject basket = new JSONObject();
+            basket.put("Panier", jArray);
+
+            json = basket.toString();
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return "";
         }
-        return "Génération du panier en QRCode";
+        return json;
     }
 }

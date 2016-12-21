@@ -1,5 +1,6 @@
 package com.ceri.visitemusee.files;
 
+import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.main.MainActivity;
 
@@ -91,6 +92,44 @@ public class FileTools {
 				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type_fr, type_en, coordx, coordy, pictures, p360, videos));
 			}
 			return IPList;
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return new ArrayList<>();
+	}
+
+	// decode json object
+	public static ArrayList<BasketItem> JSONToItem() {
+		try {
+			MainActivity.getContext().getResources().getAssets();
+			String s = null;
+			try {
+				s = readFile(MainActivity.getContext().getResources().getAssets().open(FileManager.SHOP_JSON));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			ArrayList<BasketItem> BIList = new ArrayList<>();
+			JSONObject reader;
+			JSONObject object = new JSONObject(s);
+			object = object.getJSONObject(FileManager.SHOP);
+			JSONArray jArray = object.getJSONArray(FileManager.ITEM);
+			for (int i = 0; i < jArray.length(); i++) {
+				reader = jArray.getJSONObject(i);
+				String name_en, name_fr, presentation_fr, presentation_en, type;
+				double price;
+				File picture;
+
+				name_fr = reader.getString(FileManager.NAME_FR);
+				name_en = reader.getString(FileManager.NAME_EN);
+				presentation_fr = reader.getString(FileManager.PRESENTATION_FR);
+				presentation_en = reader.getString(FileManager.PRESENTATION_EN);
+				price = Double.parseDouble(reader.getString(FileManager.PRICE));
+				type = reader.getString(FileManager.TYPE);
+				picture = new File(FileManager.SHOP_FOLDER + FileManager.PICTURES_FOLDER + reader.getString(FileManager.PICTURE));
+
+				BIList.add(new BasketItem(price, name_fr, name_en, presentation_fr, presentation_en, type, picture));
+			}
+			return BIList;
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

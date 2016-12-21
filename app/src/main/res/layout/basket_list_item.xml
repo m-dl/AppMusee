@@ -14,12 +14,11 @@
         android:layout_weight="0.5" >
 
         <ImageView
-            android:id="@+id/qrcode"
+            android:id="@+id/basketlistitemimage"
             android:scaleType="center"
             android:adjustViewBounds="true"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/museum" />
+            android:layout_height="fill_parent" />
     </RelativeLayout>
 
     <RelativeLayout
