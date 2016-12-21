@@ -59,7 +59,8 @@ public class FileTools {
 				reader = jArray.getJSONObject(i);
 				String title_en, title_fr, presentation_fr, presentation_en, author, type_en, type_fr;
 				double coordx, coordy;
-				ArrayList<File> pictures = new ArrayList<>(), p360 = new ArrayList<>(), videos = new ArrayList<>();
+				ArrayList<String> pictures = new ArrayList<>(), p360 = new ArrayList<>();
+				ArrayList<File> videos = new ArrayList<>();
 
 				title_fr = reader.getString(FileManager.NAME_FR);
 				title_en = reader.getString(FileManager.NAME_EN);
@@ -74,13 +75,13 @@ public class FileTools {
 				JSONObject tmpobject = reader.getJSONObject(FileManager.PHOTOS);
 				JSONArray tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					pictures.add(new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + tmpjArray.getString(j)));
+					pictures.add(FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + tmpjArray.getString(j));
 				}
 
 				tmpobject = reader.getJSONObject(FileManager._360);
 				tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					p360.add(new File(FileManager.MUSEUM_FOLDER + FileManager._360_FOLDER + tmpjArray.getString(j)));
+					p360.add(FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager._360_FOLDER + tmpjArray.getString(j));
 				}
 
 				tmpobject = reader.getJSONObject(FileManager.VIDEOS);
@@ -115,9 +116,8 @@ public class FileTools {
 			JSONArray jArray = object.getJSONArray(FileManager.ITEM);
 			for (int i = 0; i < jArray.length(); i++) {
 				reader = jArray.getJSONObject(i);
-				String name_en, name_fr, presentation_fr, presentation_en, type;
+				String name_en, name_fr, presentation_fr, presentation_en, type, picture;
 				double price;
-				File picture;
 
 				name_fr = reader.getString(FileManager.NAME_FR);
 				name_en = reader.getString(FileManager.NAME_EN);
@@ -125,7 +125,7 @@ public class FileTools {
 				presentation_en = reader.getString(FileManager.PRESENTATION_EN);
 				price = Double.parseDouble(reader.getString(FileManager.PRICE));
 				type = reader.getString(FileManager.TYPE);
-				picture = new File(FileManager.SHOP_FOLDER + FileManager.PICTURES_FOLDER + reader.getString(FileManager.PICTURE));
+				picture = FileManager.ASSETS + FileManager.SHOP_FOLDER + FileManager.PICTURES_FOLDER + reader.getString(FileManager.PICTURE);
 
 				BIList.add(new BasketItem(price, name_fr, name_en, presentation_fr, presentation_en, type, picture));
 			}

@@ -57,8 +57,8 @@ public class Tools {
     }
 
     // display list of element
-    public static void displayItemList(ListView ItemListView, List<BasketItem> itemList) {
-        ItemAdapter adapter = new ItemAdapter(MainActivity.getContext(), itemList);
+    public static void displayItemList(ListView ItemListView, List<BasketItem> itemList, boolean action) {
+        ItemAdapter adapter = new ItemAdapter(MainActivity.getContext(), itemList, action);
         ItemListView.setAdapter(adapter);
         int numberOfItems = adapter.getCount();
 

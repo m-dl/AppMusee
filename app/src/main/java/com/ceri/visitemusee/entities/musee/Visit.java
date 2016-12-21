@@ -2,7 +2,6 @@ package com.ceri.visitemusee.entities.musee;
 
 import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.files.FileTools;
-import com.ceri.visitemusee.params.AppParams;
 
 import java.io.Serializable;
 import java.util.ArrayList;

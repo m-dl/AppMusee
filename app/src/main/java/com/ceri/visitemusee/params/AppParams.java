@@ -1,11 +1,6 @@
 package com.ceri.visitemusee.params;
 
-import com.ceri.visitemusee.basket.BasketItem;
-import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.entities.musee.Visit;
-import com.ceri.visitemusee.files.FileTools;
-
-import java.util.ArrayList;
 
 /**
  * Created by Maxime

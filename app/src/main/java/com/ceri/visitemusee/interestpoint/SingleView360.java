@@ -1,8 +1,6 @@
 package com.ceri.visitemusee.interestpoint;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,13 +11,9 @@ import android.widget.ImageView;
 
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
-import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ScreenParam;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -49,15 +43,9 @@ public class SingleView360 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         initObjects();
 
-        ArrayList<File> photos = IP.get_360();
-        File tmpFile = photos.get(position);
-        Bitmap tmpBitmap = null;
-        try {
-            tmpBitmap = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(tmpFile.getPath()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        imageView.setImageBitmap(tmpBitmap);
+        // get image loader (cache images - no lag)
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        imageLoader.displayImage(IP.get_360().get(position), imageView);
     }
 
     // initiate the objects and design

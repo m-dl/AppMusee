@@ -30,6 +30,12 @@ import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tileview.TileViewTools;
 import com.ceri.visitemusee.tool.ScreenParam;
 import com.ceri.visitemusee.tool.Tools;
+import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.qozix.tileview.TileView;
 
 import org.altbeacon.beacon.Beacon;
@@ -115,6 +121,21 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
 		setDrawer();
 		initVisit();
+
+		// UNIVERSAL IMAGE LOADER SETUP
+		DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+				.cacheOnDisc(true).cacheInMemory(true)
+				.imageScaleType(ImageScaleType.EXACTLY)
+				.displayer(new FadeInBitmapDisplayer(500)).build();
+
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+				getApplicationContext())
+				.defaultDisplayImageOptions(defaultOptions)
+				.memoryCache(new WeakMemoryCache())
+				.discCacheSize(100 * 1024 * 1024).build();
+
+		ImageLoader.getInstance().init(config);
+		// END - UNIVERSAL IMAGE LOADER SETUP
 	}
 
 	// initiate the map design for the current floor and add the pins
@@ -239,9 +260,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 					public boolean onNavigationItemSelected(MenuItem menuItem) {
 						m_DrawerLayout.closeDrawers();
 						m_menuItem = menuItem;
-						//TODO: gerer les checkable du menu selon les activities
 						if(!menuItem.isChecked()) {
-							menuItem.setChecked(true);
 							new Handler().postDelayed(new Runnable() {
 								@Override
 								public void run() {

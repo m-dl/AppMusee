@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="ff1cdedc1200fe3b1e68b0ebea2c5371d01fab9b">
+        sha1="58d64f50ceafcf24ec4dbb4f29fb720a4400e941">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_340c0a45a79a2ac3fabd8ab6cdf485620d77202e\classes.dex" />
     </item>
     <item
@@ -75,6 +75,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Maxime\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.5\442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375\universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\universal-image-loader-1.9.5_2b0f8d8caf11474cce1df1c31e4ad7d7ffed95ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="true"
         optimize="true"
@@ -88,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="05a96d413c4c71f997c8ee36451f90e5a998456b">
+        sha1="cb4c6354ca2516e87fe0a3dbc533f9e69b362e38">
         <dex dex="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5db8de4a42916fa087b66dd4329ec9fba31a2c15\classes.dex" />
     </item>
     <item

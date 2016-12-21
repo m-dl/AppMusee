@@ -1,12 +1,5 @@
 package com.ceri.visitemusee.basket;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-
-import com.ceri.visitemusee.main.MainActivity;
-
-import java.io.File;
-import java.io.IOException;
 import java.io.Serializable;
 
 /**
@@ -16,21 +9,16 @@ import java.io.Serializable;
 public class BasketItem implements Serializable {
 
     private double price;
-    private String name_FR, name_EN, presentation_FR, presentation_EN, type;
-    private Bitmap picture;
+    private String name_FR, name_EN, presentation_FR, presentation_EN, type, picture;
 
-    public BasketItem(double price, String name_FR, String name_EN, String presentation_FR, String presentation_EN, String type, File picture) {
+    public BasketItem(double price, String name_FR, String name_EN, String presentation_FR, String presentation_EN, String type, String picture) {
         this.price = price;
         this.name_FR = name_FR;
         this.name_EN = name_EN;
         this.presentation_FR = presentation_FR;
         this.presentation_EN = presentation_EN;
         this.type = type;
-        try {
-            this.picture = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(picture.getPath()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        this.picture =picture;
     }
 
     public double getPrice() {
@@ -81,11 +69,11 @@ public class BasketItem implements Serializable {
         this.type = type;
     }
 
-    public Bitmap getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public void setPicture(Bitmap picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 }

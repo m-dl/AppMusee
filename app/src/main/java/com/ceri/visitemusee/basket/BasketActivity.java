@@ -34,8 +34,7 @@ public class BasketActivity extends AppCompatActivity {
     @Bind(R.id.toolbar)
     Toolbar m_Toolbar;
 
-    @Bind(R.id.validatebaskettext)
-    TextView validateBasketText;
+    public static TextView validateBasketText;
 
     @Bind(R.id.validatebasketbutton)
     Button validateBasketButton;
@@ -60,10 +59,7 @@ public class BasketActivity extends AppCompatActivity {
         emptyBasketButton.setText(Basket.getInstance().getBasketEmptyButtonText());
 
         // display basket items
-        Tools.displayItemList(itemList, Basket.getInstance().getItems());
-        // TODO; c/c adapter pour layout ajouter panier
-        // TODO: lags chargement images
-        // TODO: gérer onResume (prix ou listview)
+        Tools.displayItemList(itemList, Basket.getInstance().getItems(), false);
 
         validateBasketButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -75,11 +71,12 @@ public class BasketActivity extends AppCompatActivity {
         emptyBasketButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Basket.getInstance().emptyBasket();
+                validateBasketText.setText(Basket.getInstance().getBasketObjectsText());
+                Tools.displayItemList(itemList, Basket.getInstance().getItems(), false);
                 if(AppParams.getInstance().getM_french())
                     Tools.notifBar(v, getString(R.string.confirmation_empty_basket_fr));
                 else
                     Tools.notifBar(v, getString(R.string.confirmation_empty_basket_en));
-                // TODO: vider la vue du panier et tout le reste (prix)
             }
         });
     }
@@ -88,6 +85,7 @@ public class BasketActivity extends AppCompatActivity {
     private void initObjects() {
         setContentView(R.layout.activity_basket);
         ButterKnife.bind(this);
+        validateBasketText = (TextView) findViewById(R.id.validatebaskettext);
         param = new ScreenParam();
         param.paramWindowFullScreen(getWindow());
         param.paramSetSupportActionBar(m_Toolbar, this);

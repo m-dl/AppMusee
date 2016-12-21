@@ -10,6 +10,7 @@ import com.ceri.visitemusee.R;
  */
 public class FileManager {
     // json tags / folders path
+    final public static String ASSETS = "assets://";
     final public static String MUSEUM_FOLDER = "museum/";
     final public static String SHOP_FOLDER = "shop/";
     final public static String RESSOURCES = "android.resource://";

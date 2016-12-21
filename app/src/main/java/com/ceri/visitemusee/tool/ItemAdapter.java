@@ -1,7 +1,6 @@
 package com.ceri.visitemusee.tool;
 
 import android.content.Context;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +11,12 @@ import android.widget.TextView;
 
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.basket.Basket;
+import com.ceri.visitemusee.basket.BasketActivity;
 import com.ceri.visitemusee.basket.BasketItem;
-import com.ceri.visitemusee.files.FileManager;
+import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -26,8 +25,12 @@ import java.util.List;
 
 public class ItemAdapter extends ArrayAdapter<BasketItem> {
 
-    public ItemAdapter(Context context, List<BasketItem> itemList) {
+    // action true = add item to basket / false = remove item from basket
+    private boolean action;
+
+    public ItemAdapter(Context context, List<BasketItem> itemList, boolean action) {
         super(context, 0, itemList);
+        this.action = action;
     }
 
     // adapter to display item list
@@ -38,9 +41,9 @@ public class ItemAdapter extends ArrayAdapter<BasketItem> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.basket_list_item, parent, false);
         }
 
-        ItemViewHolder viewHolder = (ItemViewHolder) convertView.getTag();
+        ViewHolder viewHolder = (ViewHolder) convertView.getTag();
         if (viewHolder == null) {
-            viewHolder = new ItemViewHolder();
+            viewHolder = new ViewHolder();
             viewHolder.name = (TextView) convertView.findViewById(R.id.basketlistitemname);
             viewHolder.price = (TextView) convertView.findViewById(R.id.basketlistitemprice);
             viewHolder.action = (Button) convertView.findViewById(R.id.basketlistitemaction);
@@ -50,28 +53,53 @@ public class ItemAdapter extends ArrayAdapter<BasketItem> {
 
         final BasketItem basketItem = getItem(position);
         viewHolder.price.setText(basketItem.getPrice() + getContext().getString(R.string.euro));
-        viewHolder.picture.setImageBitmap(basketItem.getPicture());
+
+        // get image loader (cache images - no lag)
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        imageLoader.displayImage(basketItem.getPicture(), viewHolder.picture);
 
         if(AppParams.getInstance().getM_french()) {
             viewHolder.name.setText(basketItem.getName_FR());
-            viewHolder.action.setText(getContext().getString(R.string.remove_from_basket_fr));
+            if(!action)
+                viewHolder.action.setText(getContext().getString(R.string.remove_from_basket_fr));
+            else
+                viewHolder.action.setText(getContext().getString(R.string.add_to_basket_fr));
         }
         else {
             viewHolder.name.setText(basketItem.getName_EN());
-            viewHolder.action.setText(getContext().getString(R.string.remove_from_basket_en));
+            if(!action)
+                viewHolder.action.setText(getContext().getString(R.string.remove_from_basket_en));
+            else
+                viewHolder.action.setText(getContext().getString(R.string.add_to_basket_en));
         }
 
         viewHolder.action.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Basket.getInstance().removeItem(basketItem);
-                notifyDataSetChanged();
+                // delete item
+                if(!action) {
+                    Basket.getInstance().removeItem(basketItem);
+                    BasketActivity.validateBasketText.setText(Basket.getInstance().getBasketObjectsText());
+                    notifyDataSetChanged();
+                    if(AppParams.getInstance().getM_french())
+                        Tools.notifBar(v, MainActivity.getContext().getString(R.string.confirmation_remove_basket_fr));
+                    else
+                        Tools.notifBar(v, MainActivity.getContext().getString(R.string.confirmation_remove_basket_en));
+                }
+                // add item
+                else {
+                    Basket.getInstance().addItem(basketItem);
+                    if(AppParams.getInstance().getM_french())
+                        Tools.notifBar(v, MainActivity.getContext().getString(R.string.confirmation_add_basket_fr));
+                    else
+                        Tools.notifBar(v, MainActivity.getContext().getString(R.string.confirmation_add_basket_en));
+                }
             }
         });
 
         return convertView;
     }
 
-    private class ItemViewHolder {
+    private class ViewHolder {
         public TextView name, price;
         public Button action;
         public ImageView picture;

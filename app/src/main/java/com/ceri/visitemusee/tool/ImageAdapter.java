@@ -1,7 +1,6 @@
 package com.ceri.visitemusee.tool;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.ceri.visitemusee.R;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
 
@@ -18,11 +18,11 @@ import java.util.ArrayList;
 public class ImageAdapter extends BaseAdapter {
 
     private Context context;
-    private final String[] itemGridValues;
-    private ArrayList<Bitmap> myBitmaps;
+    private final int itemGridValues;
+    private ArrayList<String> myBitmaps;
 
     // image adapter for gridview
-    public ImageAdapter(Context context, String[] itemGridValues, ArrayList<Bitmap> x) {
+    public ImageAdapter(Context context, int itemGridValues, ArrayList<String> x) {
         this.context = context;
         this.itemGridValues = itemGridValues;
         this.myBitmaps = x;
@@ -37,7 +37,9 @@ public class ImageAdapter extends BaseAdapter {
             gridView = inflater.inflate(R.layout.grid_item_image, null);
             //Set image based on selected image
             ImageView imageView = (ImageView) gridView.findViewById(R.id.grid_item_image);
-            imageView.setImageBitmap(this.myBitmaps.get(position));
+            // get image loader (cache images - no lag)
+            ImageLoader imageLoader = ImageLoader.getInstance();
+            imageLoader.displayImage(this.myBitmaps.get(position), imageView);
         }
         else {
             gridView = convertView;
@@ -48,9 +50,7 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        if(itemGridValues == null)
-            return 0;
-        return itemGridValues.length;
+        return itemGridValues;
     }
 
     @Override

@@ -9,11 +9,12 @@ import java.util.ArrayList;
  */
 public class InterestPoint implements Serializable {
 	private String presentation_FR, presentation_EN, name_FR, name_EN, author, type_FR, type_EN;
-	private ArrayList<File> photos, _360, videos;
+	private ArrayList<String> photos, _360;
+	private ArrayList<File> videos;
 	private double coordX, coordY;
 
 	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type_FR, String type_EN,
-						 double coordX, double coordY, ArrayList<File> photos, ArrayList<File> _360, ArrayList<File> videos) {
+						 double coordX, double coordY, ArrayList<String> photos, ArrayList<String> _360, ArrayList<File> videos) {
 		this.name_FR = name_FR;
 		this.name_EN = name_EN;
 		this.presentation_FR = presentation_FR;
@@ -84,19 +85,19 @@ public class InterestPoint implements Serializable {
 		this.name_EN = name_EN;
 	}
 
-	public ArrayList<File> getPhotos() {
+	public ArrayList<String> getPhotos() {
 		return photos;
 	}
 
-	public void setPhotos(ArrayList<File> photos) {
+	public void setPhotos(ArrayList<String> photos) {
 		this.photos = photos;
 	}
 
-	public ArrayList<File> get_360() {
+	public ArrayList<String> get_360() {
 		return _360;
 	}
 
-	public void set_360(ArrayList<File> _360) {
+	public void set_360(ArrayList<String> _360) {
 		this._360 = _360;
 	}
 

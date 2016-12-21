@@ -2,9 +2,7 @@ package com.ceri.visitemusee.interestpoint;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.media.MediaMetadataRetriever;
-import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -24,10 +22,11 @@ import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ImageAdapter;
 import com.ceri.visitemusee.tool.ScreenParam;
+import com.ceri.visitemusee.tool.VideoThumbnailsAdapter;
 import com.ceri.visitemusee.tool.WrappingGridView;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.Bind;
@@ -94,18 +93,16 @@ public class InterestPointActivity extends AppCompatActivity {
         param.paramSetSupportActionBar(m_Toolbar, this);
         m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
 
-        // TODO: créer d'un coup le bitmap au lieu de le refaire à chaque fois
         //Getting the interest point
         IP = (InterestPoint) getIntent().getSerializableExtra("InterestPoint");
 
-        if(IP.getPhotos() != null)
-            if(!IP.getPhotos().isEmpty())
-                try {
-                    interestPointPicture.setImageBitmap(BitmapFactory.decodeStream(
-                            MainActivity.getContext().getResources().getAssets().open(IP.getPhotos().get(0).getPath())));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+        // load header picture
+        if(IP.getPhotos() != null) {
+            if (!IP.getPhotos().isEmpty()) {
+                ImageLoader imageLoader = ImageLoader.getInstance();
+                imageLoader.displayImage(IP.getPhotos().get(0), interestPointPicture);
+            }
+        }
 
         // set en or fr text
         if (AppParams.getInstance().getM_french()) {
@@ -131,28 +128,8 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPointPhotoTitle.setVisibility(View.GONE);
         }
         else {
-            myBitmap = new ArrayList<>();
-            // Load all the file from the arrayList then convert them into bitmap
-            pos = new String[IP.getPhotos().size()];
-            for(int i=0; i<IP.getPhotos().size(); i++){
-                pos[i]="media"+i;
-                this.tmpFile = IP.getPhotos().get(i);
-                if(tmpFile != null){
-                    //Decode the file into a bitmap
-                    try {
-                        tmpBitmap = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(tmpFile.getPath()));
-                        tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    //Put the created bitmap into an array to be pass to the ImageAdapter
-                    if(tmpBitmap != null){
-                        this.myBitmap.add(tmpBitmap);
-                    }
-                }
-            }
             //Inflate the grid view with the photos
-            gridViewPhoto.setAdapter(new ImageAdapter(this, pos, myBitmap)); //Pass the Bitmap array
+            gridViewPhoto.setAdapter(new ImageAdapter(this, IP.getPhotos().size(), IP.getPhotos())); //Pass the Bitmap string array
 
             // set click listener to open full image
             gridViewPhoto.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -171,27 +148,8 @@ public class InterestPointActivity extends AppCompatActivity {
             interestPoint360Title.setVisibility(View.GONE);
         }
         else {
-            myBitmap = new ArrayList<>();
-            // Load all the file from the arrayList then convert them into bitmap
-            pos = new String[IP.get_360().size()];
-            for(int i=0; i<IP.get_360().size(); i++){
-                pos[i]="media"+i;
-                this.tmpFile = IP.get_360().get(i);
-                if(tmpFile != null){
-                    try {
-                        tmpBitmap = BitmapFactory.decodeStream(MainActivity.getContext().getResources().getAssets().open(tmpFile.getPath()));
-                        tmpBitmap = ThumbnailUtils.extractThumbnail(tmpBitmap, AppParams.THUMB_SIZE, AppParams.THUMB_SIZE);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    //Put the created bitmap into an array to be pass to the ImageAdapter
-                    if(tmpBitmap != null){
-                        this.myBitmap.add(tmpBitmap);
-                    }
-                }
-            }
             //Inflate the grid view with the photos
-            gridView360.setAdapter(new ImageAdapter(this, pos, myBitmap)); //Pass the Bitmap array
+            gridView360.setAdapter(new ImageAdapter(this, IP.get_360().size(), IP.get_360())); //Pass the Bitmap string array
 
             // set click listener to open full image
             gridView360.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -219,7 +177,7 @@ public class InterestPointActivity extends AppCompatActivity {
                 if(tmpFile != null){
                     //Decode the file into a bitmap
                     Uri myVideoUri = Uri.parse(FileManager.RESSOURCES + MainActivity.getContext().getPackageName() +
-                            "/" + FileManager.RAW + tmpFile.getPath());
+                            "/" + FileManager.RAW + IP.getVideos().get(i));
                     MediaMetadataRetriever retriever = new MediaMetadataRetriever();
                     retriever.setDataSource(this, myVideoUri);
                     tmpBitmap = retriever.getFrameAtTime(10, MediaMetadataRetriever.OPTION_PREVIOUS_SYNC);
@@ -230,7 +188,7 @@ public class InterestPointActivity extends AppCompatActivity {
                 }
             }
             //Inflate the grid view with the photos
-            gridViewVideo.setAdapter(new ImageAdapter(this, pos, myBitmap)); //Pass the Bitmap array
+            gridViewVideo.setAdapter(new VideoThumbnailsAdapter(this, myBitmap.size(), myBitmap)); //Pass the Bitmap array
 
             // set click listener to open full video
             gridViewVideo.setOnItemClickListener(new AdapterView.OnItemClickListener() {

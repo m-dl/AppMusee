@@ -13,7 +13,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -34,10 +33,10 @@ public class Basket {
 
     public Basket() {
         this.items = new ArrayList<>();
-        items.add(new BasketItem(111, "rasse", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img1.jpg")));
-        items.add(new BasketItem(4512, "rasse2", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img3.jpg")));
-        items.add(new BasketItem(5, "rasse3", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img1.jpg")));
-        items.add(new BasketItem(91, "rasse5", "rasse en", "pres fr", "pres en", "type", new File(FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img2.jpg")));
+        items.add(new BasketItem(111, "rasse", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "5.jpg"));
+        items.add(new BasketItem(4512, "rasse2", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img3.jpg"));
+        items.add(new BasketItem(5, "rasse3", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img1.jpg"));
+        items.add(new BasketItem(91, "rasse5", "rasse en", "pres fr", "pres en", "type", FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + "img2.jpg"));
     }
 
     public ArrayList<BasketItem> getItems() {
@@ -71,10 +70,10 @@ public class Basket {
         if(this.items.size() > 1)
             plural = "s - ";
         if(AppParams.getInstance().getM_french())
-            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.object_fr) + plural +
+            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.article_fr) + plural +
                     Basket.getInstance().getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
         else
-            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.object_en) + plural +
+            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.article_en) + plural +
                     Basket.getInstance().getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
     }
 

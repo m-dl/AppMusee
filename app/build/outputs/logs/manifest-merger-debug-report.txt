@@ -136,8 +136,8 @@ INJECTED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml 
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:design:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [org.altbeacon:android-beacon-library:2.9.1] C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.1\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from C:\Users\Maxime\Desktop\AppMusee\app\src\main\AndroidManifest.xml
