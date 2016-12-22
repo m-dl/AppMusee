@@ -1,8 +1,6 @@
 package com.ceri.visitemusee.basket;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,15 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ScreenParam;
 import com.ceri.visitemusee.tool.Tools;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -37,16 +35,20 @@ public class BasketItemActivity extends AppCompatActivity {
     @Bind(R.id.toolbar)
     Toolbar m_Toolbar;
 
-    public static TextView validateBasketText;
+    @Bind(R.id.item_picture)
+    ImageView itemPicture;
 
-    @Bind(R.id.validatebasketbutton)
-    Button validateBasketButton;
+    @Bind(R.id.item_title)
+    TextView itemTitle;
 
-    @Bind(R.id.emptybasketbutton)
-    Button emptyBasketButton;
+    @Bind(R.id.item_price)
+    TextView itemPrice;
 
-    @Bind(R.id.item_list)
-    ListView itemList;
+    @Bind(R.id.item_content)
+    TextView itemContent;
+
+    @Bind(R.id.addbasket)
+    Button addBasket;
 
     private ActionBarDrawerToggle m_DrawerToggle;
     private ScreenParam param;
@@ -55,52 +57,50 @@ public class BasketItemActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initObjects();
-
-        // set text depending language
-        validateBasketText.setText(Basket.getInstance().getBasketObjectsText());
-        validateBasketButton.setText(Basket.getInstance().getBasketValidateButtonText());
-        emptyBasketButton.setText(Basket.getInstance().getBasketEmptyButtonText());
-
-        // display basket items
-        Tools.displayItemList(itemList, Basket.getInstance().getItems(), false);
-
-        validateBasketButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.m_Activity, GenerateBasketActivity.class);
-                ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
-            }
-        });
-
-        emptyBasketButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Basket.getInstance().emptyBasket();
-                validateBasketText.setText(Basket.getInstance().getBasketObjectsText());
-                Tools.displayItemList(itemList, Basket.getInstance().getItems(), false);
-                if(AppParams.getInstance().getM_french())
-                    Tools.notifBar(v, getString(R.string.confirmation_empty_basket_fr));
-                else
-                    Tools.notifBar(v, getString(R.string.confirmation_empty_basket_en));
-            }
-        });
     }
 
     // initiate the objects and design
     private void initObjects() {
-        setContentView(R.layout.activity_basket);
+        setContentView(R.layout.activity_basket_item);
         ButterKnife.bind(this);
 
         //Getting the basket item
         basketItem = (BasketItem) getIntent().getSerializableExtra("Item");
 
-        validateBasketText = (TextView) findViewById(R.id.validatebaskettext);
         param = new ScreenParam();
         param.paramWindowFullScreen(getWindow());
         param.paramSetSupportActionBar(m_Toolbar, this);
         m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
-        if(AppParams.getInstance().getM_french())
+        if(AppParams.getInstance().getM_french()) {
+            // set text depending language
             renameActionBar(basketItem.getName_FR());
-        else
+            itemTitle.setText(basketItem.getName_FR());
+            itemContent.setText(basketItem.getName_FR());
+            addBasket.setText(MainActivity.getContext().getString(R.string.add_to_basket_fr));
+        }
+        else {
+            // set text depending language
+            itemTitle.setText(basketItem.getName_EN());
+            itemContent.setText(basketItem.getName_EN());
             renameActionBar(basketItem.getName_EN());
+            addBasket.setText(MainActivity.getContext().getString(R.string.add_to_basket_en));
+        }
+
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        imageLoader.displayImage(basketItem.getPicture(), itemPicture);
+        itemPrice.setText(basketItem.getPrice() + getString(R.string.euro));
+
+        addBasket.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Basket.getInstance().addItem(basketItem);
+                if(AppParams.getInstance().getM_french()) {
+                    Tools.notifBar(v, getString(R.string.confirmation_add_basket_fr));
+                }
+                else {
+                    Tools.notifBar(v, getString(R.string.confirmation_add_basket_en));
+                }
+            }
+        });
     }
 
     // set action bar text

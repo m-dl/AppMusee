@@ -12,8 +12,8 @@ public class PlayerActivity$$ViewBinder<T extends com.ceri.visitemusee.interestp
     target.m_DrawerLayout = finder.castView(view, 2131558506, "field 'm_DrawerLayout'");
     view = finder.findRequiredView(source, 2131558509, "field 'm_Toolbar'");
     target.m_Toolbar = finder.castView(view, 2131558509, "field 'm_Toolbar'");
-    view = finder.findRequiredView(source, 2131558524, "field 'pre'");
-    target.pre = finder.castView(view, 2131558524, "field 'pre'");
+    view = finder.findRequiredView(source, 2131558531, "field 'pre'");
+    target.pre = finder.castView(view, 2131558531, "field 'pre'");
   }
 
   @Override public void unbind(T target) {

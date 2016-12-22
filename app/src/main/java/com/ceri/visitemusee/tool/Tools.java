@@ -1,6 +1,5 @@
 package com.ceri.visitemusee.tool;
 
-import android.content.ClipData;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,7 +7,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.basket.Basket;
 import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;

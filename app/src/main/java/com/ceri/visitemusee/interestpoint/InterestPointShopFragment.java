@@ -9,13 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.basket.Basket;
 import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.basket.BasketItemActivity;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
@@ -25,7 +23,6 @@ import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.Tools;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by Maxime
