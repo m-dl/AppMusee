@@ -30,7 +30,7 @@
             android:id="@+id/IP_tabs"
             android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="35dp"
             app:tabMaxWidth="0dp"
             app:tabGravity="fill"
             app:tabMode="fixed"
@@ -44,7 +44,7 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
             android:layout_marginTop="?attr/actionBarSize"
-            android:paddingTop="?attr/actionBarSize"
+            android:paddingTop="35dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </android.support.design.widget.CoordinatorLayout>

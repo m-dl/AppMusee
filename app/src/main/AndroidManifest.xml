@@ -54,6 +54,9 @@
         <activity
             android:name=".basket.GenerateBasketActivity"
             android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".basket.BasketItemActivity"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>

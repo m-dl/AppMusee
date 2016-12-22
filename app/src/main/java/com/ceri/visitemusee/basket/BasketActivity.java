@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -57,6 +58,14 @@ public class BasketActivity extends AppCompatActivity {
         validateBasketText.setText(Basket.getInstance().getBasketObjectsText());
         validateBasketButton.setText(Basket.getInstance().getBasketValidateButtonText());
         emptyBasketButton.setText(Basket.getInstance().getBasketEmptyButtonText());
+
+        itemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MainActivity.m_Activity, BasketItemActivity.class);
+                intent.putExtra("Item", (BasketItem) itemList.getItemAtPosition(position));
+                ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
+            }
+        });
 
         // display basket items
         Tools.displayItemList(itemList, Basket.getInstance().getItems(), false);

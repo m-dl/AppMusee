@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item_list"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_width="match_parent"
-    android:layout_height="0dip"
-    android:layout_weight="1"
-    android:layout_gravity="start"
-    android:choiceMode="singleChoice"
-    android:divider="@color/colorPrimaryDark"
-    android:dividerHeight="1dp"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_gravity="top"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:text="@string/article_fr"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shoptabtext"
+            android:textStyle="normal|bold"
+            android:layout_marginRight="25dp"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/sortitems"
+            android:background="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:entries="@array/price_sort_fr"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <include layout="@layout/separator_view" />
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1dp" />
+</LinearLayout>

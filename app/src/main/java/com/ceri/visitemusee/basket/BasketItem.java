@@ -1,6 +1,8 @@
 package com.ceri.visitemusee.basket;
 
 import java.io.Serializable;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Created by Maxime

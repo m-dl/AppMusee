@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="price_sort_en">
+        <item name="default_sort_en">Sort by default</item>
+        <item name="asc_sort_en">Ascending price</item>
+        <item name="desc_sort_en">Descending price</item>
+    </string-array>
+    <string-array name="price_sort_fr">
+        <item name="default_sort_fr">Tri par défaut</item>
+        <item name="asc_sort_fr">Prix croissant</item>
+        <item name="desc_sort_fr">Prix décroissant</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -303,6 +313,7 @@
     <string name="confirmation_empty_basket_fr">Votre panier a bien été vidé.</string>
     <string name="confirmation_remove_basket_en">The item has been removed from your basket.</string>
     <string name="confirmation_remove_basket_fr">L\'article a bien été retiré de votre panier.</string>
+    <string name="default_sort_fr">Tri par défaut</string>
     <string name="email">contact@modernmuseum.com</string>
     <string name="empty_basket_en">Empty</string>
     <string name="empty_basket_fr">Vider</string>
@@ -1699,5 +1710,10 @@
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
         <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
         <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 </resources>

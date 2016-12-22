@@ -65,23 +65,11 @@ public class Basket {
         if(this.items.size() > 1)
             plural = "s - ";
         if(AppParams.getInstance().getM_french())
-            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.article_fr) + plural +
-                    Basket.getInstance().getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
+            return getBasketSize() + " " + MainActivity.resources.getString(R.string.article_fr) + plural +
+                    getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
         else
-            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.article_en) + plural +
-                    Basket.getInstance().getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
-    }
-
-    public String getBasketItemsText() {
-        String plural = " - ";
-        if(this.items.size() > 1)
-            plural = "s - ";
-        if(AppParams.getInstance().getM_french())
-            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.article_fr) + plural +
-                    Basket.getInstance().getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
-        else
-            return Basket.getInstance().getBasketSize() + " " + MainActivity.resources.getString(R.string.article_en) + plural +
-                    Basket.getInstance().getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
+            return getBasketSize() + " " + MainActivity.resources.getString(R.string.article_en) + plural +
+                    getBasketAmmount() + MainActivity.resources.getString(R.string.euro);
     }
 
     public String getBasketValidateButtonText() {

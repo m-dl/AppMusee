@@ -45,7 +45,7 @@ public class GenerateBasketActivity extends AppCompatActivity {
         qrcode.setImageBitmap(Basket.getInstance().generateQRCode());
 
         // set text depending language
-        basketValueText.setText(Basket.getInstance().getBasketItemsText());
+        basketValueText.setText(Basket.getInstance().getBasketObjectsText());
         generateBasketText.setText(Basket.getInstance().getQRCodeBasketText());
     }
 

@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.ceri.visitemusee.R;
+import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 import com.ceri.visitemusee.tool.ScreenParam;
@@ -27,6 +28,8 @@ import butterknife.ButterKnife;
  */
 
 public class BasketItemActivity extends AppCompatActivity {
+
+    private BasketItem basketItem;
 
     @Bind(R.id.drawer_layout)
     DrawerLayout m_DrawerLayout;
@@ -85,15 +88,19 @@ public class BasketItemActivity extends AppCompatActivity {
     private void initObjects() {
         setContentView(R.layout.activity_basket);
         ButterKnife.bind(this);
+
+        //Getting the basket item
+        basketItem = (BasketItem) getIntent().getSerializableExtra("Item");
+
         validateBasketText = (TextView) findViewById(R.id.validatebaskettext);
         param = new ScreenParam();
         param.paramWindowFullScreen(getWindow());
         param.paramSetSupportActionBar(m_Toolbar, this);
         m_DrawerToggle = new ActionBarDrawerToggle(this, m_DrawerLayout, 0, 0);
         if(AppParams.getInstance().getM_french())
-            renameActionBar(getString(R.string.action_section_3));
+            renameActionBar(basketItem.getName_FR());
         else
-            renameActionBar(getString(R.string.action_section_en_3));
+            renameActionBar(basketItem.getName_EN());
     }
 
     // set action bar text

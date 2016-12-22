@@ -64,4 +64,17 @@
     <string name="pictures360">360° Pictures</string>
     <string name="videos">Vidéos</string>
     <string name="videosen">Videos</string>
+
+    <string name="default_sort_fr">Tri par défaut</string>
+    <string-array name="price_sort_fr">
+        <item name="default_sort_fr">Tri par défaut</item>
+        <item name="asc_sort_fr">Prix croissant</item>
+        <item name="desc_sort_fr">Prix décroissant</item>
+    </string-array>
+
+    <string-array name="price_sort_en">
+        <item name="default_sort_en">Sort by default</item>
+        <item name="asc_sort_en">Ascending price</item>
+        <item name="desc_sort_en">Descending price</item>
+    </string-array>
 </resources>
