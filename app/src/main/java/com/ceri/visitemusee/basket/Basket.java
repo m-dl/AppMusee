@@ -3,7 +3,6 @@ package com.ceri.visitemusee.basket;
 import android.graphics.Bitmap;
 
 import com.ceri.visitemusee.R;
-import com.ceri.visitemusee.files.FileManager;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 

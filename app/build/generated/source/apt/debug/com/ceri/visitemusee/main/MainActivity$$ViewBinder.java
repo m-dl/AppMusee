@@ -10,8 +10,8 @@ public class MainActivity$$ViewBinder<T extends com.ceri.visitemusee.main.MainAc
     View view;
     view = finder.findRequiredView(source, 2131492970, "field 'm_DrawerLayout'");
     target.m_DrawerLayout = finder.castView(view, 2131492970, "field 'm_DrawerLayout'");
-    view = finder.findRequiredView(source, 2131493012, "field 'm_NavigationView'");
-    target.m_NavigationView = finder.castView(view, 2131493012, "field 'm_NavigationView'");
+    view = finder.findRequiredView(source, 2131493014, "field 'm_NavigationView'");
+    target.m_NavigationView = finder.castView(view, 2131493014, "field 'm_NavigationView'");
     view = finder.findRequiredView(source, 2131492973, "field 'm_Toolbar'");
     target.m_Toolbar = finder.castView(view, 2131492973, "field 'm_Toolbar'");
   }

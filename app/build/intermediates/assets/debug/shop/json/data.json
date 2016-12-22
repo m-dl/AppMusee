@@ -1,0 +1,52 @@
+{
+  "shop": {
+    "item": [
+      {
+        "title_fr": "
+		article un
+	",
+        "title_en": "
+		First item
+	",
+        "presentation_fr": "
+		presentation francaise
+	",
+        "presentation_en": "
+		english presentation\n\n\nend of the presentation
+	",
+        "picture": "
+		img1.png
+	",
+        "price": "
+		26
+	",
+        "type": "
+		tableau
+	"
+      },
+      {
+        "title_fr": "
+		article deux
+	",
+        "title_en": "
+		Second item
+	",
+        "presentation_fr": "
+		presentation francaise n.2
+	",
+        "presentation_en": "
+		english presentation bis
+	",
+        "picture": "
+		img4.png
+	",
+        "price": "
+		502
+	",
+        "type": "
+		statue
+	"
+      }
+    ]
+  }
+}

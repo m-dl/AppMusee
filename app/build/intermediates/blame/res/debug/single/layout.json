@@ -208,6 +208,10 @@
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ip_page.xml",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\fragment_ip_page.xml"
+    },
+    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },

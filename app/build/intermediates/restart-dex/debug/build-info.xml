@@ -5,52 +5,39 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="29655792466235"
+    timestamp="55558559907781"
     token="-955732868572410530"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1361" />
+        duration="796" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="90" />
+        duration="121" />
     <task
         name="verifier"
-        duration="3" />
+        duration="37" />
 
     <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+        location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="28443655984340"
+        timestamp="50881925001037"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Maxime\Desktop\AppMusee\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="29298163746272"
+        timestamp="55558559907781"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="29655792466235"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            location="C:\Users\Maxime\Desktop\AppMusee\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />
     </build>
 
