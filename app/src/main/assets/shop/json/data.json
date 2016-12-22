@@ -12,10 +12,10 @@
 		presentation francaise
 	",
         "presentation_en": "
-		english presentation\n\n\nend of the presentation
+		english presentation\\n\\n\\nend of the presentation
 	",
         "picture": "
-		img1.png
+		img1.jpg
 	",
         "price": "
 		26
@@ -38,7 +38,99 @@
 		english presentation bis
 	",
         "picture": "
-		img4.png
+		4.jpg
+	",
+        "price": "
+		502
+	",
+        "type": "
+		statue
+	"
+      },
+      {
+        "title_fr": "
+		article deux
+	",
+        "title_en": "
+		Second item
+	",
+        "presentation_fr": "
+		presentation francaise n.2
+	",
+        "presentation_en": "
+		english presentation bis
+	",
+        "picture": "
+		4.jpg
+	",
+        "price": "
+		502
+	",
+        "type": "
+		statue
+	"
+      },
+      {
+        "title_fr": "
+		article deux
+	",
+        "title_en": "
+		Second item
+	",
+        "presentation_fr": "
+		presentation francaise n.2
+	",
+        "presentation_en": "
+		english presentation bis
+	",
+        "picture": "
+		4.jpg
+	",
+        "price": "
+		502
+	",
+        "type": "
+		statue
+	"
+      },
+      {
+        "title_fr": "
+		article deux
+	",
+        "title_en": "
+		Second item
+	",
+        "presentation_fr": "
+		presentation francaise n.2
+	",
+        "presentation_en": "
+		english presentation bis
+	",
+        "picture": "
+		4.jpg
+	",
+        "price": "
+		502
+	",
+        "type": "
+		statue
+	"
+      },
+      {
+        "title_fr": "
+		article deux
+	",
+        "title_en": "
+		Second item
+	",
+        "presentation_fr": "
+		presentation francaise n.2
+	",
+        "presentation_en": "
+		english presentation bis
+	",
+        "picture": "
+		4.jpg
 	",
         "price": "
 		502

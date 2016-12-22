@@ -18,7 +18,7 @@ public class BasketItem implements Serializable {
         this.presentation_FR = presentation_FR.trim();
         this.presentation_EN = presentation_EN.trim();
         this.type = type.trim();
-        this.picture =picture;
+        this.picture = picture.trim();
     }
 
     public double getPrice() {

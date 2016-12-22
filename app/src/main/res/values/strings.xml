@@ -17,6 +17,8 @@
     <string name="generate_basket_message_en">Please, show this screen to the shop seller to confirm your order.\nThank you, see you soon !</string>
     <string name="article_fr">article</string>
     <string name="article_en">item</string>
+    <string name="shop_fr">Boutique</string>
+    <string name="shop_en">Shop</string>
     <string name="validate_basket_fr">Valider ma commande</string>
     <string name="validate_basket_en">Confirm my order</string>
     <string name="empty_basket_fr">Vider</string>
@@ -54,6 +56,8 @@
 
     <string name="memory_access_error">Je ne peux accèder à la mémoire</string>
 
+    <string name="info_fr">Détails</string>
+    <string name="info_en">About</string>
     <string name="images">Images</string>
     <string name="pictures">Pictures</string>
     <string name="images360">Images 360°</string>

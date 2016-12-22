@@ -75,19 +75,19 @@ public class FileTools {
 				JSONObject tmpobject = reader.getJSONObject(FileManager.PHOTOS);
 				JSONArray tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					pictures.add(FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + tmpjArray.getString(j));
+					pictures.add(FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager.PICTURES_FOLDER + tmpjArray.getString(j).replaceAll("\\s+",""));
 				}
 
 				tmpobject = reader.getJSONObject(FileManager._360);
 				tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					p360.add(FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager._360_FOLDER + tmpjArray.getString(j));
+					p360.add(FileManager.ASSETS + FileManager.MUSEUM_FOLDER + FileManager._360_FOLDER + tmpjArray.getString(j).replaceAll("\\s+",""));
 				}
 
 				tmpobject = reader.getJSONObject(FileManager.VIDEOS);
 				tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
 				for (int j = 0; j < tmpjArray.length(); j++) {
-					videos.add(new File(removeExtension(tmpjArray.getString(j))));
+					videos.add(new File(removeExtension(tmpjArray.getString(j).replaceAll("\\s+",""))));
 				}
 
 				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type_fr, type_en, coordx, coordy, pictures, p360, videos));
@@ -125,7 +125,7 @@ public class FileTools {
 				presentation_en = reader.getString(FileManager.PRESENTATION_EN);
 				price = Double.parseDouble(reader.getString(FileManager.PRICE));
 				type = reader.getString(FileManager.TYPE);
-				picture = FileManager.ASSETS + FileManager.SHOP_FOLDER + FileManager.PICTURES_FOLDER + reader.getString(FileManager.PICTURE);
+				picture = FileManager.ASSETS + FileManager.SHOP_FOLDER + FileManager.PICTURES_FOLDER + reader.getString(FileManager.PICTURE).replaceAll("\\s+","");
 
 				BIList.add(new BasketItem(price, name_fr, name_en, presentation_fr, presentation_en, type, picture));
 			}

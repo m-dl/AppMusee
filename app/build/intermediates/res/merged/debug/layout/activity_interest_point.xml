@@ -30,18 +30,22 @@
             android:id="@+id/IP_tabs"
             android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="?attr/actionBarSize"
             app:tabMaxWidth="0dp"
             app:tabGravity="fill"
             app:tabMode="fixed"
+            app:tabBackground="@color/colorPrimaryDark"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white"
             android:layout_below="@+id/toolbar"
-            android:elevation="6dp"
-            android:minHeight="?attr/actionBarSize"/>
+            android:elevation="6dp"/>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:paddingTop="?attr/actionBarSize"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@id/IP_tabs"/>
+            android:layout_height="match_parent" />
     </android.support.design.widget.CoordinatorLayout>
 </android.support.v4.widget.DrawerLayout>

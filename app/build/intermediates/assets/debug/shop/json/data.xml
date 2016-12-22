@@ -14,7 +14,7 @@
 		english presentation\n\n\nend of the presentation
 	</presentation_en>
 	<picture>
-		img1.png
+		img1.jpg
 	</picture>
 	<price>
 		26
@@ -37,7 +37,99 @@
 		english presentation bis
 	</presentation_en>
 	<picture>
-		img4.png
+		4.jpg
+	</picture>
+	<price>
+		502
+	</price>
+	<type>
+		statue
+	</type>
+</item>
+<item>
+	<title_fr>
+		article deux
+	</title_fr>
+	<title_en>
+		Second item
+	</title_en>
+	<presentation_fr>
+		presentation francaise n.2
+	</presentation_fr>
+	<presentation_en>
+		english presentation bis
+	</presentation_en>
+	<picture>
+		4.jpg
+	</picture>
+	<price>
+		502
+	</price>
+	<type>
+		statue
+	</type>
+</item>
+<item>
+	<title_fr>
+		article deux
+	</title_fr>
+	<title_en>
+		Second item
+	</title_en>
+	<presentation_fr>
+		presentation francaise n.2
+	</presentation_fr>
+	<presentation_en>
+		english presentation bis
+	</presentation_en>
+	<picture>
+		4.jpg
+	</picture>
+	<price>
+		502
+	</price>
+	<type>
+		statue
+	</type>
+</item>
+<item>
+	<title_fr>
+		article deux
+	</title_fr>
+	<title_en>
+		Second item
+	</title_en>
+	<presentation_fr>
+		presentation francaise n.2
+	</presentation_fr>
+	<presentation_en>
+		english presentation bis
+	</presentation_en>
+	<picture>
+		4.jpg
+	</picture>
+	<price>
+		502
+	</price>
+	<type>
+		statue
+	</type>
+</item>
+<item>
+	<title_fr>
+		article deux
+	</title_fr>
+	<title_en>
+		Second item
+	</title_en>
+	<presentation_fr>
+		presentation francaise n.2
+	</presentation_fr>
+	<presentation_en>
+		english presentation bis
+	</presentation_en>
+	<picture>
+		4.jpg
 	</picture>
 	<price>
 		502

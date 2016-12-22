@@ -71,8 +71,7 @@ public class Tools {
             totalItemsHeight += item.getMeasuredHeight();
         }
         // Get total height of all item dividers.
-        int totalDividersHeight = ItemListView.getDividerHeight() *
-                (numberOfItems - 1);
+        int totalDividersHeight = ItemListView.getDividerHeight() * (numberOfItems - 1);
 
         // Set list height.
         ViewGroup.LayoutParams params = ItemListView.getLayoutParams();

@@ -1,6 +1,7 @@
 package com.ceri.visitemusee.tool;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,15 +63,19 @@ public class ItemAdapter extends ArrayAdapter<BasketItem> {
             viewHolder.name.setText(basketItem.getName_FR());
             if(!action)
                 viewHolder.action.setText(getContext().getString(R.string.remove_from_basket_fr));
-            else
+            else {
                 viewHolder.action.setText(getContext().getString(R.string.add_to_basket_fr));
+                viewHolder.action.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
+            }
         }
         else {
             viewHolder.name.setText(basketItem.getName_EN());
             if(!action)
                 viewHolder.action.setText(getContext().getString(R.string.remove_from_basket_en));
-            else
+            else {
                 viewHolder.action.setText(getContext().getString(R.string.add_to_basket_en));
+                viewHolder.action.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
+            }
         }
 
         viewHolder.action.setOnClickListener(new View.OnClickListener() {

@@ -14,14 +14,29 @@
 		english presentation\n\n\nend of the presentation
 	</presentation_en>
 	<pictures>
-		<lien>img1.png</lien>
-		<lien>img2.png</lien>
-		<lien>img3.png</lien>
+		<lien>img1.jpg</lien>
+		<lien>img2.jpg</lien>
+		<lien>img3.jpg</lien>
+		<lien>img1.jpg</lien>
+		<lien>img2.jpg</lien>
+		<lien>img3.jpg</lien>
+		<lien>img1.jpg</lien>
+		<lien>img2.jpg</lien>
+		<lien>img3.jpg</lien>
+		<lien>img1.jpg</lien>
+		<lien>img2.jpg</lien>
+		<lien>img3.jpg</lien>
+		<lien>img1.jpg</lien>
+		<lien>img2.jpg</lien>
+		<lien>img3.jpg</lien>
+		<lien>img1.jpg</lien>
+		<lien>img2.jpg</lien>
+		<lien>img3.jpg</lien>
 	</pictures>
 	<p360>
-		<lien>360_1.png</lien>
-		<lien>360_2.png</lien>
-		<lien>360_3.png</lien>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
 	</p360>
 	<videos>
 		<lien>vid1.mp4</lien>
@@ -58,19 +73,19 @@
 		english presentation bis
 	</presentation_en>
 	<pictures>
-		<lien>img4.png</lien>
-		<lien>img5.png</lien>
-		<lien>img6.png</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
 	</pictures>
 	<p360>
-		<lien>360_4.png</lien>
-		<lien>360_5.png</lien>
-		<lien>360_6.png</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
 	</p360>
 	<videos>
-		<lien>vid4.mp4</lien>
-		<lien>vid5.mp4</lien>
-		<lien>vid6.mp4</lien>
+		<lien>vid1.mp4</lien>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
 	</videos>
 	<coordx>
 		0.12

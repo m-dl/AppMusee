@@ -311,6 +311,8 @@
     <string name="generate_basket_message_fr">Veuillez montrer cet écran au vendeur de la boutique pour valider votre commande.\nMerci à bientôt !</string>
     <string name="images">Images</string>
     <string name="images360">Images 360°</string>
+    <string name="info_en">About</string>
+    <string name="info_fr">Détails</string>
     <string name="lancer">Lancer</string>
     <string name="memory_access_error">Je ne peux accèder à la mémoire</string>
     <string name="new_room_default">Vous venez d\'entrer dans une nouvelle pièce du musée !</string>
@@ -326,6 +328,8 @@
     <string name="remove_from_basket_fr">Retirer du panier</string>
     <string name="set_english_app">Set the application in English?</string>
     <string name="set_english_app_title">The application is currently in French</string>
+    <string name="shop_en">Shop</string>
+    <string name="shop_fr">Boutique</string>
     <string name="start">Start</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="validate_basket_en">Confirm my order</string>

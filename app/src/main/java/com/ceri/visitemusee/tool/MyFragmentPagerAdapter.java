@@ -5,12 +5,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.interestpoint.InterestPoint360Fragment;
 import com.ceri.visitemusee.interestpoint.InterestPointFragment;
 import com.ceri.visitemusee.interestpoint.InterestPointPicturesFragment;
 import com.ceri.visitemusee.interestpoint.InterestPointShopFragment;
 import com.ceri.visitemusee.interestpoint.InterestPointVideosFragment;
+import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 
 /**
@@ -18,8 +20,12 @@ import com.ceri.visitemusee.params.AppParams;
  */
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 5;
-    private String tabTitles_fr[] = new String[] { "Détails", "Images", "360°", "Vidéos", "Boutique" };
-    private String tabTitles_en[] = new String[] { "About", "Pictures", "360°", "Videos", "Shop" };
+    private String tabTitles_fr[] = new String[] { MainActivity.getContext().getString(R.string.info_fr),
+            MainActivity.getContext().getString(R.string.images), MainActivity.getContext().getString(R.string.images360),
+            MainActivity.getContext().getString(R.string.videos), MainActivity.getContext().getString(R.string.shop_fr)};
+    private String tabTitles_en[] = new String[] { MainActivity.getContext().getString(R.string.info_en),
+            MainActivity.getContext().getString(R.string.pictures), MainActivity.getContext().getString(R.string.pictures360),
+            MainActivity.getContext().getString(R.string.videosen), MainActivity.getContext().getString(R.string.shop_en)};
     private Context context;
     private InterestPoint IP;
 
