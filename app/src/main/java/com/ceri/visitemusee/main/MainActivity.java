@@ -206,8 +206,10 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 
 	// init a visit
 	private void initVisit() {
-		Visit v = new Visit(getString(R.string.action_section_1), getString(R.string.action_section_en_1));
-		AppParams.getInstance().setCurrentVisit(v);
+		if(AppParams.getInstance().getCurrentVisit() == null) {
+			Visit v = new Visit(getString(R.string.action_section_1), getString(R.string.action_section_en_1));
+			AppParams.getInstance().setCurrentVisit(v);
+		}
 		if(linearLayout != null)
 			linearLayout.removeAllViewsInLayout();
 		initMap(Tools.MAP_ONE, AppParams.getInstance().getCurrentVisit().getIP());
@@ -261,14 +263,12 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 					public boolean onNavigationItemSelected(MenuItem menuItem) {
 						m_DrawerLayout.closeDrawers();
 						m_menuItem = menuItem;
-						if(!menuItem.isChecked()) {
-							new Handler().postDelayed(new Runnable() {
-								@Override
-								public void run() {
-									navigationDrawerItemSelected(m_menuItem);
-								}
-							}, 250);
-						}
+						new Handler().postDelayed(new Runnable() {
+							@Override
+							public void run() {
+								navigationDrawerItemSelected(m_menuItem);
+							}
+						}, 250);
 						return false;
 					}
 				});
@@ -333,6 +333,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 				if (beacons.size() > 0) {
 					Beacon firstBeacon = beacons.iterator().next();
 					int tmpBeaconRangeDistance = distanceToRange(firstBeacon.getDistance());
+					// if beacon distance range has changed, we entered a new room
 					if(currentBeaconRangeDistance != tmpBeaconRangeDistance) {
 						Intent intent = new Intent(MainActivity.m_Activity, NewRoomActivity.class);
 						intent.putExtra(Tools.ROOM, tmpBeaconRangeDistance);
@@ -376,6 +377,9 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 				linearLayout.removeAllViewsInLayout();
 				// rebuild the new map
 				initMap(Tools.MAP_ONE, AppParams.getInstance().getCurrentVisit().getCustomIP());
+				// change menu checked item
+				m_NavigationView.getMenu().findItem(R.id.all_visits_item).setChecked(false);
+				m_NavigationView.getMenu().findItem(R.id.custom_visits_item).setChecked(true);
 				if(AppParams.getInstance().getM_french())
 					renameActionBar(getString(R.string.action_section_2));
 				else

@@ -8,13 +8,19 @@
 		First item
 	</title_en>
 	<presentation_fr>
-		presentation francaise
+		Presentation française.
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
 	</presentation_fr>
 	<presentation_en>
-		english presentation\n\n\nend of the presentation
+		English presentation
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
+
+end of the presentation.
 	</presentation_en>
 	<picture>
-		img1.jpg
+		1.jpg
 	</picture>
 	<price>
 		26
@@ -31,13 +37,13 @@
 		Second item
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.2
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 	</presentation_fr>
 	<presentation_en>
-		english presentation bis
+		 Aenean porta neque vel semper sodales. Suspendisse eget semper nisi. Nam ac est placerat, efficitur tellus sodales, lobortis erat. Mauris sit amet risus augue. Suspendisse in mollis purus. Integer vitae mattis metus. Duis sollicitudin, orci at dictum scelerisque, odio ante pulvinar leo, a vulputate tellus dui a nisi. Sed aliquam porta eros ac elementum. 
 	</presentation_en>
 	<picture>
-		4.jpg
+		3.jpg
 	</picture>
 	<price>
 		502
@@ -48,19 +54,19 @@
 </item>
 <item>
 	<title_fr>
-		article deux
+		article trois
 	</title_fr>
 	<title_en>
-		Second item
+		Third item
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.2
+		 Aenean porta neque vel semper sodales. Suspendisse eget semper nisi. Nam ac est placerat, efficitur tellus sodales, lobortis erat. Mauris sit amet risus augue. Suspendisse in mollis purus. Integer vitae mattis metus. Duis sollicitudin, orci at dictum scelerisque, odio ante pulvinar leo, a vulputate tellus dui a nisi. Sed aliquam porta eros ac elementum. 
 	</presentation_fr>
 	<presentation_en>
-		english presentation bis
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 	</presentation_en>
 	<picture>
-		4.jpg
+		2.jpg
 	</picture>
 	<price>
 		52
@@ -71,25 +77,25 @@
 </item>
 <item>
 	<title_fr>
-		article deux
+		une pièce d'or
 	</title_fr>
 	<title_en>
-		Second item
+		a gold coin
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.2
+		C'est une pièce d'or très rare.
 	</presentation_fr>
 	<presentation_en>
-		english presentation bis
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 	</presentation_en>
 	<picture>
-		4.jpg
+		7.jpg
 	</picture>
 	<price>
-		2
+		200
 	</price>
 	<type>
-		statue
+		objet
 	</type>
 </item>
 <item>
@@ -100,10 +106,10 @@
 		Second item
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.2
+		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 	</presentation_fr>
 	<presentation_en>
-		english presentation bis
+Lorem ipsum dolor sit amet. 
 	</presentation_en>
 	<picture>
 		4.jpg
@@ -112,30 +118,122 @@
 		888
 	</price>
 	<type>
+		tableau
+	</type>
+</item>
+<item>
+	<title_fr>
+		bel article
+	</title_fr>
+	<title_en>
+		nice item
+	</title_en>
+	<presentation_fr>
+		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_fr>
+	<presentation_en>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</presentation_en>
+	<picture>
+		10.jpg
+	</picture>
+	<price>
+		20
+	</price>
+	<type>
 		statue
 	</type>
 </item>
 <item>
 	<title_fr>
-		article deux
+		une peinture verte
 	</title_fr>
 	<title_en>
-		Second item
+		a green painting
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.2
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</presentation_fr>
 	<presentation_en>
-		english presentation bis
+		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 	</presentation_en>
 	<picture>
-		4.jpg
+		9.jpg
 	</picture>
 	<price>
-		502
+		20
+	</price>
+	<type>
+		peinture
+	</type>
+</item>
+<item>
+	<title_fr>
+		casque antique
+	</title_fr>
+	<title_en>
+		old helmet
+	</title_en>
+	<presentation_fr>
+		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_fr>
+	<presentation_en>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</presentation_en>
+	<picture>
+		8.jpg
+	</picture>
+	<price>
+		100
 	</price>
 	<type>
 		statue
+	</type>
+</item>
+<item>
+	<title_fr>
+		vase japonnais
+	</title_fr>
+	<title_en>
+		japanese vase
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</presentation_en>
+	<picture>
+		6.jpg
+	</picture>
+	<price>
+		350
+	</price>
+	<type>
+		objet
+	</type>
+</item>
+<item>
+	<title_fr>
+		tableau homme moustache
+	</title_fr>
+	<title_en>
+		moustache man painting
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_en>
+	<picture>
+		5.jpg
+	</picture>
+	<price>
+		75
+	</price>
+	<type>
+		tableau
 	</type>
 </item>
 </shop>

@@ -345,7 +345,7 @@
     <string name="pictures360">360° Pictures</string>
     <string name="remove_from_basket_en">Remove from basket</string>
     <string name="remove_from_basket_fr">Retirer du panier</string>
-    <string name="rooms_en">Visit by rooms number: </string>
+    <string name="rooms_en">Visit by rooms number : </string>
     <string name="rooms_fr">Visite par numéro de salles : </string>
     <string name="set_english_app">Set the application in English?</string>
     <string name="set_english_app_title">The application is currently in French</string>

@@ -2,10 +2,10 @@
 <visit>
 <ip>
 	<title_fr>
-		IP un
+		Un tableau
 	</title_fr>
 	<title_en>
-		first IP
+		A painting
 	</title_en>
 	<presentation_fr>
 		presentation francaise
@@ -32,27 +32,17 @@ presentation francaise
 presentation francaise
 	</presentation_fr>
 	<presentation_en>
-		english presentation\n\n\nend of the presentation
+		english presentation
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
+
+end of the presentation
 	</presentation_en>
 	<pictures>
-		<lien>img1.jpg</lien>
-		<lien>img2.jpg</lien>
-		<lien>img3.jpg</lien>
-		<lien>img1.jpg</lien>
-		<lien>img2.jpg</lien>
-		<lien>img3.jpg</lien>
-		<lien>img1.jpg</lien>
-		<lien>img2.jpg</lien>
-		<lien>img3.jpg</lien>
-		<lien>img1.jpg</lien>
-		<lien>img2.jpg</lien>
-		<lien>img3.jpg</lien>
-		<lien>img1.jpg</lien>
-		<lien>img2.jpg</lien>
-		<lien>img3.jpg</lien>
-		<lien>img1.jpg</lien>
-		<lien>img2.jpg</lien>
-		<lien>img3.jpg</lien>
+		<lien>24.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
 	</pictures>
 	<p360>
 		<lien>1.jpg</lien>
@@ -60,9 +50,9 @@ presentation francaise
 		<lien>3.jpg</lien>
 	</p360>
 	<videos>
-		<lien>vid1.mp4</lien>
-		<lien>vid2.mp4</lien>
-		<lien>vid3.mp4</lien>
+		<lien>1.mp4</lien>
+		<lien>2.mp4</lien>
+		<lien>3.mp4</lien>
 	</videos>
 	<coordx>
 		0.5
@@ -91,10 +81,10 @@ presentation francaise
 		Second IP
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.2
+Fusce tempus leo lacus, ac consequat orci consectetur non. Aenean non tellus faucibus justo lacinia ultrices. Praesent porttitor nulla at posuere posuere. Vestibulum a nisl rutrum dui semper suscipit et sed ligula. Fusce ac suscipit nisl. In fermentum odio sit amet euismod semper. Etiam eu mauris quis mauris lobortis cursus. Fusce vel neque viverra leo venenatis scelerisque. Nulla porta, nulla vitae imperdiet elementum, orci nisi auctor mi, eu commodo ex urna vitae lorem. Nunc porttitor elit libero, vel varius urna tempus eu. 
 	</presentation_fr>
 	<presentation_en>
-		english presentation bis
+ Mauris aliquam pretium augue vitae porttitor. Nulla a mattis risus. Fusce interdum ante sit amet posuere lacinia. Aenean porttitor rutrum justo. Cras placerat tortor mauris, vitae tempor neque vulputate in. Morbi ut dolor luctus, luctus felis vel, interdum orci. Aenean vestibulum, libero vel finibus auctor, magna erat tincidunt massa, vitae hendrerit ligula elit id ligula. 
 	</presentation_en>
 	<pictures>
 		<lien>4.jpg</lien>
@@ -132,16 +122,286 @@ presentation francaise
 </ip>
 <ip>
 	<title_fr>
-		IP trois
+		Tableau religieux
 	</title_fr>
 	<title_en>
-		third IP
+		Religious painting
 	</title_en>
 	<presentation_fr>
-		presentation francaise n.3
+		 Praesent rhoncus lacinia nulla, quis sollicitudin orci consectetur at. Nam egestas placerat sollicitudin. Cras in dui pulvinar, mollis mi vitae, laoreet augue. In posuere nibh nec maximus efficitur. Fusce sed orci sed odio feugiat condimentum vehicula nec dui. Aliquam feugiat, sem rutrum pulvinar convallis, nisi lorem scelerisque mi, at condimentum velit quam vel tellus. Nulla gravida tristique massa, non lobortis nulla interdum ut. Phasellus a ex vestibulum, mattis nunc pretium, imperdiet lectus. 
 	</presentation_fr>
 	<presentation_en>
-		english presentation 3
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>14.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+ Nam sit amet ullamcorper diam. Nam vehicula feugiat ex sed commodo. Pellentesque at neque cursus, sodales augue sed, molestie arcu. Etiam consequat ligula a turpis efficitur suscipit. Vestibulum sem ante, scelerisque sit amet rhoncus eget, porttitor vel libero. In vitae tempor lectus, nec sodales sapien. Aliquam porttitor est justo, id hendrerit nulla venenatis a. Ut pulvinar mi sollicitudin nunc rhoncus, sed pharetra nisi dapibus. Curabitur condimentum sem purus, ut posuere nisl sollicitudin at. Nullam porttitor tortor eros. Mauris pharetra nisl id laoreet convallis. Ut lacinia orci ut tempor dictum. Quisque non quam diam. Nulla sagittis justo ac sapien elementum, sit amet suscipit elit feugiat. In vulputate blandit justo, a blandit ex commodo vitae. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>19.jpg</lien>
+		<lien>20.jpg</lien>
+		<lien>21.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>23.jpg</lien>
+		<lien>24.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+		<lien>29.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		objet antique
+	</title_fr>
+	<title_en>
+		old item
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		 Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>16.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Malorum
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+
+<ip>
+	<title_fr>
+		Un tableau
+	</title_fr>
+	<title_en>
+		A painting
+	</title_en>
+	<presentation_fr>
+		presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+	</presentation_fr>
+	<presentation_en>
+		english presentation
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
+
+end of the presentation
+	</presentation_en>
+	<pictures>
+		<lien>24.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+	</p360>
+	<videos>
+		<lien>1.mp4</lien>
+		<lien>2.mp4</lien>
+		<lien>3.mp4</lien>
+	</videos>
+	<coordx>
+		0.5
+	</coordx>
+	<coordy>
+		0.26
+	</coordy>
+	<author>
+		Léonard de Vinci
+	</author>
+	<type_fr>
+		tableau
+	</type_fr>
+	<type_en>
+		painting
+	</type_en>
+	<room>
+		2
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		IP deux
+	</title_fr>
+	<title_en>
+		Second IP
+	</title_en>
+	<presentation_fr>
+Fusce tempus leo lacus, ac consequat orci consectetur non. Aenean non tellus faucibus justo lacinia ultrices. Praesent porttitor nulla at posuere posuere. Vestibulum a nisl rutrum dui semper suscipit et sed ligula. Fusce ac suscipit nisl. In fermentum odio sit amet euismod semper. Etiam eu mauris quis mauris lobortis cursus. Fusce vel neque viverra leo venenatis scelerisque. Nulla porta, nulla vitae imperdiet elementum, orci nisi auctor mi, eu commodo ex urna vitae lorem. Nunc porttitor elit libero, vel varius urna tempus eu. 
+	</presentation_fr>
+	<presentation_en>
+ Mauris aliquam pretium augue vitae porttitor. Nulla a mattis risus. Fusce interdum ante sit amet posuere lacinia. Aenean porttitor rutrum justo. Cras placerat tortor mauris, vitae tempor neque vulputate in. Morbi ut dolor luctus, luctus felis vel, interdum orci. Aenean vestibulum, libero vel finibus auctor, magna erat tincidunt massa, vitae hendrerit ligula elit id ligula. 
 	</presentation_en>
 	<pictures>
 		<lien>4.jpg</lien>
@@ -159,6 +419,60 @@ presentation francaise
 		<lien>vid3.mp4</lien>
 	</videos>
 	<coordx>
+		0.12
+	</coordx>
+	<coordy>
+		0.82
+	</coordy>
+	<author>
+		Van Gogh
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+		 Praesent rhoncus lacinia nulla, quis sollicitudin orci consectetur at. Nam egestas placerat sollicitudin. Cras in dui pulvinar, mollis mi vitae, laoreet augue. In posuere nibh nec maximus efficitur. Fusce sed orci sed odio feugiat condimentum vehicula nec dui. Aliquam feugiat, sem rutrum pulvinar convallis, nisi lorem scelerisque mi, at condimentum velit quam vel tellus. Nulla gravida tristique massa, non lobortis nulla interdum ut. Phasellus a ex vestibulum, mattis nunc pretium, imperdiet lectus. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>14.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
 		0.82
 	</coordx>
 	<coordy>
@@ -166,6 +480,1099 @@ presentation francaise
 	</coordy>
 	<author>
 		Monnet
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+ Nam sit amet ullamcorper diam. Nam vehicula feugiat ex sed commodo. Pellentesque at neque cursus, sodales augue sed, molestie arcu. Etiam consequat ligula a turpis efficitur suscipit. Vestibulum sem ante, scelerisque sit amet rhoncus eget, porttitor vel libero. In vitae tempor lectus, nec sodales sapien. Aliquam porttitor est justo, id hendrerit nulla venenatis a. Ut pulvinar mi sollicitudin nunc rhoncus, sed pharetra nisi dapibus. Curabitur condimentum sem purus, ut posuere nisl sollicitudin at. Nullam porttitor tortor eros. Mauris pharetra nisl id laoreet convallis. Ut lacinia orci ut tempor dictum. Quisque non quam diam. Nulla sagittis justo ac sapien elementum, sit amet suscipit elit feugiat. In vulputate blandit justo, a blandit ex commodo vitae. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>19.jpg</lien>
+		<lien>20.jpg</lien>
+		<lien>21.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>23.jpg</lien>
+		<lien>24.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+		<lien>29.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		objet antique
+	</title_fr>
+	<title_en>
+		old item
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		 Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>16.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Malorum
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+
+<ip>
+	<title_fr>
+		Un tableau
+	</title_fr>
+	<title_en>
+		A painting
+	</title_en>
+	<presentation_fr>
+		presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+	</presentation_fr>
+	<presentation_en>
+		english presentation
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
+
+end of the presentation
+	</presentation_en>
+	<pictures>
+		<lien>24.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+	</p360>
+	<videos>
+		<lien>1.mp4</lien>
+		<lien>2.mp4</lien>
+		<lien>3.mp4</lien>
+	</videos>
+	<coordx>
+		0.5
+	</coordx>
+	<coordy>
+		0.26
+	</coordy>
+	<author>
+		Léonard de Vinci
+	</author>
+	<type_fr>
+		tableau
+	</type_fr>
+	<type_en>
+		painting
+	</type_en>
+	<room>
+		2
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		IP deux
+	</title_fr>
+	<title_en>
+		Second IP
+	</title_en>
+	<presentation_fr>
+Fusce tempus leo lacus, ac consequat orci consectetur non. Aenean non tellus faucibus justo lacinia ultrices. Praesent porttitor nulla at posuere posuere. Vestibulum a nisl rutrum dui semper suscipit et sed ligula. Fusce ac suscipit nisl. In fermentum odio sit amet euismod semper. Etiam eu mauris quis mauris lobortis cursus. Fusce vel neque viverra leo venenatis scelerisque. Nulla porta, nulla vitae imperdiet elementum, orci nisi auctor mi, eu commodo ex urna vitae lorem. Nunc porttitor elit libero, vel varius urna tempus eu. 
+	</presentation_fr>
+	<presentation_en>
+ Mauris aliquam pretium augue vitae porttitor. Nulla a mattis risus. Fusce interdum ante sit amet posuere lacinia. Aenean porttitor rutrum justo. Cras placerat tortor mauris, vitae tempor neque vulputate in. Morbi ut dolor luctus, luctus felis vel, interdum orci. Aenean vestibulum, libero vel finibus auctor, magna erat tincidunt massa, vitae hendrerit ligula elit id ligula. 
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.12
+	</coordx>
+	<coordy>
+		0.82
+	</coordy>
+	<author>
+		Van Gogh
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+		 Praesent rhoncus lacinia nulla, quis sollicitudin orci consectetur at. Nam egestas placerat sollicitudin. Cras in dui pulvinar, mollis mi vitae, laoreet augue. In posuere nibh nec maximus efficitur. Fusce sed orci sed odio feugiat condimentum vehicula nec dui. Aliquam feugiat, sem rutrum pulvinar convallis, nisi lorem scelerisque mi, at condimentum velit quam vel tellus. Nulla gravida tristique massa, non lobortis nulla interdum ut. Phasellus a ex vestibulum, mattis nunc pretium, imperdiet lectus. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>14.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+ Nam sit amet ullamcorper diam. Nam vehicula feugiat ex sed commodo. Pellentesque at neque cursus, sodales augue sed, molestie arcu. Etiam consequat ligula a turpis efficitur suscipit. Vestibulum sem ante, scelerisque sit amet rhoncus eget, porttitor vel libero. In vitae tempor lectus, nec sodales sapien. Aliquam porttitor est justo, id hendrerit nulla venenatis a. Ut pulvinar mi sollicitudin nunc rhoncus, sed pharetra nisi dapibus. Curabitur condimentum sem purus, ut posuere nisl sollicitudin at. Nullam porttitor tortor eros. Mauris pharetra nisl id laoreet convallis. Ut lacinia orci ut tempor dictum. Quisque non quam diam. Nulla sagittis justo ac sapien elementum, sit amet suscipit elit feugiat. In vulputate blandit justo, a blandit ex commodo vitae. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>19.jpg</lien>
+		<lien>20.jpg</lien>
+		<lien>21.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>23.jpg</lien>
+		<lien>24.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+		<lien>29.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		objet antique
+	</title_fr>
+	<title_en>
+		old item
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		 Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>16.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Malorum
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+
+<ip>
+	<title_fr>
+		Un tableau
+	</title_fr>
+	<title_en>
+		A painting
+	</title_en>
+	<presentation_fr>
+		presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+	</presentation_fr>
+	<presentation_en>
+		english presentation
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
+
+end of the presentation
+	</presentation_en>
+	<pictures>
+		<lien>24.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+	</p360>
+	<videos>
+		<lien>1.mp4</lien>
+		<lien>2.mp4</lien>
+		<lien>3.mp4</lien>
+	</videos>
+	<coordx>
+		0.5
+	</coordx>
+	<coordy>
+		0.26
+	</coordy>
+	<author>
+		Léonard de Vinci
+	</author>
+	<type_fr>
+		tableau
+	</type_fr>
+	<type_en>
+		painting
+	</type_en>
+	<room>
+		2
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		IP deux
+	</title_fr>
+	<title_en>
+		Second IP
+	</title_en>
+	<presentation_fr>
+Fusce tempus leo lacus, ac consequat orci consectetur non. Aenean non tellus faucibus justo lacinia ultrices. Praesent porttitor nulla at posuere posuere. Vestibulum a nisl rutrum dui semper suscipit et sed ligula. Fusce ac suscipit nisl. In fermentum odio sit amet euismod semper. Etiam eu mauris quis mauris lobortis cursus. Fusce vel neque viverra leo venenatis scelerisque. Nulla porta, nulla vitae imperdiet elementum, orci nisi auctor mi, eu commodo ex urna vitae lorem. Nunc porttitor elit libero, vel varius urna tempus eu. 
+	</presentation_fr>
+	<presentation_en>
+ Mauris aliquam pretium augue vitae porttitor. Nulla a mattis risus. Fusce interdum ante sit amet posuere lacinia. Aenean porttitor rutrum justo. Cras placerat tortor mauris, vitae tempor neque vulputate in. Morbi ut dolor luctus, luctus felis vel, interdum orci. Aenean vestibulum, libero vel finibus auctor, magna erat tincidunt massa, vitae hendrerit ligula elit id ligula. 
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.12
+	</coordx>
+	<coordy>
+		0.82
+	</coordy>
+	<author>
+		Van Gogh
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+		 Praesent rhoncus lacinia nulla, quis sollicitudin orci consectetur at. Nam egestas placerat sollicitudin. Cras in dui pulvinar, mollis mi vitae, laoreet augue. In posuere nibh nec maximus efficitur. Fusce sed orci sed odio feugiat condimentum vehicula nec dui. Aliquam feugiat, sem rutrum pulvinar convallis, nisi lorem scelerisque mi, at condimentum velit quam vel tellus. Nulla gravida tristique massa, non lobortis nulla interdum ut. Phasellus a ex vestibulum, mattis nunc pretium, imperdiet lectus. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>14.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+ Nam sit amet ullamcorper diam. Nam vehicula feugiat ex sed commodo. Pellentesque at neque cursus, sodales augue sed, molestie arcu. Etiam consequat ligula a turpis efficitur suscipit. Vestibulum sem ante, scelerisque sit amet rhoncus eget, porttitor vel libero. In vitae tempor lectus, nec sodales sapien. Aliquam porttitor est justo, id hendrerit nulla venenatis a. Ut pulvinar mi sollicitudin nunc rhoncus, sed pharetra nisi dapibus. Curabitur condimentum sem purus, ut posuere nisl sollicitudin at. Nullam porttitor tortor eros. Mauris pharetra nisl id laoreet convallis. Ut lacinia orci ut tempor dictum. Quisque non quam diam. Nulla sagittis justo ac sapien elementum, sit amet suscipit elit feugiat. In vulputate blandit justo, a blandit ex commodo vitae. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>19.jpg</lien>
+		<lien>20.jpg</lien>
+		<lien>21.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>23.jpg</lien>
+		<lien>24.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+		<lien>29.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		objet antique
+	</title_fr>
+	<title_en>
+		old item
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		 Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>16.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Malorum
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+
+<ip>
+	<title_fr>
+		Un tableau
+	</title_fr>
+	<title_en>
+		A painting
+	</title_en>
+	<presentation_fr>
+		presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+presentation francaise
+	</presentation_fr>
+	<presentation_en>
+		english presentation
+
+ Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. 
+
+end of the presentation
+	</presentation_en>
+	<pictures>
+		<lien>24.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+	</p360>
+	<videos>
+		<lien>1.mp4</lien>
+		<lien>2.mp4</lien>
+		<lien>3.mp4</lien>
+	</videos>
+	<coordx>
+		0.5
+	</coordx>
+	<coordy>
+		0.26
+	</coordy>
+	<author>
+		Léonard de Vinci
+	</author>
+	<type_fr>
+		tableau
+	</type_fr>
+	<type_en>
+		painting
+	</type_en>
+	<room>
+		2
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		IP deux
+	</title_fr>
+	<title_en>
+		Second IP
+	</title_en>
+	<presentation_fr>
+Fusce tempus leo lacus, ac consequat orci consectetur non. Aenean non tellus faucibus justo lacinia ultrices. Praesent porttitor nulla at posuere posuere. Vestibulum a nisl rutrum dui semper suscipit et sed ligula. Fusce ac suscipit nisl. In fermentum odio sit amet euismod semper. Etiam eu mauris quis mauris lobortis cursus. Fusce vel neque viverra leo venenatis scelerisque. Nulla porta, nulla vitae imperdiet elementum, orci nisi auctor mi, eu commodo ex urna vitae lorem. Nunc porttitor elit libero, vel varius urna tempus eu. 
+	</presentation_fr>
+	<presentation_en>
+ Mauris aliquam pretium augue vitae porttitor. Nulla a mattis risus. Fusce interdum ante sit amet posuere lacinia. Aenean porttitor rutrum justo. Cras placerat tortor mauris, vitae tempor neque vulputate in. Morbi ut dolor luctus, luctus felis vel, interdum orci. Aenean vestibulum, libero vel finibus auctor, magna erat tincidunt massa, vitae hendrerit ligula elit id ligula. 
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.12
+	</coordx>
+	<coordy>
+		0.82
+	</coordy>
+	<author>
+		Van Gogh
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+		 Praesent rhoncus lacinia nulla, quis sollicitudin orci consectetur at. Nam egestas placerat sollicitudin. Cras in dui pulvinar, mollis mi vitae, laoreet augue. In posuere nibh nec maximus efficitur. Fusce sed orci sed odio feugiat condimentum vehicula nec dui. Aliquam feugiat, sem rutrum pulvinar convallis, nisi lorem scelerisque mi, at condimentum velit quam vel tellus. Nulla gravida tristique massa, non lobortis nulla interdum ut. Phasellus a ex vestibulum, mattis nunc pretium, imperdiet lectus. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>14.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		objet
+	</type_fr>
+	<type_en>
+		item
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		Tableau religieux
+	</title_fr>
+	<title_en>
+		Religious painting
+	</title_en>
+	<presentation_fr>
+ Nam sit amet ullamcorper diam. Nam vehicula feugiat ex sed commodo. Pellentesque at neque cursus, sodales augue sed, molestie arcu. Etiam consequat ligula a turpis efficitur suscipit. Vestibulum sem ante, scelerisque sit amet rhoncus eget, porttitor vel libero. In vitae tempor lectus, nec sodales sapien. Aliquam porttitor est justo, id hendrerit nulla venenatis a. Ut pulvinar mi sollicitudin nunc rhoncus, sed pharetra nisi dapibus. Curabitur condimentum sem purus, ut posuere nisl sollicitudin at. Nullam porttitor tortor eros. Mauris pharetra nisl id laoreet convallis. Ut lacinia orci ut tempor dictum. Quisque non quam diam. Nulla sagittis justo ac sapien elementum, sit amet suscipit elit feugiat. In vulputate blandit justo, a blandit ex commodo vitae. 
+	</presentation_fr>
+	<presentation_en>
+		 Duis semper, mi id pulvinar commodo, ipsum justo rhoncus lacus, blandit lacinia ligula augue at nisl. Sed quis hendrerit tellus, eget cursus lectus. Nulla ut elit nibh. In pretium lorem id orci faucibus mollis. Fusce tempus pretium facilisis. Morbi id efficitur felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sodales lacus ut maximus dapibus. Donec aliquet eu erat eu posuere. Sed urna ante, iaculis ac sagittis et, volutpat id justo. Integer venenatis porttitor neque, vel vehicula eros maximus nec. Suspendisse sollicitudin ex vel ipsum porta, id lobortis arcu congue. Nunc id tortor lobortis, facilisis erat quis, pretium leo. Nulla quis leo eget risus rutrum congue quis sit amet sem. Vivamus vitae dolor rutrum, feugiat enim sit amet, suscipit diam. 
+	</presentation_en>
+	<pictures>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>19.jpg</lien>
+		<lien>20.jpg</lien>
+		<lien>21.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>23.jpg</lien>
+		<lien>24.jpg</lien>
+		<lien>25.jpg</lien>
+		<lien>26.jpg</lien>
+		<lien>27.jpg</lien>
+		<lien>28.jpg</lien>
+		<lien>29.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>1.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>3.jpg</lien>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>7.jpg</lien>
+		<lien>8.jpg</lien>
+		<lien>9.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+		<lien>12.jpg</lien>
+		<lien>13.jpg</lien>
+		<lien>14.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid2.mp4</lien>
+		<lien>vid3.mp4</lien>
+		<lien>vid1.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Monnet
+	</author>
+	<type_fr>
+		statue
+	</type_fr>
+	<type_en>
+		statue
+	</type_en>
+	<room>
+		5
+	</room>
+</ip>
+<ip>
+	<title_fr>
+		objet antique
+	</title_fr>
+	<title_en>
+		old item
+	</title_en>
+	<presentation_fr>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	</presentation_fr>
+	<presentation_en>
+		 Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+	</presentation_en>
+	<pictures>
+		<lien>4.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>16.jpg</lien>
+		<lien>17.jpg</lien>
+		<lien>18.jpg</lien>
+		<lien>22.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</pictures>
+	<p360>
+		<lien>16.jpg</lien>
+		<lien>5.jpg</lien>
+		<lien>6.jpg</lien>
+		<lien>15.jpg</lien>
+		<lien>2.jpg</lien>
+		<lien>10.jpg</lien>
+		<lien>11.jpg</lien>
+	</p360>
+	<videos>
+		<lien>vid3.mp4</lien>
+	</videos>
+	<coordx>
+		0.82
+	</coordx>
+	<coordy>
+		0.52
+	</coordy>
+	<author>
+		Malorum
 	</author>
 	<type_fr>
 		objet
