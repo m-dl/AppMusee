@@ -37,6 +37,9 @@ public class FileManager {
     final public static String COORD_Y = "coordy";
     final public static String AUTHOR = "author";
     final public static String TYPE = "type";
+    final public static String TYPE_FR = "type_fr";
+    final public static String TYPE_EN = "type_en";
+    final public static String ROOM = "room";
     final public static String LINK = "lien";
 
     private static FileManager INSTANCE;

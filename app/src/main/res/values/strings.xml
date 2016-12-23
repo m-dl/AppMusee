@@ -56,12 +56,13 @@
     <string name="ok">Ok</string>
     <string name="custom_message_fr">Vous pouvez sélectionner les objets que vous souhaitez visiter dans votre visite personnalisée :</string>
     <string name="custom_message_en">You can select the items you want to visit during your custom visit : </string>
-    <string name="paintings_fr">Visiter les peintures : </string>
-    <string name="paintings_en">Visit paintings : </string>
-    <string name="statues_fr">Visiter les statues : </string>
-    <string name="statues_en">Visit statues : </string>
-    <string name="items_fr">Visiter les objets : </string>
-    <string name="items_en">Visit items : </string>
+    <string name="rooms_fr">Visite par numéro de salles : </string>
+    <string name="rooms_en">Visit by rooms number: </string>
+    <string name="artists_fr">Visite par artistes : </string>
+    <string name="artists_en">Visit by artists : </string>
+    <string name="items_fr">Visite par objets : </string>
+    <string name="items_en">Visit by items : </string>
+    <string name="default_spinner_title">Sélectionnez des éléments</string>
 
     <string name="memory_access_error">Je ne peux accèder à la mémoire</string>
 

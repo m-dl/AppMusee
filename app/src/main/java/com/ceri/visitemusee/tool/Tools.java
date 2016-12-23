@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.ceri.visitemusee.R;
 import com.ceri.visitemusee.basket.BasketItem;
+import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.main.MainActivity;
 import com.ceri.visitemusee.params.AppParams;
 
@@ -121,5 +122,28 @@ public class Tools {
             return basketItemArrayList.size() + " " + MainActivity.resources.getString(R.string.article_fr) + plural;
         else
             return basketItemArrayList.size() + " " + MainActivity.resources.getString(R.string.article_en) + plural;
+    }
+
+    public static ArrayList<InterestPoint> buildCustomIPList(List<String> visitRooms, List<String> visitArtists, List<String> visitItems) {
+        ArrayList<InterestPoint> interestPointArrayList = new ArrayList<>();
+        // if french compare french data
+        if(AppParams.getInstance().getM_french()) {
+            for(InterestPoint tmpIP : AppParams.getInstance().getCurrentVisit().getIP()) {
+                if(visitRooms.contains(tmpIP.getRoom()) || visitItems.contains(tmpIP.getType_FR()) || visitArtists.contains(tmpIP.getAuthor())) {
+                    // we have a match
+                    interestPointArrayList.add(tmpIP);
+                }
+            }
+        }
+        // or compare english data
+        else {
+            for(InterestPoint tmpIP : AppParams.getInstance().getCurrentVisit().getIP()) {
+                if (visitRooms.contains(tmpIP.getRoom()) || visitItems.contains(tmpIP.getType_EN()) || visitArtists.contains(tmpIP.getAuthor())) {
+                    // we have a match
+                    interestPointArrayList.add(tmpIP);
+                }
+            }
+        }
+        return interestPointArrayList;
     }
 }

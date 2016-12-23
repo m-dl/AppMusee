@@ -1,7 +1,5 @@
 package com.ceri.visitemusee.files;
 
-import android.widget.ImageView;
-
 import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.main.MainActivity;
@@ -15,7 +13,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 /**
@@ -59,7 +56,7 @@ public class FileTools {
 			JSONArray jArray = object.getJSONArray(FileManager.IP);
 			for (int i = 0; i < jArray.length(); i++) {
 				reader = jArray.getJSONObject(i);
-				String title_en, title_fr, presentation_fr, presentation_en, author, type;
+				String title_en, title_fr, presentation_fr, presentation_en, author, type_fr, type_en, room;
 				double coordx, coordy;
 				ArrayList<String> pictures = new ArrayList<>(), p360 = new ArrayList<>();
 				ArrayList<File> videos = new ArrayList<>();
@@ -71,7 +68,9 @@ public class FileTools {
 				coordx = Double.parseDouble(reader.getString(FileManager.COORD_X));
 				coordy = Double.parseDouble(reader.getString(FileManager.COORD_Y));
 				author = reader.getString(FileManager.AUTHOR);
-				type = reader.getString(FileManager.TYPE);
+				type_fr = reader.getString(FileManager.TYPE_FR);
+				type_en = reader.getString(FileManager.TYPE_EN);
+				room = reader.getString(FileManager.ROOM);
 
 				JSONObject tmpobject = reader.getJSONObject(FileManager.PHOTOS);
 				JSONArray tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
@@ -91,7 +90,7 @@ public class FileTools {
 					videos.add(new File(removeExtension(tmpjArray.getString(j).replaceAll("\\s+",""))));
 				}
 
-				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type, coordx, coordy, pictures, p360, videos));
+				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type_fr, type_en, room, coordx, coordy, pictures, p360, videos));
 			}
 			return IPList;
 		} catch (JSONException e) {
@@ -140,7 +139,7 @@ public class FileTools {
 	public static void ItemInIP(ArrayList<InterestPoint> interestPointArrayList, ArrayList<BasketItem> basketItemArrayList) {
 		for(InterestPoint IP : interestPointArrayList) {
 			for(BasketItem BI : basketItemArrayList) {
-				if(BI.getType().equals(IP.getType())) {
+				if(BI.getType().equals(IP.getType_FR())) {
 					IP.getBasketItemList().add(BI);
 				}
 			}

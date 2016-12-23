@@ -26,120 +26,138 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
         </android.support.design.widget.AppBarLayout>
 
-        <LinearLayout
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_container"
             android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="1" >
+            android:weightSum="1">
 
             <LinearLayout
-                android:id="@+id/main_container"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:weightSum="1">
+                android:weightSum="1" >
 
-                <TextView
+                <LinearLayout
+                    android:id="@+id/main_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cutom_text"
-                    android:text="@string/custom_message_fr"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:gravity="center_horizontal" />
-
-                <include layout="@layout/separator_view" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:textSize="16sp"
-                        android:id="@+id/cutom_paintings_text"
-                        android:textColor="@color/black"
-                        android:textStyle="normal|bold"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="Your text:"/>
-
-                    <CheckBox
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:id="@+id/cutom_paintings_checkbox"
-                        android:button="@null"
-                        android:backgroundTint="@color/colorAccent"
-                        android:background="?android:attr/listChoiceIndicatorMultiple" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:textSize="16sp"
-                        android:id="@+id/cutom_statues_text"
-                        android:textColor="@color/black"
-                        android:textStyle="normal|bold"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="Your text:"/>
-
-                    <CheckBox
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:id="@+id/cutom_statues_checkbox"
-                        android:button="@null"
-                        android:backgroundTint="@color/colorAccent"
-                        android:background="?android:attr/listChoiceIndicatorMultiple" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:textSize="16sp"
-                        android:id="@+id/cutom_items_text"
-                        android:textColor="@color/black"
-                        android:textStyle="normal|bold"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:text="Your text:"/>
-
-                    <CheckBox
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:button="@null"
-                        android:id="@+id/cutom_items_checkbox"
-                        android:backgroundTint="@color/colorAccent"
-                        android:background="?android:attr/listChoiceIndicatorMultiple" />
-                </LinearLayout>
-
-                <Button
-                    android:text="@string/démarrer"
-                    android:textColor="@color/white"
-                    android:background="@color/colorAccent"
-                    android:layout_width="match_parent"
+                    android:orientation="vertical"
                     android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:paddingRight="@dimen/activity_horizontal_margin"
-                    android:layout_marginTop="@dimen/activity_horizontal_margin"
-                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/startcustom" />
-            </LinearLayout>
+                    android:weightSum="1">
 
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cutom_text"
+                        android:text="@string/custom_message_fr"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center_horizontal" />
+
+                    <include layout="@layout/separator_view" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:textSize="16sp"
+                            android:id="@+id/cutom_items_text"
+                            android:textColor="@color/black"
+                            android:textStyle="normal|bold"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/items_fr"/>
+
+                        <com.ceri.visitemusee.tool.MultiSelectionSpinner
+                            android:id="@+id/cutom_items_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:textSize="16sp"
+                            android:id="@+id/cutom_rooms_text"
+                            android:textColor="@color/black"
+                            android:textStyle="normal|bold"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rooms_fr"/>
+
+                        <com.ceri.visitemusee.tool.MultiSelectionSpinner
+                            android:id="@+id/cutom_rooms_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:textSize="16sp"
+                            android:id="@+id/cutom_artists_text"
+                            android:textColor="@color/black"
+                            android:textStyle="normal|bold"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/artists_fr"/>
+
+                        <com.ceri.visitemusee.tool.MultiSelectionSpinner
+                            android:id="@+id/cutom_artists_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin" />
+                    </LinearLayout>
+
+                    <include layout="@layout/separator_view" />
+
+                    <Button
+                        android:text="@string/démarrer"
+                        android:textColor="@color/white"
+                        android:background="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startcustom" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
     </android.support.design.widget.CoordinatorLayout>
 </android.support.v4.widget.DrawerLayout>

@@ -10,20 +10,22 @@ import java.util.ArrayList;
  * @author Maxime
  */
 public class InterestPoint implements Serializable {
-	private String presentation_FR, presentation_EN, name_FR, name_EN, author, type;
+	private String presentation_FR, presentation_EN, name_FR, name_EN, author, type_FR, type_EN, room;
 	private ArrayList<String> photos, _360;
 	private ArrayList<BasketItem> basketItemList;
 	private ArrayList<File> videos;
 	private double coordX, coordY;
 
-	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type,
+	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type_FR, String type_EN, String room,
 						 double coordX, double coordY, ArrayList<String> photos, ArrayList<String> _360, ArrayList<File> videos) {
-		this.name_FR = name_FR.trim();
-		this.name_EN = name_EN.trim();
+		this.name_FR = (name_FR.substring(0,1).toUpperCase() + name_FR.substring(1).toLowerCase()).trim();
+		this.name_EN = (name_EN.substring(0,1).toUpperCase() + name_EN.substring(1).toLowerCase()).trim();
 		this.presentation_FR = presentation_FR.trim();
 		this.presentation_EN = presentation_EN.trim();
-		this.author = author.trim();
-		this.type = type.trim();
+		this.author = (author.substring(0,1).toUpperCase() + author.substring(1).toLowerCase()).trim();
+		this.type_FR = (type_FR.substring(0,1).toUpperCase() + type_FR.substring(1).toLowerCase()).trim();
+		this.type_EN = (type_EN.substring(0,1).toUpperCase() + type_EN.substring(1).toLowerCase()).trim();
+		this.room = room.trim();
 		this.coordX = coordX;
 		this.coordY = coordY;
 		this.photos = photos;
@@ -48,12 +50,12 @@ public class InterestPoint implements Serializable {
 		this.author = author;
 	}
 
-	public String getType() {
-		return type;
+	public String getType_FR() {
+		return type_FR;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setType_FR(String type_FR) {
+		this.type_FR = type_FR;
 	}
 
 	public String getPresentation_FR() {
@@ -126,5 +128,21 @@ public class InterestPoint implements Serializable {
 
 	public void setBasketItemList(ArrayList<BasketItem> basketItemList) {
 		this.basketItemList = basketItemList;
+	}
+
+	public String getType_EN() {
+		return type_EN;
+	}
+
+	public void setType_EN(String type_EN) {
+		this.type_EN = type_EN;
+	}
+
+	public String getRoom() {
+		return room;
+	}
+
+	public void setRoom(String room) {
+		this.room = room;
 	}
 }

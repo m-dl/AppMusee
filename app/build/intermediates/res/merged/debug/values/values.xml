@@ -302,6 +302,8 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="article_en">item</string>
     <string name="article_fr">article</string>
+    <string name="artists_en">Visit by artists : </string>
+    <string name="artists_fr">Visite par artistes : </string>
     <string name="basket_action_default">Action</string>
     <string name="basket_name_default">Nom</string>
     <string name="basket_price_default">0€</string>
@@ -316,6 +318,7 @@
     <string name="custom_message_en">You can select the items you want to visit during your custom visit : </string>
     <string name="custom_message_fr">Vous pouvez sélectionner les objets que vous souhaitez visiter dans votre visite personnalisée :</string>
     <string name="default_sort_fr">Tri par défaut</string>
+    <string name="default_spinner_title">Sélectionnez des éléments</string>
     <string name="démarrer">Démarrer</string>
     <string name="email">contact@modernmuseum.com</string>
     <string name="empty_basket_en">Empty</string>
@@ -327,8 +330,8 @@
     <string name="images360">Images 360°</string>
     <string name="info_en">About</string>
     <string name="info_fr">Détails</string>
-    <string name="items_en">Visit items : </string>
-    <string name="items_fr">Visiter les objets : </string>
+    <string name="items_en">Visit by items : </string>
+    <string name="items_fr">Visite par objets : </string>
     <string name="lancer">Lancer</string>
     <string name="memory_access_error">Je ne peux accèder à la mémoire</string>
     <string name="new_room_default">Vous venez d\'entrer dans une nouvelle pièce du musée !</string>
@@ -338,19 +341,17 @@
     <string name="new_room_fr_2">du musée !</string>
     <string name="no">No</string>
     <string name="ok">Ok</string>
-    <string name="paintings_en">Visit paintings : </string>
-    <string name="paintings_fr">Visiter les peintures : </string>
     <string name="pictures">Pictures</string>
     <string name="pictures360">360° Pictures</string>
     <string name="remove_from_basket_en">Remove from basket</string>
     <string name="remove_from_basket_fr">Retirer du panier</string>
+    <string name="rooms_en">Visit by rooms : </string>
+    <string name="rooms_fr">Visite par salles  : </string>
     <string name="set_english_app">Set the application in English?</string>
     <string name="set_english_app_title">The application is currently in French</string>
     <string name="shop_en">Shop</string>
     <string name="shop_fr">Boutique</string>
     <string name="start">Start</string>
-    <string name="statues_en">Visit statues : </string>
-    <string name="statues_fr">Visiter les statues : </string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="validate_basket_en">Confirm my order</string>
     <string name="validate_basket_fr">Valider ma commande</string>

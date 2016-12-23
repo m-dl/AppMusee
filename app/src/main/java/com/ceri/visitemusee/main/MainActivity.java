@@ -48,6 +48,7 @@ import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -59,6 +60,7 @@ import static com.ceri.visitemusee.tool.Tools.distanceToRange;
  */
 public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 
+	private static final int CUSTOM_VISIT = 101;
 	private static final String BEACON_TAG = "BeaconReferenceApp";
 	private BackgroundPowerSaver backgroundPowerSaver;
 	private double currentBeaconRangeDistance = 1;
@@ -139,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 	}
 
 	// initiate the map design for the current floor and add the pins
-	private void initMap(int f) {
+	private void initMap(int f, ArrayList<InterestPoint> IPArray) {
 		// change these path to change map plans
 		String floorPath = "maps/map_" + f + "/%col%_%row%.jpg";
 		String floorPath2 = "maps/map_" + f + "/planmusee.jpg";
@@ -163,14 +165,13 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		// center the frame
 		TileViewTools.frameTo(tileView, 0.5, 0.5);
 		// add pins
-		initPins();
+		initPins(IPArray);
 	}
 
 	// add pins from IP on the map
-	private void initPins() {
+	private void initPins(ArrayList<InterestPoint> IPArray) {
 		// if a visit is running, list the IP on the map
 		if(AppParams.getInstance().getCurrentVisit() != null) {
-			ArrayList<InterestPoint> IPArray = AppParams.getInstance().getCurrentVisit().getIP();
 			for(InterestPoint IP : IPArray) {
 				TileViewTools.addPin(tileView, getContext(), IP);
 			}
@@ -209,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		AppParams.getInstance().setCurrentVisit(v);
 		if(linearLayout != null)
 			linearLayout.removeAllViewsInLayout();
-		initMap(Tools.MAP_ONE);
+		initMap(Tools.MAP_ONE, AppParams.getInstance().getCurrentVisit().getIP());
 		if(AppParams.getInstance().getM_french())
 			renameActionBar(getString(R.string.action_section_0));
 		else
@@ -282,7 +283,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 		// custom visit item
 		else if (menuItem.getItemId() == R.id.custom_visits_item) {
 			Intent intent = new Intent(MainActivity.m_Activity, CustomVisitActivity.class);
-			ActivityCompat.startActivity(MainActivity.m_Activity, intent, null);
+			ActivityCompat.startActivityForResult(MainActivity.m_Activity, intent, CUSTOM_VISIT ,null);
 		}
 		// basket item
 		else if (menuItem.getItemId() == R.id.basket_item) {
@@ -346,4 +347,41 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 			beaconManager.startRangingBeaconsInRegion(new Region("myRangingUniqueId", null, null, null));
 		} catch (RemoteException e) {   }
 	}
+
+	// activity result manager
+	@Override
+	protected void onActivityResult(
+			int requestCode, int resultCode, Intent data
+	) {
+		switch (requestCode) {
+			// case overview visit returns result to start or cancel the visit
+			case CUSTOM_VISIT:
+				launchVisit(data);
+				break;
+		}
+		super.onActivityResult(requestCode, resultCode, data);
+	}
+
+	// if customs activity confirms, we launch the custom visit, or we do nothing
+	private void launchVisit(Intent aData) {
+		if (aData != null) {
+			// get the bool response
+			boolean b = aData.getBooleanExtra("launchFlag", false);
+			if(b) {
+				List<String> visitRooms = (List<String>) aData.getSerializableExtra("visitRoomsSpinner");
+				List<String> visitArtists = (List<String>) aData.getSerializableExtra("visitArtistsSpinner");
+				List<String> visitItems = (List<String>) aData.getSerializableExtra("visitItemsSpinner");
+				AppParams.getInstance().getCurrentVisit().setCustomIP(Tools.buildCustomIPList(visitRooms, visitArtists, visitItems));
+				// remove all view or it doesn't work
+				linearLayout.removeAllViewsInLayout();
+				// rebuild the new map
+				initMap(Tools.MAP_ONE, AppParams.getInstance().getCurrentVisit().getCustomIP());
+				if(AppParams.getInstance().getM_french())
+					renameActionBar(getString(R.string.action_section_2));
+				else
+					renameActionBar(getString(R.string.action_section_en_2));
+			}
+		}
+	}
+
 }

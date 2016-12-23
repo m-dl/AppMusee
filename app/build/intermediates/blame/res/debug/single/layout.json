@@ -56,12 +56,12 @@
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\activity_new_room.xml"
     },
     {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\main.xml"
-    },
-    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\main.xml"
     },
     {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\activity_player.xml"
     },
     {
-        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_basket_item.xml",
         "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\src\\main\\res\\layout\\activity_basket_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
