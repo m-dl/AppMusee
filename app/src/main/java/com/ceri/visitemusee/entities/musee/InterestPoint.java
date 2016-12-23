@@ -18,13 +18,13 @@ public class InterestPoint implements Serializable {
 
 	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type_FR, String type_EN, String room,
 						 double coordX, double coordY, ArrayList<String> photos, ArrayList<String> _360, ArrayList<File> videos) {
-		this.name_FR = (name_FR.substring(0,1).toUpperCase() + name_FR.substring(1).toLowerCase()).trim();
-		this.name_EN = (name_EN.substring(0,1).toUpperCase() + name_EN.substring(1).toLowerCase()).trim();
+		this.name_FR = name_FR.trim().toUpperCase().charAt(0) + name_FR.trim().toLowerCase().substring(1);
+		this.name_EN = name_EN.trim().toUpperCase().charAt(0) + name_EN.trim().toLowerCase().substring(1);
 		this.presentation_FR = presentation_FR.trim();
 		this.presentation_EN = presentation_EN.trim();
-		this.author = (author.substring(0,1).toUpperCase() + author.substring(1).toLowerCase()).trim();
-		this.type_FR = (type_FR.substring(0,1).toUpperCase() + type_FR.substring(1).toLowerCase()).trim();
-		this.type_EN = (type_EN.substring(0,1).toUpperCase() + type_EN.substring(1).toLowerCase()).trim();
+		this.author = author.trim().toUpperCase().charAt(0) + author.trim().toLowerCase().substring(1);
+		this.type_FR = type_FR.trim().toUpperCase().charAt(0) + type_FR.trim().toLowerCase().substring(1);
+		this.type_EN = type_EN.trim().toUpperCase().charAt(0) + type_EN.trim().toLowerCase().substring(1);
 		this.room = room.trim();
 		this.coordX = coordX;
 		this.coordY = coordY;

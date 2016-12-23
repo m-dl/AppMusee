@@ -72,6 +72,8 @@ public class CustomVisitActivity extends AppCompatActivity {
             visitItemsSpinner.setItems(AppParams.getInstance().getCurrentVisit().getCustomItemsFR());
         else
             visitItemsSpinner.setItems(AppParams.getInstance().getCurrentVisit().getCustomItemsEN());
+
+        // todo: gérer le menu selon la visite
     }
 
 

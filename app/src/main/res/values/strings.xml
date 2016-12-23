@@ -57,7 +57,7 @@
     <string name="custom_message_fr">Vous pouvez sélectionner les objets que vous souhaitez visiter dans votre visite personnalisée :</string>
     <string name="custom_message_en">You can select the items you want to visit during your custom visit : </string>
     <string name="rooms_fr">Visite par numéro de salles : </string>
-    <string name="rooms_en">Visit by rooms number: </string>
+    <string name="rooms_en">Visit by rooms number : </string>
     <string name="artists_fr">Visite par artistes : </string>
     <string name="artists_en">Visit by artists : </string>
     <string name="items_fr">Visite par objets : </string>

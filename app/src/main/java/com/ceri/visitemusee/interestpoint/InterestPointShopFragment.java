@@ -69,7 +69,7 @@ public class InterestPointShopFragment extends Fragment {
 
         // display basket items
         Tools.displayItemList(itemList, IP.getBasketItemList(), true);
-        shopTabText.setText(Tools.getBasketNumberText(AppParams.getInstance().getCurrentVisit().getBI()));
+        shopTabText.setText(Tools.getBasketNumberText(IP.getBasketItemList()));
 
         // price sort spinner
         ArrayAdapter<CharSequence> spinnerArrayAdapter;
