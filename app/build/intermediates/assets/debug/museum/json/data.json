@@ -12,7 +12,7 @@
 		presentation francaise
 	",
         "presentation_en": "
-		english presentation\\n\\n\\nend of the presentation
+		english presentation\n\nend of the presentation
 	",
         "pictures": {
           "lien": [
@@ -59,11 +59,8 @@
         "author": "
 		Léonard de Vinci
 	",
-        "type_fr": "
+        "type": "
 		tableau
-	",
-        "type_en": "
-		painting
 	"
       },
       {
@@ -109,10 +106,7 @@
         "author": "
 		Van Gogh
 	",
-        "type_fr": "
-		statue
-	",
-        "type_en": "
+        "type": "
 		statue
 	"
       }

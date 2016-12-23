@@ -75,13 +75,13 @@ public class BasketItemActivity extends AppCompatActivity {
             // set text depending language
             renameActionBar(basketItem.getName_FR());
             itemTitle.setText(basketItem.getName_FR());
-            itemContent.setText(basketItem.getName_FR());
+            itemContent.setText(basketItem.getPresentation_FR());
             addBasket.setText(MainActivity.getContext().getString(R.string.add_to_basket_fr));
         }
         else {
             // set text depending language
             itemTitle.setText(basketItem.getName_EN());
-            itemContent.setText(basketItem.getName_EN());
+            itemContent.setText(basketItem.getPresentation_EN());
             renameActionBar(basketItem.getName_EN());
             addBasket.setText(MainActivity.getContext().getString(R.string.add_to_basket_en));
         }

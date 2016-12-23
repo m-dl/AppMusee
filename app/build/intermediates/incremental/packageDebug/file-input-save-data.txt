@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 22 22:14:43 CET 2016
+#Fri Dec 23 00:54:08 CET 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\assets\\debug\\maps\\map_6\\0_0.jpg

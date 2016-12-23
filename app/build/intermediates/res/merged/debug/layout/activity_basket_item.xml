@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="0.8">
+            android:weightSum="1">
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/main_container"
@@ -72,7 +72,7 @@
                     android:textColor="@color/black" />
 
                 <Button
-                    android:text="@string/validate_basket_fr"
+                    android:text="@string/add_to_basket_fr"
                     android:textColor="@color/white"
                     android:background="@color/colorAccent"
                     android:layout_width="match_parent"

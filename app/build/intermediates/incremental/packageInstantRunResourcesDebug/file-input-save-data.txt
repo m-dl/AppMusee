@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Dec 22 23:43:59 CET 2016
+#Fri Dec 23 02:19:56 CET 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Maxime\\Desktop\\AppMusee\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\vid2.mp4

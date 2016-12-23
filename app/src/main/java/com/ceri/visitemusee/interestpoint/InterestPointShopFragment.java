@@ -68,7 +68,7 @@ public class InterestPointShopFragment extends Fragment {
         });
 
         // display basket items
-        Tools.displayItemList(itemList, AppParams.getInstance().getCurrentVisit().getBI(), true);
+        Tools.displayItemList(itemList, IP.getBasketItemList(), true);
         shopTabText.setText(Tools.getBasketNumberText(AppParams.getInstance().getCurrentVisit().getBI()));
 
         // price sort spinner
@@ -84,17 +84,17 @@ public class InterestPointShopFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 1) {
-                    ArrayList<BasketItem> basketItems = (ArrayList<BasketItem>) AppParams.getInstance().getCurrentVisit().getBI().clone();
+                    ArrayList<BasketItem> basketItems = (ArrayList<BasketItem>) IP.getBasketItemList().clone();
                     Tools.sortPriceUp(basketItems);
                     Tools.displayItemList(itemList, basketItems, true);
                 }
                 else if(position == 2) {
-                    ArrayList<BasketItem> basketItems = (ArrayList<BasketItem>) AppParams.getInstance().getCurrentVisit().getBI().clone();
+                    ArrayList<BasketItem> basketItems = (ArrayList<BasketItem>) IP.getBasketItemList().clone();
                     Tools.sortPriceDown(basketItems);
                     Tools.displayItemList(itemList, basketItems, true);
                 }
                 else {
-                    Tools.displayItemList(itemList, AppParams.getInstance().getCurrentVisit().getBI(), true);
+                    Tools.displayItemList(itemList, IP.getBasketItemList(), true);
                 }
             }
 

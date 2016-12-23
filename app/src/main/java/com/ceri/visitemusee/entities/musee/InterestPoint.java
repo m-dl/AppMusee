@@ -1,5 +1,7 @@
 package com.ceri.visitemusee.entities.musee;
 
+import com.ceri.visitemusee.basket.BasketItem;
+
 import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -8,25 +10,26 @@ import java.util.ArrayList;
  * @author Maxime
  */
 public class InterestPoint implements Serializable {
-	private String presentation_FR, presentation_EN, name_FR, name_EN, author, type_FR, type_EN;
+	private String presentation_FR, presentation_EN, name_FR, name_EN, author, type;
 	private ArrayList<String> photos, _360;
+	private ArrayList<BasketItem> basketItemList;
 	private ArrayList<File> videos;
 	private double coordX, coordY;
 
-	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type_FR, String type_EN,
+	public InterestPoint(String name_FR, String name_EN, String presentation_FR, String presentation_EN, String author, String type,
 						 double coordX, double coordY, ArrayList<String> photos, ArrayList<String> _360, ArrayList<File> videos) {
 		this.name_FR = name_FR.trim();
 		this.name_EN = name_EN.trim();
 		this.presentation_FR = presentation_FR.trim();
 		this.presentation_EN = presentation_EN.trim();
 		this.author = author.trim();
-		this.type_FR = type_FR.trim();
-		this.type_EN = type_EN.trim();
+		this.type = type.trim();
 		this.coordX = coordX;
 		this.coordY = coordY;
 		this.photos = photos;
 		this._360 = _360;
 		this.videos = videos;
+		this.basketItemList = new ArrayList<>();
 	}
 
 	public String getName_FR() {
@@ -45,20 +48,12 @@ public class InterestPoint implements Serializable {
 		this.author = author;
 	}
 
-	public String getType_FR() {
-		return type_FR;
+	public String getType() {
+		return type;
 	}
 
-	public void setType_FR(String type_FR) {
-		this.type_FR = type_FR;
-	}
-
-	public String getType_EN() {
-		return type_EN;
-	}
-
-	public void setType_EN(String type_EN) {
-		this.type_EN = type_EN;
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getPresentation_FR() {
@@ -123,5 +118,13 @@ public class InterestPoint implements Serializable {
 
 	public void setCoordY(double coordY) {
 		this.coordY = coordY;
+	}
+
+	public ArrayList<BasketItem> getBasketItemList() {
+		return basketItemList;
+	}
+
+	public void setBasketItemList(ArrayList<BasketItem> basketItemList) {
+		this.basketItemList = basketItemList;
 	}
 }

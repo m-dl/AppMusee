@@ -59,11 +59,11 @@ public class InterestPointFragment extends Fragment {
 
         // set en or fr text
         if (AppParams.getInstance().getM_french()) {
-            interestPointTitle.setText(IP.getName_FR());
+            interestPointTitle.setText(IP.getName_FR() + " - " + IP.getAuthor());
             interestPointContent.setText(IP.getPresentation_FR());
         }
         else {
-            interestPointTitle.setText(IP.getName_EN());
+            interestPointTitle.setText(IP.getName_EN() + " - " + IP.getAuthor());
             interestPointContent.setText(IP.getPresentation_EN());
         }
 

@@ -52,12 +52,9 @@
 	<author>
 		Léonard de Vinci
 	</author>
-	<type_fr>
+	<type>
 		tableau
-	</type_fr>
-	<type_en>
-		painting
-	</type_en>
+	</type>
 </ip>
 <ip>
 	<title_fr>
@@ -96,11 +93,8 @@
 	<author>
 		Van Gogh
 	</author>
-	<type_fr>
+	<type>
 		statue
-	</type_fr>
-	<type_en>
-		statue
-	</type_en>
+	</type>
 </ip>
 </visit>

@@ -1,5 +1,7 @@
 package com.ceri.visitemusee.files;
 
+import android.widget.ImageView;
+
 import com.ceri.visitemusee.basket.BasketItem;
 import com.ceri.visitemusee.entities.musee.InterestPoint;
 import com.ceri.visitemusee.main.MainActivity;
@@ -32,7 +34,7 @@ public class FileTools {
 	static String readFile(InputStream inputStream) {
 		try {
 			StringWriter writer = new StringWriter();
-			IOUtils.copy(inputStream, writer, StandardCharsets.UTF_8.name());
+			IOUtils.copy(inputStream, writer, "WINDOWS-1252");
 			return writer.toString();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -57,7 +59,7 @@ public class FileTools {
 			JSONArray jArray = object.getJSONArray(FileManager.IP);
 			for (int i = 0; i < jArray.length(); i++) {
 				reader = jArray.getJSONObject(i);
-				String title_en, title_fr, presentation_fr, presentation_en, author, type_en, type_fr;
+				String title_en, title_fr, presentation_fr, presentation_en, author, type;
 				double coordx, coordy;
 				ArrayList<String> pictures = new ArrayList<>(), p360 = new ArrayList<>();
 				ArrayList<File> videos = new ArrayList<>();
@@ -69,8 +71,7 @@ public class FileTools {
 				coordx = Double.parseDouble(reader.getString(FileManager.COORD_X));
 				coordy = Double.parseDouble(reader.getString(FileManager.COORD_Y));
 				author = reader.getString(FileManager.AUTHOR);
-				type_fr = reader.getString(FileManager.TYPE_FR);
-				type_en = reader.getString(FileManager.TYPE_EN);
+				type = reader.getString(FileManager.TYPE);
 
 				JSONObject tmpobject = reader.getJSONObject(FileManager.PHOTOS);
 				JSONArray tmpjArray = tmpobject.getJSONArray(FileManager.LINK);
@@ -90,7 +91,7 @@ public class FileTools {
 					videos.add(new File(removeExtension(tmpjArray.getString(j).replaceAll("\\s+",""))));
 				}
 
-				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type_fr, type_en, coordx, coordy, pictures, p360, videos));
+				IPList.add(new InterestPoint(title_fr, title_en, presentation_fr, presentation_en, author, type, coordx, coordy, pictures, p360, videos));
 			}
 			return IPList;
 		} catch (JSONException e) {
@@ -134,5 +135,15 @@ public class FileTools {
 			e.printStackTrace();
 		}
 		return new ArrayList<>();
+	}
+
+	public static void ItemInIP(ArrayList<InterestPoint> interestPointArrayList, ArrayList<BasketItem> basketItemArrayList) {
+		for(InterestPoint IP : interestPointArrayList) {
+			for(BasketItem BI : basketItemArrayList) {
+				if(BI.getType().equals(IP.getType())) {
+					IP.getBasketItemList().add(BI);
+				}
+			}
+		}
 	}
 }

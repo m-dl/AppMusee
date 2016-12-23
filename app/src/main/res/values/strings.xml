@@ -47,12 +47,21 @@
     <string name="lancer">Lancer</string>
     <string name="cancel">Cancel</string>
     <string name="start">Start</string>
+    <string name="démarrer">Démarrer</string>
     <string name="new_room_default">Vous venez d\'entrer dans une nouvelle pièce du musée !</string>
     <string name="new_room_fr_1">Vous venez d\'entrer dans la pièce n°</string>
     <string name="new_room_fr_2">du musée !</string>
     <string name="new_room_en_1">You have just stepped in the room n°</string>
     <string name="new_room_en_2">of the museum !</string>
     <string name="ok">Ok</string>
+    <string name="custom_message_fr">Vous pouvez sélectionner les objets que vous souhaitez visiter dans votre visite personnalisée :</string>
+    <string name="custom_message_en">You can select the items you want to visit during your custom visit : </string>
+    <string name="paintings_fr">Visiter les peintures : </string>
+    <string name="paintings_en">Visit paintings : </string>
+    <string name="statues_fr">Visiter les statues : </string>
+    <string name="statues_en">Visit statues : </string>
+    <string name="items_fr">Visiter les objets : </string>
+    <string name="items_en">Visit items : </string>
 
     <string name="memory_access_error">Je ne peux accèder à la mémoire</string>
 
