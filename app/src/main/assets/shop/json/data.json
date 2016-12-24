@@ -1,144 +1,96 @@
 {
-  "shop": {
-    "item": [
-      {
-        "title_fr": "
-		article un
-	",
-        "title_en": "
-		First item
-	",
-        "presentation_fr": "
-		presentation francaise
-	",
-        "presentation_en": "
-		english presentation\n\n\nend of the presentation
-	",
-        "picture": "
-		img1.jpg
-	",
-        "price": "
-		26
-	",
-        "type": "
-		tableau
-	"
-      },
-      {
-        "title_fr": "
-		article deux
-	",
-        "title_en": "
-		Second item
-	",
-        "presentation_fr": "
-		presentation francaise n.2
-	",
-        "presentation_en": "
-		english presentation bis
-	",
-        "picture": "
-		4.jpg
-	",
-        "price": "
-		502
-	",
-        "type": "
-		statue
-	"
-      },
-      {
-        "title_fr": "
-		article deux
-	",
-        "title_en": "
-		Second item
-	",
-        "presentation_fr": "
-		presentation francaise n.2
-	",
-        "presentation_en": "
-		english presentation bis
-	",
-        "picture": "
-		4.jpg
-	",
-        "price": "
-		52
-	",
-        "type": "
-		statue
-	"
-      },
-      {
-        "title_fr": "
-		article deux
-	",
-        "title_en": "
-		Second item
-	",
-        "presentation_fr": "
-		presentation francaise n.2
-	",
-        "presentation_en": "
-		english presentation bis
-	",
-        "picture": "
-		4.jpg
-	",
-        "price": "
-		2
-	",
-        "type": "
-		statue
-	"
-      },
-      {
-        "title_fr": "
-		article deux
-	",
-        "title_en": "
-		Second item
-	",
-        "presentation_fr": "
-		presentation francaise n.2
-	",
-        "presentation_en": "
-		english presentation bis
-	",
-        "picture": "
-		4.jpg
-	",
-        "price": "
-		888
-	",
-        "type": "
-		statue
-	"
-      },
-      {
-        "title_fr": "
-		article deux
-	",
-        "title_en": "
-		Second item
-	",
-        "presentation_fr": "
-		presentation francaise n.2
-	",
-        "presentation_en": "
-		english presentation bis
-	",
-        "picture": "
-		4.jpg
-	",
-        "price": "
-		502
-	",
-        "type": "
-		statue
-	"
-      }
-    ]
-  }
+   "shop": {
+      "item": [
+         {
+            "title_fr": "article un",
+            "title_en": "First item",
+            "presentation_fr": "Presentation française.\n\n Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis.",
+            "presentation_en": "English presentation\n\n Nulla facilisi. Donec finibus massa at elit maximus finibus. Vivamus dapibus rhoncus ex a varius. Etiam dapibus porta ipsum quis consectetur. Sed elementum maximus libero. Ut sed lacus sem. Quisque quis sodales turpis. \n\nend of the presentation.",
+            "picture": "1.jpg",
+            "price": "26",
+            "type": "tableau"
+         },
+         {
+            "title_fr": "article deux",
+            "title_en": "Second item",
+            "presentation_fr": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "presentation_en": "Aenean porta neque vel semper sodales. Suspendisse eget semper nisi. Nam ac est placerat, efficitur tellus sodales, lobortis erat. Mauris sit amet risus augue. Suspendisse in mollis purus. Integer vitae mattis metus. Duis sollicitudin, orci at dictum scelerisque, odio ante pulvinar leo, a vulputate tellus dui a nisi. Sed aliquam porta eros ac elementum.",
+            "picture": "3.jpg",
+            "price": "502",
+            "type": "statue"
+         },
+         {
+            "title_fr": "article trois",
+            "title_en": "Third item",
+            "presentation_fr": "Aenean porta neque vel semper sodales. Suspendisse eget semper nisi. Nam ac est placerat, efficitur tellus sodales, lobortis erat. Mauris sit amet risus augue. Suspendisse in mollis purus. Integer vitae mattis metus. Duis sollicitudin, orci at dictum scelerisque, odio ante pulvinar leo, a vulputate tellus dui a nisi. Sed aliquam porta eros ac elementum.",
+            "presentation_en": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "picture": "2.jpg",
+            "price": "52",
+            "type": "statue"
+         },
+         {
+            "title_fr": "une pièce d'or",
+            "title_en": "a gold coin",
+            "presentation_fr": "C'est une pièce d'or très rare.",
+            "presentation_en": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "picture": "7.jpg",
+            "price": "200",
+            "type": "objet"
+         },
+         {
+            "title_fr": "article deux",
+            "title_en": "Second item",
+            "presentation_fr": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+            "presentation_en": "Lorem ipsum dolor sit amet.",
+            "picture": "4.jpg",
+            "price": "888",
+            "type": "tableau"
+         },
+         {
+            "title_fr": "bel article",
+            "title_en": "nice item",
+            "presentation_fr": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+            "presentation_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "picture": "10.jpg",
+            "price": "20",
+            "type": "statue"
+         },
+         {
+            "title_fr": "une peinture verte",
+            "title_en": "a green painting",
+            "presentation_fr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "presentation_en": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+            "picture": "9.jpg",
+            "price": "20",
+            "type": "peinture"
+         },
+         {
+            "title_fr": "casque antique",
+            "title_en": "old helmet",
+            "presentation_fr": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+            "presentation_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "picture": "8.jpg",
+            "price": "100",
+            "type": "statue"
+         },
+         {
+            "title_fr": "vase japonnais",
+            "title_en": "japanese vase",
+            "presentation_fr": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "presentation_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "picture": "6.jpg",
+            "price": "350",
+            "type": "objet"
+         },
+         {
+            "title_fr": "tableau homme moustache",
+            "title_en": "moustache man painting",
+            "presentation_fr": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+            "presentation_en": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+            "picture": "5.jpg",
+            "price": "75",
+            "type": "tableau"
+         }
+      ]
+   }
 }
